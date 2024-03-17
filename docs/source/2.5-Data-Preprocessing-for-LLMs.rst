@@ -88,6 +88,7 @@ Removing noise and normalization
 
 1.Lowercasing
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 Lowercasing is a text preprocessing step where all letters in the text are converted to lowercase. This step is implemented so that the algorithm does not treat the same words differently in different situations.
          .. code-block::python
           :linenos:
@@ -96,6 +97,7 @@ Lowercasing is a text preprocessing step where all letters in the text are conve
 
 2.Removing Punctuation and Special Characters
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 Punctuation and special characters removal is a text preprocessing step where you remove all punctuation marks (such as periods, commas, exclamation marks, emojis etc.) from the text to simplify it and focus on the words themselves.
          .. code-block::python
           :linenos:
@@ -109,6 +111,7 @@ Punctuation and special characters removal is a text preprocessing step where yo
 
 3.Stop-words Removal 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 Stop-words are the mostcommon words in any language (like articles, prepositions, pronouns, conjunctions, etc) and does not add much information to the text.Examples of a few stop words in English are “the”, “a”, “an”, “so”, “what”.
 For this technique we will the NLTK library.
       
@@ -131,6 +134,7 @@ For this technique we will the NLTK library.
 
 4.Removing URL
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 This preprocessing step is to remove any URLs present in the data.
       
          .. code-block::python
@@ -168,3 +172,47 @@ It’s important to remove HTML tags from the text data. Indeed, if we work with
 
           print("Original HTML text:", html_text)
           print("Text after HTML tag removal (BeautifulSoup):", cleaned_text_bs4)
+
+6.Stemming
+~~~~~~~~~~~~~~~~~~~
+Stemming is a linguistic normalization that simplifies words to their base form or root by removing prefixes and suffixes,helping the natural language processing and information retrieval.
+          
+         .. code-block::python
+          :linenos:
+         
+          import nltk
+          from nltk.stem import PorterStemmer
+
+          nltk.download("punkt")
+          ps = PorterStemmer()
+          example_words = ["program","programming","programer","programs","programmed"]
+          print("{0:20}{1:20}".format("--Word--","--Stem--"))
+          for word in example_words:
+            print ("{0:20}{1:20}".format(word, ps.stem(word)))
+
+7. Lemmatization
+Lemmatization simplifies words to their base or root form, known as the lemma, making it easier to analyze a word.The difference between stemming and lemmatization is that the latter transforms words to their standardized form and aims to return a valid word by applying linguistic rules and context.
+
+   .. figure:: ../Images/Difference between Stemming and Lemmatization.jpg
+   :width: 80%
+   :align: center
+   :alt: Alternative text for the image
+    
+         
+         
+         
+         
+         
+         .. code-block::python
+          :linenos:
+         
+          from nltk.stem import WordNetLemmatizer
+          nltk.download("wordnet")
+          nltk.download("omw-1.4") 
+          wnl = WordNetLemmatizer()
+          example_words = ["program","programming","programer","programs","programmed"]
+          print("{0:20}{1:20}".format("--Word--","--Lemma--"))
+          for word in example_words:
+            print ("{0:20}{1:20}".format(word, wnl.lemmatize(word, pos="v")))
+
+8. 
