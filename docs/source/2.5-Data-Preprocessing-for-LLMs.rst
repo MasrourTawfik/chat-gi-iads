@@ -46,18 +46,18 @@ To handle missing value ,we have the following techniques:
        
        2. Deletion: This involves removing rows or columns with missing values.
 
-   .. code-block:: python
-      :linenos:
+         .. code-block:: python
+            :linenos:
 
-      import pandas as pd
-      import numpy as np
+            import pandas as pd
+            import numpy as np
 
-      data = {'A': [1, 2, np.nan, 6, 14],'B': [11, np.nan, 14, 13, 10],'C': [2, 24, np.nan, 33,84]}
-      df = pd.DataFrame(data)
-      print(df)
+            data = {'A': [1, 2, np.nan, 6, 14],'B': [11, np.nan, 14, 13, 10],'C': [2, 24, np.nan, 33,84]}
+            df = pd.DataFrame(data)
+            print(df)
 
-      imputed = df.dropna()
-      print(imputed)
+            imputed = df.dropna()
+            print(imputed)
 
 2.Noise reduction
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -71,13 +71,13 @@ Consistency checks ensure the data across the dataset adheres to consistent form
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Duplicated data can occur for various reasons including data entry errors or system glitches. These duplicates can skew the data distribution and lead to biased model training. By removing duplicates, the dataset becomes more accurate and representative, improving the performance of the LLM.
 
-   .. code-block:: python
-      :linenos:
-      data = {'Name': ['John', 'Alice', 'Bob', 'Charlie', 'John', 'Eve', 'Alice'],'Age': [25, 30, 22, 35, 25, 28, 30]}
-      d1= pd.DataFrame(data)
-      print(d1)
-      d2 = d1.drop_duplicates()
-      print(d2)
+         .. code-block:: python
+          :linenos:
+            data = {'Name': ['John', 'Alice', 'Bob', 'Charlie', 'John', 'Eve', 'Alice'],'Age': [25, 30, 22, 35, 25, 28, 30]}
+            d1= pd.DataFrame(data)
+            print(d1)
+            d2 = d1.drop_duplicates()
+            print(d2)
 
 
 Text cleaning and normalization
@@ -89,57 +89,58 @@ Removing noise and normalization
 1.Lowercasing
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Lowercasing is a text preprocessing step where all letters in the text are converted to lowercase. This step is implemented so that the algorithm does not treat the same words differently in different situations.
-     .. code-block::python
-        :linenos:
-         string = "ConvErT ALL tO LoWErCASe"
-         print(string.lower())
+         .. code-block::python
+          :linenos:
+          string = "ConvErT ALL tO LoWErCASe"
+          print(string.lower())
 
 2.Removing Punctuation and Special Characters
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Punctuation and special characters removal is a text preprocessing step where you remove all punctuation marks (such as periods, commas, exclamation marks, emojis etc.) from the text to simplify it and focus on the words themselves.
-      .. code-block::python
-         :linenos:
-         test_str = "Gfg, is best : for ! Geeks ;"
-         print("The original string is : " + test_str)
-         punc = '''!()-[]{};:'"\,<>./?@#$%^&*_~'''
-         for ele in test_str:
+         .. code-block::python
+          :linenos:
+          test_str = "Gfg, is best : for ! Geeks ;"
+          print("The original string is : " + test_str)
+          punc = '''!()-[]{};:'"\,<>./?@#$%^&*_~'''
+          for ele in test_str:
             if ele in punc:
                test_str = test_str.replace(ele, "")
-         print("The string after punctuation filter : " + test_str)
+          print("The string after punctuation filter : " + test_str)
 
 3.Stop-words Removal 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Stop-words are the mostcommon words in any language (like articles, prepositions, pronouns, conjunctions, etc) and does not add much information to the text.Examples of a few stop words in English are “the”, “a”, “an”, “so”, “what”.
 For this technique we will the NLTK library.
       
-      .. code-block::python
-         :linenos:
-         from nltk.corpus import stopwords
-         from nltk.tokenize import word_tokenize
+          .. code-block::python
+           :linenos:
+           from nltk.corpus import stopwords
+           from nltk.tokenize import word_tokenize
 
-         nltk.download('punkt')
-         example_sent = """This is a sample sentence,showing off the stop words filtration."""
-         stop_words = set(stopwords.words('english'))
-         word_tokens = word_tokenize(example_sent)
-         filtered_sentence = [w for w in word_tokens if not w.lower() in stop_words]
-         filtered_sentence = []
-         for w in word_tokens:
-           if w not in stop_words:
-            filtered_sentence.append(w)
-         print(word_tokens)
-         print(filtered_sentence)
+           nltk.download('punkt')
+           example_sent = """This is a sample sentence,showing off the stop words filtration."""
+           stop_words = set(stopwords.words('english'))
+           word_tokens = word_tokenize(example_sent)
+           filtered_sentence = [w for w in word_tokens if not w.lower() in stop_words]
+           filtered_sentence = []
+           for w in word_tokens:
+              if w not in stop_words:
+                filtered_sentence.append(w)
+           print(word_tokens)
+           print(filtered_sentence)
 
 4.Removing URL
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 This preprocessing step is to remove any URLs present in the data.
-      .. code-block::python
-         :linenos:
-         import re
-         def remove_urls(text, replacement_text="[URL REMOVED]"):
+      
+         .. code-block::python
+          :linenos:
+          import re
+          def remove_urls(text, replacement_text="[URL REMOVED]"):
             url_pattern = re.compile(r'https?://\S+|www\.\S+')
             text_without_urls = url_pattern.sub(replacement_text, text)
             return text_without_urls
-        #Example
+          #Example
          input_text = "Visit on GeeksforGeeks Website: https://www.geeksforgeeks.org/"
          output_text = remove_urls(input_text)
          print("Original Text:")
@@ -149,19 +150,21 @@ This preprocessing step is to remove any URLs present in the data.
 
 5.Removal of HTML Tags
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-It’s important to remove HTML tags from the text data. Indeed, if we work with text data obtained from HTML sources, the text may contain HTML tags, which are not desirable for text analysis. 
-      .. code-block::python
-         :linenos:
-         
-         import re
-         from bs4 import BeautifulSoup
 
-         def remove_html_tags_beautifulsoup(text):
+It’s important to remove HTML tags from the text data. Indeed, if we work with text data obtained from HTML sources, the text may contain HTML tags, which are not desirable for text analysis. 
+      
+         .. code-block::python
+          :linenos:
+         
+          import re
+          from bs4 import BeautifulSoup
+
+          def remove_html_tags_beautifulsoup(text):
             soup = BeautifulSoup(text, 'html.parser')
             return soup.get_text()
 
-         html_text = "<p>This is <b>HTML</b> text.</p>"
-         cleaned_text_bs4 = remove_html_tags_beautifulsoup(html_text)
+          html_text = "<p>This is <b>HTML</b> text.</p>"
+          cleaned_text_bs4 = remove_html_tags_beautifulsoup(html_text)
 
-         print("Original HTML text:", html_text)
-         print("Text after HTML tag removal (BeautifulSoup):", cleaned_text_bs4)
+          print("Original HTML text:", html_text)
+          print("Text after HTML tag removal (BeautifulSoup):", cleaned_text_bs4)
