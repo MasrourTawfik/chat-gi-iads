@@ -8,6 +8,7 @@ Data is a collection of discrete values that convey information, describing quan
    :alt: Alternative text for the image
 
 
+
 Data preprocessing is a crucial step in our pipeline since a bad data preprocessing leads to bad results.It involves a series of steps to prepare the raw text data for training. 
 Effective preprocessing contributes to smoother training, faster convergence, and improved model performance. The goal is to standardize the input data to reduce the complexity that the model needs to handle.
 Data preprocessing for large language model involves prominent techniques to pre-process its data .
@@ -38,6 +39,10 @@ Noise in data refers to irrelevant or random information that can distort the tr
 3.Consistency checks
 --------------------------------------
 Consistency checks ensure the data across the dataset adheres to consistent formats, rules, or conventions.Inconsistencies arec caused by data entry erros or system glitches.These inconsistencies can lead to misleading results when training models.
+
+4.Deduplication
+---------------------------------------
+Duplicated data can occur for various reasons including data entry errors or system glitches. These duplicates can skew the data distribution and lead to biased model training. By removing duplicates, the dataset becomes more accurate and representative, improving the performance of the LLM.
 
 
        
