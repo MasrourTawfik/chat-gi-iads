@@ -7,7 +7,6 @@ Welcome to CHAT GI-IADS's documentation!
    :alt: Alternative text for the image
 
 .. toctree::
-
    2.5-Data-Preprocessing-for-LLMs
 
 
