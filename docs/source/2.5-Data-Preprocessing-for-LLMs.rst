@@ -28,7 +28,8 @@ Data cleaning methods
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Missing values can occur when there is no data for some observations or features in a dataset. These gaps in data can lead to inaccurate predictions or a biased model.
 To handle missing value ,we have the following techniques:
-       1.Data imputation: is the substitution of an estimated value that is as realistic as possible for a missing or problematic data item.
+       
+       1. Data imputation: is the substitution of an estimated value that is as realistic as possible for a missing or problematic data item.
         
         .. code-block:: python
          :linenos:
@@ -43,7 +44,20 @@ To handle missing value ,we have the following techniques:
          df_mean_imputed = pd.DataFrame(imputer_mean.fit_transform(df), columns=df.columns)
          print(df_mean_imputed)
        
-       2.Deletion: Where rows or columns with missing values are removed.
+       2. Deletion: This involves removing rows or columns with missing values.
+
+   .. code-block:: python
+      :linenos:
+
+      import pandas as pd
+      import numpy as np
+
+      data = {'A': [1, 2, np.nan, 6, 14],'B': [11, np.nan, 14, 13, 10],'C': [2, 24, np.nan, 33,84]}
+      df = pd.DataFrame(data)
+      print(df)
+
+      imputed = df.dropna()
+      print(imputed)
 
 2.Noise reduction
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -56,6 +70,15 @@ Consistency checks ensure the data across the dataset adheres to consistent form
 4.Deduplication
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Duplicated data can occur for various reasons including data entry errors or system glitches. These duplicates can skew the data distribution and lead to biased model training. By removing duplicates, the dataset becomes more accurate and representative, improving the performance of the LLM.
+
+   .. code-block:: python
+      :linenos:
+      data = {'Name': ['John', 'Alice', 'Bob', 'Charlie', 'John', 'Eve', 'Alice'],'Age': [25, 30, 22, 35, 25, 28, 30]}
+      d1= pd.DataFrame(data)
+      print(d1)
+      d2 = d1.drop_duplicates()
+      print(d2)
+
 
 Text cleaning and normalization
 -------------------------------
