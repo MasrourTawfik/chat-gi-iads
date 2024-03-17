@@ -191,6 +191,7 @@ Stemming is a linguistic normalization that simplifies words to their base form 
             print ("{0:20}{1:20}".format(word, ps.stem(word)))
 
 7. Lemmatization
+~~~~~~~~~~~~~~~~~~~~~~~~
 Lemmatization simplifies words to their base or root form, known as the lemma, making it easier to analyze a word.The difference between stemming and lemmatization is that the latter transforms words to their standardized form and aims to return a valid word by applying linguistic rules and context.
 
 .. figure:: ../Images/Difference between Stemming and Lemmatization.jpg
