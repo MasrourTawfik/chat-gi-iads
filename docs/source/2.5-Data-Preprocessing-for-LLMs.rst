@@ -1,6 +1,7 @@
 Data preprocessing for LLMs
 ==================================
 Data is a collection of discrete values that convey information, describing quantity, quality, fact, statistics, other basic units of meaning, or simply sequences of symbols that may be further interpreted.
+
 .. figure:: ../Images/DataTypes.jpeg
    :width: 80%
    :align: center
