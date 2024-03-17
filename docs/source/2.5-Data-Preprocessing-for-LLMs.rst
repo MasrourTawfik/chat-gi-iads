@@ -10,13 +10,12 @@ Data preprocessing for large language model involves prominent techniques to pre
    :align: center
    :alt: Alternative text for the image
 
-=====================================
 Data cleaning
-=====================================
+------------------------
 Data cleaning is a fundamental aspect of data pre-processing for training LLMs. This technique involves identifying and rectifying inaccuracies, inconsistencies, and irrelevant elements within the raw text data. 
-==============================
+
 Data cleaning methods 
-=============================
+------------------------
 1.Handling missing values
-=============================
-Missing values can occur when there is no data for some observations or features in a dataset. These gaps in data can lead to inaccurate predictions or a biased model. 
+----------------------------
+Missing values can occur when there is no data for some observations or features in a dataset. These gaps in data can lead to inaccurate predictions or a biased model.
