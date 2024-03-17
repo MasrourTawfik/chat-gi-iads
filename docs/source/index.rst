@@ -1,7 +1,7 @@
 Welcome to CHAT GI-IADS's documentation!
 ========================================
 
-.. figure:: docs\documentation\img\giiads.jpg
+.. figure:: docs/documentation/img/giiads.jpg
    :width: 80%
    :align: left
    :alt: Alternative text for the image
@@ -12,6 +12,6 @@ Welcome to CHAT GI-IADS's documentation!
 .. toctree::
    :maxdepth: 2
    :caption: Table of Content:
-   docs\source\2.5 Data Preprocessing for LLMs.rst
+   docs/source/2.5 Data Preprocessing for LLMs.rst
 
 
