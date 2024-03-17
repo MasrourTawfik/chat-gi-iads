@@ -46,4 +46,11 @@ Duplicated data can occur for various reasons including data entry errors or sys
 
 Text cleaning and normalization
 -------------------------------
-       
+Removing noise and normalization 
+-----------------------------
+ Removing noise from text and standardizing it are crucial steps for improving the quality of our textual data and enhancing the performance of the natural language processing tasks.Many techniques are used to fix this issue.
+
+1.Lowercasing
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Lowercasing is a text preprocessing step where all letters in the text are converted to lowercase. This step is implemented so that the algorithm does not treat the same words differently in different situations.
+
