@@ -29,6 +29,17 @@ Data cleaning methods
 Missing values can occur when there is no data for some observations or features in a dataset. These gaps in data can lead to inaccurate predictions or a biased model.
 To handle missing value ,we have the following techniques:
        1.Data imputation: is the substitution of an estimated value that is as realistic as possible for a missing or problematic data item.
+        
+        .. code-block:: python
+         import pandas as pd
+         import numpy as np
+         from sklearn.impute import SimpleImputer
+         data = {'A': [1, 2, np.nan, 6, 14],'B': [11, np.nan, 14, 13, 10],'C': [2, 24, np.nan, 33,84]}
+         df = pd.DataFrame(data)
+         print(df)
+         imputer_mean = SimpleImputer(strategy='mean')
+         df_mean_imputed = pd.DataFrame(imputer_mean.fit_transform(df), columns=df.columns)
+         print(df_mean_imputed)
        
        2.Deletion: Where rows or columns with missing values are removed.
 
@@ -52,5 +63,5 @@ Removing noise and normalization
 
 1.Lowercasing
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Lowercasing is a text preprocessing step where all letters in the text are converted to lowercase. This step is implemented so that the algorithm does not treat the same words differently in different situations.
+
 
