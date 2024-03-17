@@ -31,6 +31,8 @@ To handle missing value ,we have the following techniques:
        1.Data imputation: is the substitution of an estimated value that is as realistic as possible for a missing or problematic data item.
         
         .. code-block:: python
+         :linenos:
+
          import pandas as pd
          import numpy as np
          from sklearn.impute import SimpleImputer
