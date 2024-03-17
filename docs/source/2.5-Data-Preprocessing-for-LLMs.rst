@@ -26,8 +26,7 @@ Data cleaning methods
 ----------------------------
 Missing values can occur when there is no data for some observations or features in a dataset. These gaps in data can lead to inaccurate predictions or a biased model.
 To handle missing value ,we have the following techniques:
-       1.Data imputation: is the substitution of an estimated value that is as realistic as possible for a missing or problematic data item
- 
+       1.Data imputation: is the substitution of an estimated value that is as realistic as possible for a missing or problematic data item.
        2.Deletion: Where rows or columns with missing values are removed.
 
 2.Noise reduction
