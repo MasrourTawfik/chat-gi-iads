@@ -7,7 +7,7 @@ HEY THIS IS DOCUMENTATION TRIAL 69
    :alt: Alternative text for the image
    :name: logo
 
-   ..
+
 
 .. toctree::
    :maxdepth: 2
