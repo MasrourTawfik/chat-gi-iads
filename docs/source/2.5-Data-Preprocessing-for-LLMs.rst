@@ -88,5 +88,22 @@ Removing noise and normalization
 
 1.Lowercasing
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Lowercasing is a text preprocessing step where all letters in the text are converted to lowercase. This step is implemented so that the algorithm does not treat the same words differently in different situations.
+     .. code-block::python
+        :linenos:
+         string = "ConvErT ALL tO LoWErCASe"
+         print(string.lower())
 
-
+2.Removing Punctuation and Special Characters
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Punctuationand special characters removal is a text preprocessing step where you remove all punctuation marks (such as periods, commas, exclamation marks, emojis etc.) from the text to simplify it and focus on the words themselves.
+      .. code-block::python
+         :linenos:
+         test_str = "Gfg, is best : for ! Geeks ;"
+         print("The original string is : " + test_str)
+         punc = '''!()-[]{};:'"\,<>./?@#$%^&*_~'''
+         for ele in test_str:
+            if ele in punc:
+               test_str = test_str.replace(ele, "")
+         print("The string after punctuation filter : " + test_str)
+         
