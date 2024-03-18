@@ -18,17 +18,20 @@ Installation
 ~~~~~~~~~~~~
 1. Clone the repository to your local machine.
 
+.. code-block:: bash
 
+        git clone https://github.com/MasrourTawfik/chat-gi-iads.git
 
 2. Navigate to the root directory of the repository.
 
 .. code-block:: bash
 
-    git clone https://github.com/MasrourTawfik/chat-gi-iads.git
+        cd GIA-LLM-Documentation
     
 3. Run the following command to install the required packages:
-   .. code-block:: bash
-        :linenos:
+
+.. code-block:: bash
+
         pip install -r requirements.txt
 
 Now you're ready to start working on the documentation!
