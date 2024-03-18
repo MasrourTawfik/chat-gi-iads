@@ -284,8 +284,8 @@ Sentence algorithm
 3. Detokenization: SentencePiece merges subword units according to the rules learned during training, effectively reversing the tokenization process from tokens to sentences.
 
    .. figure:: ../Images/SentencePiece.jpg
-     :width: 80%
-     :align: center
-     :alt: SentencePiece Tokenization
+    :width: 80%
+    :align: center
+    :alt: SentencePiece Tokenization
 
    
