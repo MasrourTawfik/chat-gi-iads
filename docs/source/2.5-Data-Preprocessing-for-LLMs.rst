@@ -241,7 +241,7 @@ Tokenization and word embedding
 --------------------------------
 Tokenization, in the realm of Natural Language Processing (NLP) and machine learning, refers to the process of converting a sequence of text into smaller parts, known as tokens. These tokens can be as small as characters or as long as words.
 The aim of tokenization is to represent text in a manner that's meaningful for machines without losing its context.
-   .. figure:: ../Images/DifferencebetweenStemmingandLemmatization.jpg
+   .. figure:: ../Images/TypesOfTokenization.jpg
     :width: 80%
     :align: center
     :alt: Alternative text for the image
