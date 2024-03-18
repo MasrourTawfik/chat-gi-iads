@@ -1,7 +1,8 @@
-Template for the Read the Docs tutorial
+CHAT GI-IADS Documentation
 =======================================
 
-This GitHub template includes fictional Python library
-with some basic Sphinx docs.
+Greetings, and welcome to the documentation repository dedicated to CHAT GI-IADS! Our project is centered around refining open-source language models using domain-specific datasets that cover aspects such as quality, maintenance, and production. Within this repository, you'll find comprehensive documentation covering a wide array of topics related to our project.
 
-https://chat-gi-iads.readthedocs.io/en/latest
+Getting Started with Documentation Development
+----------------------------------------------
+If you're interested in contributing to the documentation, follow these steps to set up your development environment:

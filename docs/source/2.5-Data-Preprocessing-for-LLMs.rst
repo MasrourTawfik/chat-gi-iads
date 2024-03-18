@@ -276,13 +276,16 @@ SentencePiece is an unsupervised text tokenizer(a tokenizer breaks down text int
 
 Sentence algorithm
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 1.Training:The algorithm begins by training on a large corpus of text data.During training,it learns a vocabulary of subword units based on the frequency of character sequences in the training data.
+
 2.Tokenization:Once the algorithm is trained , it can tokenize new text inputs.It segments the input text into subword units using the learned vocabulary.
-3.Detokenization: it merges subword units according to the rules learned during training, effectively reversing the tokenization process(from tokens to sentences).
- 
-   .. figure:: ../Images/TypesOfTokenization.jpg
-     :width: 80%
-     :align: center
-     :alt: Alternative text for the image
+
+3. Detokenization: SentencePiece merges subword units according to the rules learned during training, effectively reversing the tokenization process from tokens to sentences.
+
+   .. figure:: ../Images/SentencePiece.jpg
+    :width: 80%
+    :align: center
+    :alt: SentencePiece Tokenization
 
    
