@@ -76,7 +76,7 @@ To learn what is and is not a relevant entity and how to categorize them, a mode
 Example:Named Entity Recognition (NER)
 Objective:NER capabilities using spaCy to identify various types of entities in a text, such as persons, organizations, locations...
 
-`Click here for example`_.
+`Click here for example`_
 
 .. _Click here for example: https://jupyter.org/try-jupyter/notebooks/?path=NameEntityRecognition.ipynb
 
@@ -114,7 +114,7 @@ Defining a set of rules for assigning POS tags to words. For example:
 Example:PoS tagging
 Objective:how to perform PoS tagging on a given sentence, assigning grammatical parts of speech to each word, such as nouns, verbs, adjectives, etc.
 
-`Click here for example`_.
+`Click here for example`_
 
 .. _Click here for example: https://jupyter.org/try-jupyter/notebooks/? path=PartOfSpeechTagging.ipynb
 
@@ -164,7 +164,7 @@ The primary steps in the machine translation process are:
 Example:Machine Translation
 Objective:emonstrating how to translate text from English to French using a pre-trained model..
 
-`Click here for example`_.
+`Click here for example`_
 
 .. _Click here for example: https://jupyter.org/try-jupyter/notebooks/?path=MachineTranslation.ipynb
 
