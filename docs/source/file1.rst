@@ -27,9 +27,13 @@ Graded Sentiment Analysis (Fine-Grained Sentiment Analysis)
 
 For businesses where understanding the precise level of sentiment is necessary, expanding the range of sentiment categories to capture various degrees of positivity or negativity can be beneficial:
 - Very positive
+
 - Positive
+
 - Neutral
+
 - Negative
+
 - Very negative
 
 Emotion Detection
@@ -79,6 +83,7 @@ Objective:NER capabilities using spaCy to identify various types of entities in 
 Part-Of-Speech Tagging (PoS)
 ---------------------------
 Part-of-speech tagging, a fundamental aspect of natural language processing, involves assigning syntactic tags to each word in a sentence based on its context. Also known as grammatical tagging, this process categorizes words into grammatical groups like verbs, adjectives, nouns, etc.
+
 
 .. table:: Example of Part of Speech Tags
    :name: tab:pos_tags
@@ -132,7 +137,9 @@ Transformation-Based Tagging (TBT)
 ^^^^^^^^^^^^^^^^^^^^^^^^
 TBT applies rules to transform word tags based on their context. Unlike rule-based tagging, TBT dynamically updates tags by applying rules in sequence, such as changing a verb to a noun if preceded by a determiner.
 In TBT, a set of rules is defined to transform the tags of words in a text based on the context in which they appear. 
-For example, a rule might change the tag of a verb to a noun if it appears after a determiner such as “the” .The rules are applied to the text in a specific order, and the tags are updated after each transformation.
+
+For example, a rule might change the tag of a verb to a noun if it appears after a determiner such as “the” .
+The rules are applied to the text in a specific order, and the tags are updated after each transformation.
 Here is an example of how a TBT system might work:
 Defining a set of rules for transforming the tags of words in the text.
 
@@ -161,8 +168,49 @@ Objective:emonstrating how to translate text from English to French using a pre-
 
 .. _Click here for example: https://jupyter.org/try-jupyter/notebooks/?path=MachineTranslation.ipynb
 
+Rule-based Machine Translation or RBMT
+^^^^^^^^^^^^^^^^^^^^^^
+Also called knowledge-based machine translation, these are the earliest set of classical methods used for machine translation.
 
+These translation systems are mainly based on linguistic information about the source and target languages that are derived from dictionaries and grammar covering the characteristic elements of each language separately.
 
+Corpus-based Machine Translation Approach or CBMT
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Corpus-Based Machine Translation uses bilingual parallel corpora as a foundational dataset to inform and guide the translation of new text. 
 
+This method relies on extensive databases of raw text paired with their corresponding translations, utilizing these parallel texts to derive insights and patterns for translation tasks.
 
+Example-based Machine Translation or EBMT
+^^^^^^^^^^^^^^^^^^^^^^
+Example-based machine translation systems are trained from bilingual parallel corpora where the sentence pairs contain sentences in one language with their translations into another.
 
+The principle of translation by analogy is encoded to the example-based machine translation through the example translations that are used to train the system.
+
+Here's a simplified example using English and French:
+Suppose we have a bilingual corpus with the following sentence pairs:
+
+English : "The cat sat on the mat".
+French: "Le chat s'est assis sur le tapis".
+
+English:"She sat by the river".
+French: "Elle s'est assise au bord de la rivière."
+
+Now, if we want to translate a new English sentence using the EBMT approach:
+
+English: "The cat sat by the window".
+
+The EBMT system will:
+1. Identify segments from the known examples that can be reused:
+ -"The cat sat" can be matched with "Le chat s'est assis" from the first pair.
+ 
+ -"by" can be associated with "au bord" from the second pair, though this is not a direct match.
+
+2. Adjust for the new context:
+-"The window" has no direct match, but based on "on the mat" and the structure of the French sentence, the system may infer the correct preposition "à" for the English "by."
+
+3. Assemble the translated segments:
+-"Le chat s'est assis" + "à" + "la fenêtre" (where "la fenêtre" is the translation of "the window").
+
+4. Generate the translated sentence:-"Le chat s'est assis à la fenêtre."
+
+Here, the EBMT system uses fragments of known translations to construct the translation of a new sentence. It requires a comprehensive bilingual corpus to increase the accuracy and fluency of the translations it produces.
