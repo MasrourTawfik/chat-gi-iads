@@ -1,7 +1,7 @@
 Welcome to CHAT GI-IADS's documentation!
 ========================================
 
-.. figure:: ../Images/giiads.jpg
+.. figure:: ../Images/gi.png
    :width: 50%
    :align: center
    :alt: Alternative text for the image
