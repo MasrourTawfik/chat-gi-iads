@@ -11,4 +11,5 @@ Welcome to CHAT GI-IADS's documentation!
    intro
    2.5-Data-Preprocessing-for-LLMs
    file1
+   Understanding-the-Architecture-of-Transformers
 
