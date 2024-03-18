@@ -254,6 +254,7 @@ Suppose we have data aaabdaaabac which needs to be encoded (compressed). The byt
       
       BPE algorithm
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 1.Initialize Vocabulary: Start with a vocabulary that consists of all the characters or tokens in the dataset.
 
 2.Calculate Frequencies: Calculate the frequency of each character or token pair in the dataset.
