@@ -270,5 +270,22 @@ BPE algorithm
 
    <iframe width="560" height="315" src="https://www.youtube.com/embed/i0D5GbudU6c" frameborder="0" allowfullscreen></iframe>
 
+Sentence Piece Tokenization
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+SentencePiece is an unsupervised text tokenizer(a tokenizer breaks down text into smaller subword units) and detokenizer(a detokenizer reconstructs the original text from a sequence of subword units, ensuring proper formatting and coherence) primarily designed for Neural Network-based text generation tasks. It supports multiple languages with a single model and can tokenize text into subwords, making it versatile for various NLP tasks.
+
+Sentence algorithm
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+1.Training:The algorithm begins by training on a large corpus of text data.During training,it learns a vocabulary of subword units based on the frequency of character sequences in the training data.
+
+2.Tokenization:Once the algorithm is trained , it can tokenize new text inputs.It segments the input text into subword units using the learned vocabulary.
+
+3. Detokenization: SentencePiece merges subword units according to the rules learned during training, effectively reversing the tokenization process from tokens to sentences.
+
+.. figure:: ../Images/SentencePiece.jpg
+   :width: 80%
+   :align: center
+   :alt: SentencePiece Tokenization
 
    
