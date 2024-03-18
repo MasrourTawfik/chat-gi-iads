@@ -38,5 +38,5 @@ Now you're ready to start working on the documentation!
 
 Accessing the Documentation Online
 ---------------------------------
-The documentation is hosted on Read the Docs, and you can access it by following this link: [CHAT GI-IADS Documentation](https://chat-gi-iads.readthedocs.io/en/latest/)
+The documentation is hosted on Read the Docs, and you can access it by following this link: `CHAT GI-IADS Documentation <https://chat-gi-iads.readthedocs.io/en/latest/>`_
 
