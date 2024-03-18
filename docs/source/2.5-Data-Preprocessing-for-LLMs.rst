@@ -246,22 +246,29 @@ The aim of tokenization is to represent text in a manner that's meaningful for m
     :align: center
     :alt: Alternative text for the image
 
-Tokenization 
+Tokenization algorithms
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
   1.Byte pair encoding (BPE)
-
+  
 BPE is a simple form of data compression algorithm in which the most common pair of consecutive bytes of data is replaced with a byte that does not occur in that data.
 Suppose we have data aaabdaaabac which needs to be encoded (compressed). The byte pair aa occurs most often, so we will replace it with Z as Z does not occur in our data.
       
-      BPE algorithm
+BPE algorithm
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
- 1.Initialize Vocabulary: Start with a vocabulary that consists of all the characters or tokens in the dataset.
+1.Initialize Vocabulary: Start with a vocabulary that consists of all the characters or tokens in the dataset.
 
- 2.Calculate Frequencies: Calculate the frequency of each character or token pair in the dataset.
+2.Calculate Frequencies: Calculate the frequency of each character or token pair in the dataset.
 
- 3.Merge Most Frequent Pair: Identify the most frequent pair of characters or tokens in the dataset, and merge them into a new token. Update the vocabulary accordingly.
+3.Merge Most Frequent Pair: Identify the most frequent pair of characters or tokens in the dataset, and merge them into a new token. Update the vocabulary accordingly.
 
- 4.Repeat: Repeat steps 2 and 3 for a fixed number of iterations or until a certain condition is met (e.g., reaching a predefined vocabulary size).
+4.Repeat: Repeat steps 2 and 3 for a fixed number of iterations or until a certain condition is met (e.g., reaching a predefined vocabulary size).
 
- 5.Encoding: Once the vocabulary is constructed, encode the input text by replacing each token with its corresponding token in the vocabulary.
+5.Encoding: Once the vocabulary is constructed, encode the input text by replacing each token with its corresponding token in the vocabulary.
+
+.. raw:: html
+
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/i0D5GbudU6c" frameborder="0" allowfullscreen></iframe>
+
+
+   
