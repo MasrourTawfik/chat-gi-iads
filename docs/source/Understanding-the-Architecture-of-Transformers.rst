@@ -124,20 +124,24 @@ architectures designed primarily for understanding and interpreting text. Unlike
 their encoder-decoder counterparts, they do not generate new text but focus on
 analyzing and extracting meaning from input sequences.
 
+.. table:: Examples of Existing Models
+   :name: tab:roberta_bert
 
-| Examples of Existing Models | RoBERTa & BERT                              |
-|-----------------------------|---------------------------------------------|
-| Focus                       | Understanding text                          |
-|                             |                                             |
-| Applications                | - Sentence embedding                        |
-|                             | - Sentiment Analysis                        |
-|                             | - Named entity recognition                  |
-|                             | - Text classification                       |
-|                             | - Feature extraction                        |
-|                             |                                             |
-| Limitations                 | - Not designed for text generation          |
-|                             | - May require large datasets for fine-tuning|
-|                             | - Can be computationally intensive          |
+   +-------------------------------+---------------------------------------------+
+   | Examples of Existing Models   | RoBERTa & BERT                              |
+   +===============================+=============================================+
+   | Focus                         | Understanding text                          |
+   +-------------------------------+---------------------------------------------+
+   | Applications                  | - Sentence embedding                        |
+   |                               | - Sentiment Analysis                        |
+   |                               | - Named entity recognition                  |
+   |                               | - Text classification                       |
+   |                               | - Feature extraction                        |
+   +-------------------------------+---------------------------------------------+
+   | Limitations                   | - Not designed for text generation          |
+   |                               | - May require large datasets for fine-tuning|
+   |                               | - Can be computationally intensive          |
+   +-------------------------------+---------------------------------------------+
 
 
 
@@ -193,21 +197,25 @@ input sequence, often used in tasks like language modeling and text generation.
 
 
 
-| Examples of Existing Models | GPT & BLOOM                              | 
-|-----------------------------|------------------------------------------|
-| Focus                       | Text Generation                          | 
-|                             |                                          |  
-| Applications                | - Text completion                        | 
-|                             | - Language modeling                      | 
-|                             | - Chatbots                               |
-|                             | - Text summarization                     | 
-|                             |                                          | 
-| Limitations                 | - May generate incoherent or biased text | 
-|                             | - Requires substantial computational     | 
-|                             |   resources                              |   
-|                             | - Limited understanding of context       | 
-|                             |   compared to encoder-decoder models     |  
+.. table:: Examples of Existing Models
+   :name: tab:gpt_bloom
 
+   +-------------------------------+------------------------------------------+
+   | Examples of Existing Models   | GPT & BLOOM                              |
+   +===============================+==========================================+
+   | Focus                         | Text Generation                          |
+   +-------------------------------+------------------------------------------+
+   | Applications                  | - Text completion                        |
+   |                               | - Language modeling                      |
+   |                               | - Chatbots                               |
+   |                               | - Text summarization                     |
+   +-------------------------------+------------------------------------------+
+   | Limitations                   | - May generate incoherent or biased text |
+   |                               | - Requires substantial computational     |
+   |                               |   resources                              |
+   |                               | - Limited understanding of context       |
+   |                               |   compared to encoder-decoder models     |
+   +-------------------------------+------------------------------------------+
 
 
 
@@ -264,23 +272,26 @@ erating text, by combining two main components: an encoder that processes the
 input sequence and a decoder that generates the output sequence.
 
 
+.. table:: Examples of Existing Models
+   :name: tab:existing_models
 
-| Example of Existing Models       | T5 (Text-to-Text Transfer Transformer) |
-|----------------------------------|----------------------------------------|
-| Focus                            | Text Understanding and Generation      |
-|                                  |                                        |
-| Applications                     | - Machine translation                  |
-|                                  | - Text summarization                   |
-|                                  | - Question answering                   |
-|                                  | - Conversational agents                |
-|                                  | - Text-to-speech synthesis             |
-|                                  | - Language Translation Systems         |
-|                                  | - Image Caption Generation             |
-|                                  | - Speech-to-Text Systems               |
-|                                  |                                        |
-| Advantages                       | - Versatility                          |
-|                                  | - Enhanced Accuracy                    |
-|                                  |                                        |
-|                                  |                                        |
-| Limitations                      | - Information Loss                     |
-|                                  | - Complex Training                     |
+   +-------------------------------+-----------------------------------------+
+   | Example of Existing Models    | T5 (Text-to-Text Transfer Transformer)  |
+   +===============================+=========================================+
+   | Focus                         | Text Understanding and Generation       |
+   +-------------------------------+-----------------------------------------+
+   | Applications                  | - Machine translation                   |
+   |                               | - Text summarization                    |
+   |                               | - Question answering                    |
+   |                               | - Conversational agents                 |
+   |                               | - Text-to-speech synthesis              |
+   |                               | - Language Translation Systems          |
+   |                               | - Image Caption Generation              |
+   |                               | - Speech-to-Text Systems                |
+   +-------------------------------+-----------------------------------------+
+   | Advantages                    | - Versatility                           |
+   |                               | - Enhanced Accuracy                     |
+   |                               | - Complex Training                      |
+   +-------------------------------+-----------------------------------------+
+   | Limitations                   | - Information Loss                      |
+   +-------------------------------+-----------------------------------------+
