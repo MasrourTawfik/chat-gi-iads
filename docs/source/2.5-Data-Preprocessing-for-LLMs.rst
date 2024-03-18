@@ -280,7 +280,7 @@ Sentence algorithm
 2.Tokenization:Once the algorithm is trained , it can tokenize new text inputs.It segments the input text into subword units using the learned vocabulary.
 3.Detokenization: it merges subword units according to the rules learned during training, effectively reversing the tokenization process(from tokens to sentences).
  
-   .. figure:: ../Images/TypesOfTokenization.jpg
+   .. figure:: ../Images/SentencePiece.jpg
      :width: 80%
      :align: center
      :alt: Alternative text for the image
