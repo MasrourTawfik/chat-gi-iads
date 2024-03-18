@@ -17,21 +17,20 @@ Prerequisites
 Installation
 ~~~~~~~~~~~~
 1. Clone the repository to your local machine.
-   .. code-block:: bash
-      :linenos:
-        git clone https://github.com/MasrourTawfik/chat-gi-iads.git
+
 
 
 2. Navigate to the root directory of the repository.
-    .. code-block:: bash
-         :linenos:
-         cd chat-gi-iads
+
+.. code-block:: bash
+
+    git clone https://github.com/MasrourTawfik/chat-gi-iads.git
     
 3. Run the following command to install the required packages:
    .. code-block:: bash
         :linenos:
         pip install -r requirements.txt
-        
+
 Now you're ready to start working on the documentation!
 
 Accessing the Documentation Online
