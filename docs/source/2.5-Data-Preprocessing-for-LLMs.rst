@@ -195,7 +195,12 @@ Removing noise from text and standardizing it are crucial steps for improving th
 7. Lemmatization
    ~~~~~~~~~~~~~~~~~~~~~~~~
    Lemmatization simplifies words to their base or root form, known as the lemma, making it easier to analyze a word. The difference between stemming and lemmatization is that the latter transforms words to their standardized form and aims to return a valid word by applying linguistic rules and context.
-   
+   .. figure:: ../Images/DifferencebetweenStemmingandLemmatization.jpg
+   :width: 80%
+   :align: center
+   :alt: Alternative text for the image
+
+
    .. code-block:: python
       :linenos:
 
@@ -207,3 +212,27 @@ Removing noise from text and standardizing it are crucial steps for improving th
       print("{0:20}{1:20}".format("--Word--", "--Lemma--"))
       for word in example_words:
          print("{0:20}{1:20}".format(word, wnl.lemmatize(word, pos="v")))
+
+8.Removing redundant whitespace
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ Removing redundant whitespace is  an essential step in text preprocessing to ensure a clean and standardized representation of the text. Extra whitespaces can lead to inconsistencies and negatively impact the performance of natural language processing (NLP) tasks.
+
+   .. code-block:: python
+      :linenos:
+
+      import re
+
+      test_str = "GfG is good         website"
+      print("The original string is : " + test_str)
+      res = re.sub(' +', ' ', test_str)
+      print("The strings after extra space removal : " + str(res))
+
+9.Removing numbers
+   .. code-block:: python
+      :linenos:
+
+      ini_string = "Giant12for17giant"
+      print("initial string : ", ini_string)
+      res = ''.join([i for i in ini_string if not i.isdigit()])
+      print("final string : ", res)
+
