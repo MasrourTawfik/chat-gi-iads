@@ -6,3 +6,37 @@ Greetings, and welcome to the documentation repository dedicated to CHAT GI-IADS
 Getting Started with Documentation Development
 ----------------------------------------------
 If you're interested in contributing to the documentation, follow these steps to set up your development environment:
+
+Prerequisites
+~~~~~~~~~~~~~
+- Python 3.6 or higher
+- `pip` package manager
+- sphinx
+- sphinx-rtd-theme
+
+Installation
+~~~~~~~~~~~~
+1. Clone the repository to your local machine.
+
+.. code-block:: bash
+
+        git clone https://github.com/MasrourTawfik/chat-gi-iads.git
+
+2. Navigate to the root directory of the repository.
+
+.. code-block:: bash
+
+        cd GIA-LLM-Documentation
+    
+3. Run the following command to install the required packages:
+
+.. code-block:: bash
+
+        pip install -r requirements.txt
+
+Now you're ready to start working on the documentation!
+
+Accessing the Documentation Online
+---------------------------------
+The documentation is hosted on Read the Docs, and you can access it by following this link: `CHAT GI-IADS Documentation <https://chat-gi-iads.readthedocs.io/en/latest/>`_
+
