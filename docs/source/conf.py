@@ -10,6 +10,10 @@ release = '0.1'
 version = '0.0.1'
 
 # -- General configuration
+import sys,os
+
+sys.path.insert(0, os.path.abspath('..'))
+
 
 extensions = [
     'sphinx.ext.duration',
@@ -17,6 +21,7 @@ extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.autosummary',
     'sphinx.ext.intersphinx',
+    'button',
 ]
 
 intersphinx_mapping = {
@@ -33,3 +38,4 @@ html_theme = 'sphinx_rtd_theme'
 
 # -- Options for EPUB output
 epub_show_urls = 'footnote'
+
