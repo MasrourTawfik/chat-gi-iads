@@ -78,9 +78,10 @@ To learn what is and is not a relevant entity and how to categorize them, a mode
 Example:Named Entity Recognition (NER)
 Objective:NER capabilities using spaCy to identify various types of entities in a text, such as persons, organizations, locations...
 
-`Click here for example`_
+`Hands On for Tokenization`_.
 
-.. _Click here for example: https://jupyter.org/try-jupyter/notebooks/?path=NameEntityRecognition.ipynb
+.. _Hands On for Tokenization: https://jupyter.org/try-jupyter/notebooks/?path=NameEntityRecognition.ipynb
+
 
 Part-Of-Speech Tagging (PoS)
 ---------------------------
