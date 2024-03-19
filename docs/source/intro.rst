@@ -9,4 +9,4 @@ For the objective of facilitating the application of theoretical knowledge
 
 .. raw:: html
 
-   <a href="https://chat-gi-iads.readthedocs.io/en/latest/" class="btn btn-primary">chat-gi-iads documentation</a>
+   <a href="https://chat-gi-iads.readthedocs.io/en/latest/" class="custom_style">Read the Docs</a>
