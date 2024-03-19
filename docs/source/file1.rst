@@ -21,7 +21,7 @@ Sentiment analysis not only assesses the general sentiment polarity of text (pos
 
    Customer Feed-Back Sentiment Classification
 
-   
+
 
 Graded Sentiment Analysis (Fine-Grained Sentiment Analysis)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -69,10 +69,10 @@ The second step requires the creation of entity categories.
 To learn what is and is not a relevant entity and how to categorize them, a model requires training data. The more relevant that training data is to the task, the more accurate the model will be at completing said task.
 
 .. figure:: ../Images/NER.png
-   :width: 80%
    :align: center
-   :caption: Example of NER e.g Name Entity Recognition
    :alt: Alternative text for the image
+   Example of NER e.g Name Entity Recognition
+   
 
 Example:Named Entity Recognition (NER)
 Objective:NER capabilities using spaCy to identify various types of entities in a text, such as persons, organizations, locations...
@@ -102,6 +102,7 @@ Part-of-speech tagging, a fundamental aspect of natural language processing, inv
    +----------------+------+
 
 Words behave differently given different contexts in most languages, and thus the difficulty is to identify the correct tag of a word appearing in a particular sentence. Several approaches have been deployed to automatic POS tagging, like transformational-based, rule-based and probabilistic approaches.
+
 Rule-Based POS Tagging
 ^^^^^^^^^^^^^^^^^^
 This traditional method utilizes a lexicon to suggest possible tags for each word. Disambiguation is achieved through hand-written rules considering the word's context and neighboring words.
@@ -124,10 +125,10 @@ Artificial Neural Networks (ANN)
 ANNs for POS tagging involve preprocessing to prepare input for the network. The network then adjusts its weights during training to predict accurate tags.
 
 .. figure:: ../Images/POS.png
-   :width: 80%
-   :align: center
-   :caption: Use of ML/DL in PoS
    :alt: Alternative text for the image
+   :align: center
+   Use of ML/DL in PoS
+   
 
 Hidden Markov Model (HMM)
 ^^^^^^^^^^^^^^^^^
