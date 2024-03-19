@@ -21,11 +21,10 @@ Sentiment analysis not only assesses the general sentiment polarity of text (pos
    :caption: Customer Feed-Back Sentiment Classification
    :alt: Alternative text for the image
 
-
 Graded Sentiment Analysis (Fine-Grained Sentiment Analysis)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
 For businesses where understanding the precise level of sentiment is necessary, expanding the range of sentiment categories to capture various degrees of positivity or negativity can be beneficial:
+
 - Very positive
 
 - Positive
