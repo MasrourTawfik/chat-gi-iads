@@ -29,7 +29,7 @@ class ButtonDirective(Directive):
         env = self.state.document.settings.env
         app = env.app
 
-        app.add_css_file('docs\source\_static\button.css')
+        app.add_css_file('button.css')
 
         node = button_node()
         node['text'] = self.options['text']
