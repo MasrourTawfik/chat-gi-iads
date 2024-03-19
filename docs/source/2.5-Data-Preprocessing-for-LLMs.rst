@@ -288,4 +288,28 @@ Sentence algorithm
     :align: center
     :alt: SentencePiece Tokenization
 
+Word embedding
+~~~~~~~~~~~~~~~~~~~~~~~
+Word embedding or known as word vector is an approach with which we represent documents and words. It is defined as a numeric vector input that allows words with similar meanings to have the same representation.
+
+Algorithms for word embedding
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1.Word2Vec
+~~~~~~~~~~~~~~~~~~~~~
+Word2Vec is a neural approach for generating word embeddings.It is a shallow, two-layer neural network trained to reconstruct linguistic contexts of words. It takes a large corpus as input and generates a vector space, usually with several hundred dimensions. Each unique word in the corpus is assigned a vector in this space, positioning words with common contexts close to each other.
+There are two neural embedding methods for Word2Vec :Continuous Bag of Words(CBOW) and Skip-gram
+ 
+   1.1 Continuous Bag of Words
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CBOW aims to predict a target word based on its context, which consists of the surrounding words in a given window.
+It a feedforward neural network with a single hidden layer. The input layer represents the context words, and the output layer represents the target word. The hidden layer contains the learned continuous vector representations (word embeddings) of the input words.
+    
+.. figure:: ../Images/cbow.png
+    :width: 80%
+    :align: center
+    :alt: SentencePiece Tokenization
+
+
+
+
    
