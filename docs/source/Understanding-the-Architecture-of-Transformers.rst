@@ -20,7 +20,7 @@ Input
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 In a Transformer model, the input is a sequence of words or tokens, commonly referred to as the context or prompt. 
 
-.. figure:: ../Images/inputsss.png
+.. figure:: ../Images/inputs.png
    :width: 80%
    :alt: Transformer architecture
    :align: center
