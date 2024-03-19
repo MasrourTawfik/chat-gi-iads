@@ -10,4 +10,5 @@ For the objective of facilitating the application of theoretical knowledge
 .. raw:: html
 
    <link rel="stylesheet" href="_static/buttonClass.css">
+   <a href="https://www.example.com" class="buttonClass">Go to Example</a>
 
