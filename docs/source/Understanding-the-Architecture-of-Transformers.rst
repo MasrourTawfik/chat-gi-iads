@@ -4,7 +4,7 @@ Introduction
 ------------------------------------
 Transformers represent an advanced architecture of neural networks optimized for processing sequential data. This innovation was introduced by Vaswani et al. in the seminal paper `"Attention is All You Need" <https://arxiv.org/abs/1706.03762>`_ Central to its design is the self-attention mechanism, which enables the model to dynamically concentrate on various segments of the input sequence—irrespective of their initial positions. This capability is crucial for detecting and comprehending patterns and correlations that extend across extensive portions of the data.
 
-.. figure:: docs\Images\architectureattention.png
+.. figure:: ../Images/architectureattention.png
    :alt: Transformer architecture
    :align: center
 
