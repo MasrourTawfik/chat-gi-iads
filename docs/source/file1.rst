@@ -69,9 +69,9 @@ The second step requires the creation of entity categories.
 To learn what is and is not a relevant entity and how to categorize them, a model requires training data. The more relevant that training data is to the task, the more accurate the model will be at completing said task.
 
 .. figure:: ../Images/NER.png
-   :align: center
-   :alt: Alternative text for the image
-   Example of NER e.g Name Entity Recognition
+    :alt: Alternative text for the image
+    :align: center
+    Example of NER e.g Name Entity Recognition
    
 
 Example:Named Entity Recognition (NER)
