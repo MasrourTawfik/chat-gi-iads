@@ -6,3 +6,9 @@ provides a learning path for Large Language Models (LLMs), their architecture,
 applications in the industrial world, and fine-tuning techniques in an interactive
 way, with links to hands-on activities (labs, quizzes, additional resources, etc.).
 For the objective of facilitating the application of theoretical knowledge
+
+.. raw:: html
+
+   <link rel="stylesheet" href="_static/buttonClass.css">
+   <a href="https://www.example.com" class="buttonClass">Go to Example</a>
+
