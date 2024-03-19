@@ -11,6 +11,3 @@ For the objective of facilitating the application of theoretical knowledge
    :text: CHAT GI-IADS
    :link: https://chat-gi-iads.readthedocs.io/en/latest/intro.html
 
-.. button::
-   :text: CHAT GI-IADS
-   :link: https://chat-gi-iads.readthedocs.io/en/latest/intro.html
