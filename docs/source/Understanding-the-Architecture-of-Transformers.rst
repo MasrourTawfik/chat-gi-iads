@@ -20,6 +20,12 @@ Input
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 In a Transformer model, the input is a sequence of words or tokens, commonly referred to as the context or prompt. 
 
+.. figure:: ../Images/inputsss.png
+   :width: 80%
+   :alt: Transformer architecture
+   :align: center
+
+
 Tokenization
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Tokenization is the process of systematically decomposing input text into a se-
