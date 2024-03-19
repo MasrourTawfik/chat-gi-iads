@@ -7,7 +7,5 @@ applications in the industrial world, and fine-tuning techniques in an interacti
 way, with links to hands-on activities (labs, quizzes, additional resources, etc.).
 For the objective of facilitating the application of theoretical knowledge
 
-.. raw:: html
 
-   <a href="https://www.example.com" class="buttonClass">Go to Example</a>
 
