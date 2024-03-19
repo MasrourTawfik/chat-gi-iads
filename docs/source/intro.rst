@@ -9,4 +9,5 @@ For the objective of facilitating the application of theoretical knowledge
 
 .. raw:: html
 
-   <a href="https://chat-gi-iads.readthedocs.io/en/latest/" class="buttonClass">Read the Docs</a>
+   <link rel="stylesheet" href="_static/buttonClass.css">
+
