@@ -8,6 +8,6 @@ way, with links to hands-on activities (labs, quizzes, additional resources, etc
 For the objective of facilitating the application of theoretical knowledge
 
 .. button::
-   :text: Button Text
-   :link: link/to/stuff.html
+   :text: CHAT GI-IADS
+   :link: https://chat-gi-iads.readthedocs.io/en/latest/intro.html
 
