@@ -18,8 +18,9 @@ Sentiment analysis not only assesses the general sentiment polarity of text (pos
 .. figure:: ../Images/sentiment.png
    :width: 80%
    :align: center
-   :caption: Customer Feed-Back Sentiment Classification
    :alt: Alternative text for the image
+
+   Customer Feed-Back Sentiment Classification
 
 Graded Sentiment Analysis (Fine-Grained Sentiment Analysis)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
