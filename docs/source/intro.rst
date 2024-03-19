@@ -6,3 +6,8 @@ provides a learning path for Large Language Models (LLMs), their architecture,
 applications in the industrial world, and fine-tuning techniques in an interactive
 way, with links to hands-on activities (labs, quizzes, additional resources, etc.).
 For the objective of facilitating the application of theoretical knowledge
+
+.. button:: Google
+    :class: btn-solid-blue
+    :style: "background-color:green; font-size:30px;"
+    :link: https://www.google.com/
