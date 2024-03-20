@@ -7,8 +7,7 @@ applications in the industrial world, and fine-tuning techniques in an interacti
 way, with links to hands-on activities (labs, quizzes, additional resources, etc.).
 For the objective of facilitating the application of theoretical knowledge
 
-.. raw:: html
-
-   <link rel="stylesheet" href="_static/buttonClass.css">
-   <a href="https://www.example.com" class="buttonClass">Go to Example</a>
+.. button::
+   :text: CHAT GI-IADS
+   :link: https://chat-gi-iads.readthedocs.io/en/latest/intro.html
 

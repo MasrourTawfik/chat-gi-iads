@@ -1,0 +1,21 @@
+.button {
+    font-size:15px;
+    font-family:Arial;
+    width:250px;
+    height:70px;
+    border-width:1px;
+    color:#ffffff;
+    border-color:#2980b9;
+    border-top-left-radius:3px;
+    border-top-right-radius:3px;
+    border-bottom-left-radius:3px;
+    border-bottom-right-radius:3px;
+    box-shadow:inset 0px 1px 0px 0px #54a3f7;
+    text-shadow:inset 0px 1px 0px #154682;
+    background:linear-gradient(#2980b9, #2980b9);
+  }
+  
+  .button:hover {
+    background: linear-gradient(#0061a7, #007dc1);
+  }
+                
