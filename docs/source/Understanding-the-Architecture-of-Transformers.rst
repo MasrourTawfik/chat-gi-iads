@@ -58,6 +58,15 @@ unique token from the vocabulary is associated with a specific vector in a high-
 dimensional space. This configuration allows the model to capture the semantic
 meaning and contextual nuances of each token within the input sequence.
 
+
+.. figure:: ../Images/emb.png
+   :alt: Word Embeddings
+   :align: center
+
+   From Words to Contextual Embeddings
+
+
+
 `Hands On for words embeddings`_.
 
 .. _Hands On for words embeddings:https://colab.research.google.com/drive/1ZLZ8UTUnAsJHeTW3sZw73XLDBvgJKqhY
