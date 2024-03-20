@@ -87,6 +87,7 @@ each position, although other methods can also be used.
    :alt: Positional encoding
    :align: center
 
+   
 `Hands on for Positional encoding`_.
 
 .. _Hands on for Positional encoding:https://colab.research.google.com/drive/10vdBYhhd19sH3Vp5H5SiRpMykBMll_Je
