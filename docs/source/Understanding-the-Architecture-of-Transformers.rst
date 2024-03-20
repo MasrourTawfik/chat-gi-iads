@@ -65,9 +65,10 @@ meaning and contextual nuances of each token within the input sequence.
    From Words to Contextual Embeddings
 
 
-`Hands On for words embeddings`_.
+`Hands On for words embeddings`_
 
-.. _Hands On for words embeddings:https://colab.research.google.com/drive/1ZLZ8UTUnAsJHeTW3sZw73XLDBvgJKqhY
+.. _Hands On for words embeddings: https://colab.research.google.com/drive/1ZLZ8UTUnAsJHeTW3sZw73XLDBvgJKqhY
+
 
 Positional Encoding
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -84,9 +85,9 @@ each position, although other methods can also be used.
    :align: center
 
 
-`Hands on for Positional encoding`_.
+`Hands on for Positional encoding`_
 
-.. _Hands on for Positional encoding:https://colab.research.google.com/drive/10vdBYhhd19sH3Vp5H5SiRpMykBMll_Je
+.. _Hands on for Positional encoding: https://colab.research.google.com/drive/10vdBYhhd19sH3Vp5H5SiRpMykBMll_Je
 
 Core Mechanisms
 ------------------------------
@@ -101,9 +102,9 @@ through learned self-attention weights that are refined during the training pro-
 cess. by adjusting these weights the model can capture implicit patterns and
 dependencies.
 
-`Hands on for Self-Attention Layer`_.
+`Hands on for Self-Attention Layer`_
 
-.. _Hands on for Self-Attention Layer:https://colab.research.google.com/drive/1fdr45ZpzuSXa0d3rgkxNrcRiCHMoJQO6#scrollTo=BobDOsxZnhY5
+.. _Hands on for Self-Attention Layer: https://colab.research.google.com/drive/1fdr45ZpzuSXa0d3rgkxNrcRiCHMoJQO6#scrollTo=BobDOsxZnhY5
 
 
 Multi-Head Attention
@@ -115,9 +116,9 @@ dependently. This design aims for the simultaneous comprehension of various
 language facets, with the number of attention heads varying across models.
 Each head captures different dimensions of the input sequence’s information.
 
-`Hands on for Multi-Head Attention`_.
+`Hands on for Multi-Head Attention`_
 
-.. _Hands on for Multi-Head Attention:{https://colab.research.google.com/drive/1lRHUApEDwL77pG8mmObFovXX_yDSrt1W#scrollTo=Oe_QiFpYw4Mn
+.. _Hands on for Multi-Head Attention: https://colab.research.google.com/drive/1lRHUApEDwL77pG8mmObFovXX_yDSrt1W#scrollTo=Oe_QiFpYw4Mn
 
 Network Layers
 ------------------------------
@@ -134,9 +135,9 @@ corresponding tokens in the tokenizer’s dictionary. To make sure that the mode
 not only identifies key patterns through attention but also evaluates and pre-
 dicts the sequence’s structure and content accurately.
 
-`Hands on for Feedforward Neural Network`_.
+`Hands on for Feedforward Neural Network`_
 
-.. _Hands on for Feedforward Neural Network:https://colab.research.google.com/drive/1E70FTFNzPFhO44_FySWmMzZLEa-yI79G
+.. _Hands on for Feedforward Neural Network: https://colab.research.google.com/drive/1E70FTFNzPFhO44_FySWmMzZLEa-yI79G
 
 
 Residual Connections
@@ -160,7 +161,7 @@ ensure a mean of zero and a standard deviation of one. This normalization
 process aids in stabilizing the training of deep neural networks by mitigating
 covariate shift, thereby facilitating faster convergence.
 
-`Hands on for Residual Connections & Layer Normalization`_.
+`Hands on for Residual Connections & Layer Normalization`_
 
 .. _Hands on for Residual Connections & Layer Normalization: https://colab.research.google.com/drive/1FqrBfqYe6ouMoWvC_zQaDIyEGsUO0xNR#scrollTo=nPt5jtl67eLQ
 
@@ -176,9 +177,9 @@ of operations transforms the linear layer’s output into a comprehensive proba-
 bility distribution, effectively predicting the next word in the sequence with a
 quantifiable likelihood for each possible token.
 
-`Full example here`_.
+`Full example here`_
 
-.. _full example here:https://colab.research.google.com/drive/1X4GlWya1NUkZlucbe6hc_y9_3u8Yzb5h#scrollTo=jpkEME0q9x5c
+.. _full example here: https://colab.research.google.com/drive/1X4GlWya1NUkZlucbe6hc_y9_3u8Yzb5h#scrollTo=jpkEME0q9x5c
 
 
 Types of Transformer Architectures
