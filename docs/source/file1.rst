@@ -11,7 +11,7 @@ Practical uses of NLP encompass speech recognition, machine translation, sentime
 
 Large Language Models (LLMs), a significant advancement in NLP, leverage increased computing capabilities, abundant data, and machine learning innovations. By digesting vast text corpora, these models discern language patterns, grammatical rules, world knowledge, and reasoning capabilities.
 
-.. figure:: ../Images/NLP.png
+.. figure:: ../Images/nlp.png
    :alt: Alternative text for the image
    :align: center
 
