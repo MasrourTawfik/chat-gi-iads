@@ -118,9 +118,9 @@ Defining a set of rules for assigning POS tags to words. For example:
 Example:PoS tagging
 Objective:how to perform PoS tagging on a given sentence, assigning grammatical parts of speech to each word, such as nouns, verbs, adjectives, etc.
 
-`Click here for example`_
+`Hands on for Pos Tagging`_
 
-.. _Click here for example: https://jupyter.org/try-jupyter/notebooks/? path=PartOfSpeechTagging.ipynb
+.. _Hands on for Pos Tagging: https://colab.research.google.com/drive/1TrphG2ueaYbu1TOD0lk_koTp55LGJiLs#scrollTo=myAoNkvTCdf-
 
 Artificial Neural Networks (ANN)
 ^^^^^^^^^^^^^^^^^^^^^^^^
@@ -132,10 +132,7 @@ ANNs for POS tagging involve preprocessing to prepare input for the network. The
    Use of ML/DL in PoS
    
 
-Hidden Markov Model (HMM)
-^^^^^^^^^^^^^^^^^
-HMM, a prevalent stochastic method, uses a state transition framework where the tags are inferred from observable outputs dependent on hidden states.It follows a factual Markov model in which the tagger framework being demonstrated is thought to be explored from one state to another with an inconspicuous state.
-Unlike the Markov model, in HMM, the state is not directly observable to the observer, but the output that depends on the hidden state is visible. Hidden Markov Model is a familiar statistical model that is used to find the most frequent tag sequence T=(t1, t2, t3… tn) for a word sequence in sentence W=(w1, w2, w3…wn).
+
 
 Transformation-Based Tagging (TBT)
 ^^^^^^^^^^^^^^^^^^^^^^^^
@@ -170,8 +167,7 @@ Objective:emonstrating how to translate text from English to French using a pre-
 
 `Hands on for Machine Translation`_
 
-.. _Hands on for Machine Translation: https://jupyter.org/try-jupyter/notebooks/?path=MachineTranslation.ipynb
-
+.. _Hands on for Machine Translation: https://colab.research.google.com/drive/1LYFiiQ8Isl5P3-pv6V9eF5EFkzoasOEf#scrollTo=ww1ZHb--KScs
 Rule-based Machine Translation or RBMT
 ^^^^^^^^^^^^^^^^^^^^^^
 Also called knowledge-based machine translation, these are the earliest set of classical methods used for machine translation.
