@@ -65,12 +65,9 @@ meaning and contextual nuances of each token within the input sequence.
    From Words to Contextual Embeddings
 
 
-
 `Hands On for words embeddings`_.
 
 .. _Hands On for words embeddings:https://colab.research.google.com/drive/1ZLZ8UTUnAsJHeTW3sZw73XLDBvgJKqhY
-
-
 
 Positional Encoding
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -86,7 +83,7 @@ each position, although other methods can also be used.
    :alt: Positional encoding
    :align: center
 
-   
+
 `Hands on for Positional encoding`_.
 
 .. _Hands on for Positional encoding:https://colab.research.google.com/drive/10vdBYhhd19sH3Vp5H5SiRpMykBMll_Je
@@ -108,6 +105,7 @@ dependencies.
 
 .. _Hands on for Self-Attention Layer:https://colab.research.google.com/drive/1fdr45ZpzuSXa0d3rgkxNrcRiCHMoJQO6#scrollTo=BobDOsxZnhY5
 
+
 Multi-Head Attention
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -120,6 +118,7 @@ Each head captures different dimensions of the input sequence’s information.
 `Hands on for Multi-Head Attention`_.
 
 .. _Hands on for Multi-Head Attention:{https://colab.research.google.com/drive/1lRHUApEDwL77pG8mmObFovXX_yDSrt1W#scrollTo=Oe_QiFpYw4Mn
+
 Network Layers
 ------------------------------
 
@@ -164,6 +163,8 @@ covariate shift, thereby facilitating faster convergence.
 `Hands on for Residual Connections & Layer Normalization`_.
 
 .. _Hands on for Residual Connections & Layer Normalization: https://colab.research.google.com/drive/1FqrBfqYe6ouMoWvC_zQaDIyEGsUO0xNR#scrollTo=nPt5jtl67eLQ
+
+
 output Layer
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -178,6 +179,8 @@ quantifiable likelihood for each possible token.
 `Full example here`_.
 
 .. _full example here:https://colab.research.google.com/drive/1X4GlWya1NUkZlucbe6hc_y9_3u8Yzb5h#scrollTo=jpkEME0q9x5c
+
+
 Types of Transformer Architectures
 ====================================
 
