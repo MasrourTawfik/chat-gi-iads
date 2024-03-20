@@ -9,5 +9,5 @@ For the objective of facilitating the application of theoretical knowledge
 
 .. button::
    :text: CHAT GI-IADS
-   :link: https://chat-gi-iads.readthedocs.io/en/latest/intro.html
+   :link: https://www.youtube.com/
 
