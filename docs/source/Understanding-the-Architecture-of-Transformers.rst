@@ -28,10 +28,9 @@ In a Transformer model, the input is a sequence of words or tokens, commonly ref
 
 Tokenization
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Tokenization is the process of systematically decomposing input text into a se-
-quence of tokens, which can include words, subwords, punctuation marks, and
-individual characters. Each token is then mapped to a unique identifier, linking
-it to a comprehensive and predefined vocabulary.
+Tokenization is the process of systematically decomposing input text into a sequence of tokens, which can include words, subwords, punctuation marks, and
+individual characters. Each token is then mapped to a unique identifier, linking it to a comprehensive and predefined vocabulary.
+
 Note: The tokenizer used during training should be the same one used for
 generating text.
 
