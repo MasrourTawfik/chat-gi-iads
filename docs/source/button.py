@@ -5,7 +5,7 @@ from docutils.parsers.rst.directives import unchanged
 from docutils.parsers.rst import Directive
 
 BUTTON_TEMPLATE = jinja2.Template(u"""
-<a href="{{ link }}">
+<a href="{{ link }}" target="_blank">
     <span class="button">{{ text }}</span>
 </a>
 """)
