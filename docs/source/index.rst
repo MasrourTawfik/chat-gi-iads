@@ -5,11 +5,14 @@ Welcome to CHAT GI-IADS's documentation!
    :width: 50%
    :align: center
    :alt: Alternative text for the image
-
+   
 .. toctree::
 
    intro
    2.5-Data-Preprocessing-for-LLMs
    file1
    Understanding-the-Architecture-of-Transformers
+
+
+
 
