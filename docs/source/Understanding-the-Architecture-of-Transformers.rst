@@ -83,7 +83,7 @@ Transformer paper proposed a specific method for positional encoding that uses
 a combination of sine and cosine functions to generate a distinct encoding for
 each position, although other methods can also be used.
 
-.. figure:: ../Images/pe.png
+.. figure:: ../Images/positionalenc.png
    :alt: Positional encoding
    :align: center
 
