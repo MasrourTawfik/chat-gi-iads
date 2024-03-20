@@ -20,6 +20,12 @@ Input
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 In a Transformer model, the input is a sequence of words or tokens, commonly referred to as the context or prompt. 
 
+.. figure:: ../Images/inputs.png
+   :width: 80%
+   :alt: Transformer architecture
+   :align: center
+
+
 Tokenization
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Tokenization is the process of systematically decomposing input text into a se-
@@ -29,7 +35,14 @@ it to a comprehensive and predefined vocabulary.
 Note: The tokenizer used during training should be the same one used for
 generating text.
 
-`Hands On for Tokenization`_.
+.. figure:: ../Images/Tokenization.png
+   :width: 80%
+   :alt: Transformer architecture
+   :align: center
+
+
+   
+`Hands On for Tokenization`_
 
 .. _Hands On for Tokenization: https://colab.research.google.com/drive/1SF_meHmrbrTq7oxVtXQ24GaO67pzjmHl
 
@@ -43,6 +56,15 @@ vector representations. It operates as a learnable embedding space,where each
 unique token from the vocabulary is associated with a specific vector in a high-
 dimensional space. This configuration allows the model to capture the semantic
 meaning and contextual nuances of each token within the input sequence.
+
+
+.. figure:: ../Images/emb.png
+   :alt: Word embeddings
+   :align: center
+
+   From Words to Contextual Embeddings
+
+
 
 `Hands On for words embeddings`_.
 
@@ -60,6 +82,11 @@ Transformer paper proposed a specific method for positional encoding that uses
 a combination of sine and cosine functions to generate a distinct encoding for
 each position, although other methods can also be used.
 
+.. figure:: ../Images/positionalenc.png
+   :alt: Positional encoding
+   :align: center
+
+   
 `Hands on for Positional encoding`_.
 
 .. _Hands on for Positional encoding:https://colab.research.google.com/drive/10vdBYhhd19sH3Vp5H5SiRpMykBMll_Je

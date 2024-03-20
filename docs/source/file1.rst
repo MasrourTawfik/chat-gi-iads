@@ -16,16 +16,17 @@ Sentiment Analysis
 Sentiment analysis not only assesses the general sentiment polarity of text (positive, negative, neutral) but also goes into detecting specific emotions (e.g., joy, frustration, anger, sorrow), levels of urgency (urgent, non-urgent), and intentions (interested vs. uninterested)
 
 .. figure:: ../Images/sentiment.png
-   :width: 80%
-   :align: center
-   :caption: Customer Feed-Back Sentiment Classification
    :alt: Alternative text for the image
+   :align: center
+
+   Customer Feed-Back Sentiment Classification
+
 
 
 Graded Sentiment Analysis (Fine-Grained Sentiment Analysis)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
 For businesses where understanding the precise level of sentiment is necessary, expanding the range of sentiment categories to capture various degrees of positivity or negativity can be beneficial:
+
 - Very positive
 
 - Positive
@@ -68,17 +69,19 @@ The second step requires the creation of entity categories.
 To learn what is and is not a relevant entity and how to categorize them, a model requires training data. The more relevant that training data is to the task, the more accurate the model will be at completing said task.
 
 .. figure:: ../Images/NER.png
-   :width: 80%
-   :align: center
-   :caption: Example of NER e.g Name Entity Recognition
    :alt: Alternative text for the image
+   :align: center
+
+   Example of NER e.g Name Entity Recognition
+
 
 Example:Named Entity Recognition (NER)
 Objective:NER capabilities using spaCy to identify various types of entities in a text, such as persons, organizations, locations...
 
-`Click here for example`_
+`Hands On for Tokenization`_.
 
-.. _Click here for example: https://jupyter.org/try-jupyter/notebooks/?path=NameEntityRecognition.ipynb
+.. _Hands On for Tokenization: https://jupyter.org/try-jupyter/notebooks/?path=NameEntityRecognition.ipynb
+
 
 Part-Of-Speech Tagging (PoS)
 ---------------------------
@@ -101,6 +104,7 @@ Part-of-speech tagging, a fundamental aspect of natural language processing, inv
    +----------------+------+
 
 Words behave differently given different contexts in most languages, and thus the difficulty is to identify the correct tag of a word appearing in a particular sentence. Several approaches have been deployed to automatic POS tagging, like transformational-based, rule-based and probabilistic approaches.
+
 Rule-Based POS Tagging
 ^^^^^^^^^^^^^^^^^^
 This traditional method utilizes a lexicon to suggest possible tags for each word. Disambiguation is achieved through hand-written rules considering the word's context and neighboring words.
@@ -123,10 +127,10 @@ Artificial Neural Networks (ANN)
 ANNs for POS tagging involve preprocessing to prepare input for the network. The network then adjusts its weights during training to predict accurate tags.
 
 .. figure:: ../Images/POS.png
-   :width: 80%
-   :align: center
-   :caption: Use of ML/DL in PoS
    :alt: Alternative text for the image
+   :align: center
+   Use of ML/DL in PoS
+   
 
 Hidden Markov Model (HMM)
 ^^^^^^^^^^^^^^^^^
@@ -164,9 +168,9 @@ The primary steps in the machine translation process are:
 Example:Machine Translation
 Objective:emonstrating how to translate text from English to French using a pre-trained model..
 
-`Click here for example`_
+`Hands on for Machine Translation`_
 
-.. _Click here for example: https://jupyter.org/try-jupyter/notebooks/?path=MachineTranslation.ipynb
+.. _Hands on for Machine Translation: https://jupyter.org/try-jupyter/notebooks/?path=MachineTranslation.ipynb
 
 Rule-based Machine Translation or RBMT
 ^^^^^^^^^^^^^^^^^^^^^^
