@@ -50,9 +50,9 @@ For instance, in the review, "The battery life of this laptop is too short", asp
 Example:Sentiment Analysis with Python and NLTK
 Objective:To determine the sentiment of a given text (positive, negative, or neutral) using the NLTK library.
 
-`Click here for example`_.
+`Hands on for Sentiment Analysis`_.
 
-.. _Click here for example: https://jupyter.org/try-jupyter/notebooks/?path=Sentiment_analysis.ipynb
+.. _Hands on for Sentiment Analysis: https://colab.research.google.com/drive/1_YIDvSwWqgXW8OasKAA3IW1gYSnAfs_o?authuser=0#scrollTo=XwDS1lJj3r2G
 
 Named Entity Recognition (NER)
 ------------------------------
@@ -78,9 +78,9 @@ To learn what is and is not a relevant entity and how to categorize them, a mode
 Example:Named Entity Recognition (NER)
 Objective:NER capabilities using spaCy to identify various types of entities in a text, such as persons, organizations, locations...
 
-`Hands On for Tokenization`_.
+`Hands On for NER`_.
 
-.. _Hands On for Tokenization: https://jupyter.org/try-jupyter/notebooks/?path=NameEntityRecognition.ipynb
+.. _Hands On for NER: https://colab.research.google.com/drive/1qF4IBkVMKc9XLOCJIi21uo6aVIddhQCC#scrollTo=jH7gBXJA6Bcy
 
 
 Part-Of-Speech Tagging (PoS)
