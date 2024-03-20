@@ -34,7 +34,7 @@ individual characters. Each token is then mapped to a unique identifier, linking
 Note: The tokenizer used during training should be the same one used for
 generating text.
 
-.. figure:: ../Images/Tokenization.png
+.. figure:: ../Images/tokenizationfinal.png
    :width: 80%
    :alt: Transformer architecture
    :align: center
