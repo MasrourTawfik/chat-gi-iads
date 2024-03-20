@@ -76,6 +76,7 @@ For example simulating predator-prey dynamics in an ecosystem.
 
 Prompts:
 ---------------
+
 .. Prompt:: Produce 10 exemplars for sentiment analysis. Examples are categorized as either positive or negative. Produce 2 negative examples and 8 positive examples. Use this format for the examples: Q: <sentence>A: <sentiment>
 
 .. Output:: I just got the best news ever!A: Positive: We just got a raise at work! A: PositiveQ: I'm so proud of what I accomplished today. A: Positive: I'm having the best day ever!A: PositiveQ: I'm really looking forward to the weekend. A: PositiveQ: I just got the best present ever! A: Positive: I'm so happy right now.A: PositiveQ: I'm so blessed to have such an amazing family.A: PositiveQ: The weather outside is so gloomy.A: NegativeQ: I just got some terrible news.A: Negative
@@ -86,7 +87,7 @@ This is very useful. We actually use this example for a different test in anothe
 
 .. Hint:: In our case, we generated sythetic data from GTP4, by the use of the following prompt:
 
-.. Prompt:: ## instruction: As an industrial engineer with extensive expertise in your field, your task is to generate a synthetic dataset that accurately reflects the complexities and nuances of industrial engineering. ## input: generate synthetic data about production near to be factual, generate real industrial situation.## output: Json file <input, context, output>and the number of questions is 500
+.. Prompt:: ## instruction: As an industrial engineer with extensive expertise in your field, your task is to generate a synthetic dataset that accurately reflects the complexities and nuances of industrial engineering. ## input: generate synthetic data about production near to be factual, generate real industrial situation.## output: Json file <input, context, output>and the number of questions is 500 
 .. Output:: The output was our json file containing sythetic data.
 
 
