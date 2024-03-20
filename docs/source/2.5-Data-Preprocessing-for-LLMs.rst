@@ -299,7 +299,7 @@ Algorithms for word embedding
 Word2Vec is a neural approach for generating word embeddings.It is a shallow, two-layer neural network trained to reconstruct linguistic contexts of words. It takes a large corpus as input and generates a vector space, usually with several hundred dimensions. Each unique word in the corpus is assigned a vector in this space, positioning words with common contexts close to each other.
 There are two neural embedding methods for Word2Vec :Continuous Bag of Words(CBOW) and Skip-gram
  
-   1.1 Continuous Bag of Words
+1.1 Continuous Bag of Words
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 CBOW aims to predict a target word based on its context, which consists of the surrounding words in a given window.
 It a feedforward neural network with a single hidden layer. The input layer represents the context words, and the output layer represents the target word. The hidden layer contains the learned continuous vector representations (word embeddings) of the input words.
@@ -309,6 +309,15 @@ It a feedforward neural network with a single hidden layer. The input layer repr
     :align: center
     :alt: SentencePiece Tokenization
 
+1.2 Skip-gram
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Skip-gram is a slightly different word embedding technique in comparison to CBOW as it does not predict the current word based on the context.This variant takes only one word as an input and then predicts the closely related context words. That is the reason it can efficiently represent rare words.
+
+.. figure:: ../Images/skipgram.png
+    :width: 80%
+    :align: center
+    :alt: SentencePiece Tokenization
 
 
 

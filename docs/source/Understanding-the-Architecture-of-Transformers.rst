@@ -58,6 +58,15 @@ unique token from the vocabulary is associated with a specific vector in a high-
 dimensional space. This configuration allows the model to capture the semantic
 meaning and contextual nuances of each token within the input sequence.
 
+
+.. figure:: ../Images/emb.png
+   :alt: Word embeddings
+   :align: center
+
+   From Words to Contextual Embeddings
+
+
+
 `Hands On for words embeddings`_.
 
 .. _Hands On for words embeddings:https://colab.research.google.com/drive/1ZLZ8UTUnAsJHeTW3sZw73XLDBvgJKqhY
@@ -74,6 +83,11 @@ Transformer paper proposed a specific method for positional encoding that uses
 a combination of sine and cosine functions to generate a distinct encoding for
 each position, although other methods can also be used.
 
+.. figure:: ../Images/positionalenc.png
+   :alt: Positional encoding
+   :align: center
+
+   
 `Hands on for Positional encoding`_.
 
 .. _Hands on for Positional encoding:https://colab.research.google.com/drive/10vdBYhhd19sH3Vp5H5SiRpMykBMll_Je
