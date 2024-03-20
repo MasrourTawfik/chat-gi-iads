@@ -42,8 +42,7 @@ generating text.
 
 
    
-
-`Hands On for Tokenization`_.
+`Hands On for Tokenization`_
 
 .. _Hands On for Tokenization: https://colab.research.google.com/drive/1SF_meHmrbrTq7oxVtXQ24GaO67pzjmHl
 
