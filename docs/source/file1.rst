@@ -168,9 +168,9 @@ The primary steps in the machine translation process are:
 Example:Machine Translation
 Objective:emonstrating how to translate text from English to French using a pre-trained model..
 
-`Click here for example`_
+`Hands on for Machine Translation`_
 
-.. _Click here for example: https://jupyter.org/try-jupyter/notebooks/?path=MachineTranslation.ipynb
+.. _Hands on for Machine Translation: https://jupyter.org/try-jupyter/notebooks/?path=MachineTranslation.ipynb
 
 Rule-based Machine Translation or RBMT
 ^^^^^^^^^^^^^^^^^^^^^^
