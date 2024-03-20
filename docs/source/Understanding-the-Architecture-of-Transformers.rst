@@ -60,7 +60,7 @@ meaning and contextual nuances of each token within the input sequence.
 
 
 .. figure:: ../Images/emb.png
-   :alt: Word Embeddings
+   :alt: Word embeddings
    :align: center
 
    From Words to Contextual Embeddings
