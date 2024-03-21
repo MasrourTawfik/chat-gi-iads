@@ -91,3 +91,44 @@ In this lab example, we focus specifically on magnitude-based weight pruning, a 
 .. button::
    :text: Hands on Lab
    :link: https://colab.research.google.com/drive/1ghXOWNWC8kmzKTDMm_YgBcOFkG3Jow_9?usp=drive_link
+
+Quantization
+~~~~~~~~~~~~
+The term quantization referes to the process of mapping continuous infinite values to a smaller set of
+discrete finite values. In the context of LLMs, it refers to the process of converting the weights of the
+model from higher precision data types to lower-precision ones. Quantization significantly decreases the model’s size by reducing the number of bits required for each model weight. A typical scenario
+would be the reduction of the weights from FP16 (16-bit Floating-point) to INT4 (4-bit Integer). This
+allows for models to run on cheaper hardware and/or with higher speed. By reducing the precision of
+the weights, the overall quality of the LLM can also suffer some impact.
+Studies show that this impact varies depending on the techniques used and that larger models suffer
+less from change in precision. Larger models (over 70B) are able to maintain their capacities even
+when converted to 4-bit, with some techniques such as the NF4 suggesting no impact on their performance. Therefore, 4-bit appears to be the best compromise between performance and size/speed for
+these larger models, while 6 or 8-bit might be better for smaller models
+
+.. figure:: ../Images/quantization.png
+   :width: 80%
+   :align: center
+   :alt: Alternative text for the image
+
+It’s possible to divide the techniques of obtaining quantized models into two:
+
+   |1. Post-training quantization(PTQ): converting the weights of an already trained model to a lower precision without any retraining. Though straightforward and easy to implement, PTQ might degrade the model’s performance slightly due to the loss of precision in the value of the weights.
+   
+   |2.Quantization-Aware Training (QAT): Unlike PTQ, QAT integrates the weight conversion process during the training stage. This often results in superior model performance, but it’s more computationally demanding. A highly used QAT technique is the QLoRA.
+
+Sometimes the quality of the answers might decrease when doing quantization on some smaller models
+or a more aggressive type of quantization. In those cases before giving up on the quantized model,
+a deep dive into prompt engineering might be the solution! Sometimes the model just needs to be
+nudged in the right direction to still maintain the accuracy and quality.
+
+In this lab, we're diving into something called 4-bit LLM Quantization with GPTQ. It's all about taking those fancy GPT models and squeezing them down to 4-bit precision. We'll be exploring how this process affects the size of the model, how well it performs, and whether it's practical for using on devices with limited resources. So, get ready to roll up your sleeves and delve into the nitty-gritty of quantizing GPT models!
+
+.. button::
+   :text: Hands on Lab
+   :link: https://colab.research.google.com/drive/1g-D8rQlVZ-rMqSot3JZGd4MiQOzk-lUx?usp=sharing
+
+Parallelization
+~~~~~~~~~~~~~~~
+One way to reduce the per-device memory footprint of the model weights is to distribute the model over several GPUs. Spreading the memory and compute footprint enables running larger models, or larger batches of inputs. Model parallelization is a necessity to train or infer on a model requiring more memory than available on a single device, and to make training times and inference measures (latency or throughput) suitable for certain use cases. There are several ways of parallelizing the model based on how the model weights are split. 
+
+Note that data parallelism is also a technique often mentioned in the same context as the others listed below. In this, weights of the model are copied over multiple devices, and the (global) batch size of inputs is sharded across each of the devices into microbatches. It reduces the overall execution time by processing larger batches. However, it is a training time optimization that is less relevant during inference.
