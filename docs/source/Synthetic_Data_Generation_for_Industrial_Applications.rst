@@ -11,13 +11,13 @@ Synthetic data is very important for industrial uses because of several key reas
 Here is a mindmap diagram illustrating the importance of data synthesis for industrial 
 applications, specifically for fine-tuning Large Language Models (LLMs):
 
-.. figure:: ..C:\Users\yassine\Desktop\chat-gi-iads\docs\Images\diagram_data_synt_import.png
+.. figure:: ..\Images\diagram_data_synt_import.png
    :width: 50%
    :align: center
    :alt: Mindmap diagram illustrating the importance of data synthesis for industrial applications
 
 1. Overcoming Data Scarcity
-^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Data synthesis helps generate diverse datasets where real-world data is limited or hard to collect. 
 For example, in industries such as healthcare, synthetic patient data can be created to train models
@@ -61,7 +61,7 @@ In situations where access to authentic data is constrained or inadequate, gener
 Techniques for generating synthetic data
 ---------------
 
-There are multiple techniques to generate synthetic data, out of which these are the most prominent:
+Now that we discussed the importance of generating synthetic datasets, We will introduce multiple techniques to generate synthetic data, out of which these are the most prominent:
 
 Drawing Numbers from a Distribution
 --------------------------------------------
@@ -69,7 +69,19 @@ Drawing Numbers from a Distribution
 Sampling from a distribution is a widely used method in synthetic data generation, where numbers are selected from a statistical distribution to mimic real-world data patterns. Using Python and the NumPy library, one can easily generate datasets that adhere to a specified distribution, such as a normal distribution.
 An example of this is generating a dataset with values normally distributed around a mean of 0 and a standard deviation of 1.
 
-.. code-block:: Python
+.. code-block:: python 
+   import numpy as np
+   import matplotlib.pyplot as plt
+
+   #Generate synthetic data
+   data = np.random.normal(loc=0, scale=1, size=1000)
+   # Visualize the distribution
+   plt.hist(data, bins=30)
+   plt.title('Synthetic Data with Normal Distribution')
+   plt.xlabel('Value')
+   plt.ylabel('Frequency')
+   plt.show()
+
     
 Agent-based Modeling (ABM):
 --------------
