@@ -17,6 +17,7 @@ Welcome to CHAT GI-IADS's documentation!
    The_computational_requirements_for_Training_LLMs
    Synthetic_Data_Generation_for_Industrial_Applications
    2.8.part
+   Evaluation-metrics
 
    
    

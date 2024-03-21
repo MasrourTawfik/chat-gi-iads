@@ -124,6 +124,8 @@ If the context suggests that the focus is on a man who has a telescope, the AI m
    :alt: Alternative text for the image
    :align: center   
 
+
+
 How AI Uses Context for Text Generation?
 ^^^^^^^^^^^^^^^^^
 
