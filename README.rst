@@ -11,8 +11,6 @@ Prerequisites
 ~~~~~~~~~~~~~
 - Python 3.6 or higher
 - `pip` package manager
-- sphinx
-- sphinx-rtd-theme
 
 Installation
 ~~~~~~~~~~~~

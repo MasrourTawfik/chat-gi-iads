@@ -39,7 +39,7 @@ Use of the already carried out benchmarking:
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 In this part, we explored the work of last promotion and we tried to search other new LLMs especially the most popular and recent ones. ^
-.. image:: docs\Images\bensh.png
+.. image::../Images/bensh.png
    :width: 100px
    :height: 100px
    :align: center
@@ -66,7 +66,7 @@ Gemma’s performance:
 
 The most notable aspect of Gemma is its impressive performance compared to other popular and widely used open-source models, such as Llama 2 7B and Mistral, as shown in the figure below.
 
-.. figure:: docs\Images\89c53026-6b1d-47eb-a3e9-5bdd73538128.png
+.. figure:: ../Images/89c53026-6b1d-47eb-a3e9-5bdd73538128.png
    :width: 100px
    :height: 100px
    :align: center
@@ -88,7 +88,7 @@ As mentioned in first question, its vocabulary size (and consequently the embedd
 
 Next that we discussed the raisons behind GEMMA, This figure shows an architecture overview comparing Gemma to LLama 2 7B and OLMo 7B.
 
-.. figure:: docs\Images\gemma_olmo.png
+.. figure:: ../Images/gemma_olmo.png
    :width: 100px
    :height: 100px
    :align: center

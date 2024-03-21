@@ -11,10 +11,10 @@ Synthetic data is very important for industrial uses because of several key reas
 Here is a mindmap diagram illustrating the importance of data synthesis for industrial 
 applications, specifically for fine-tuning Large Language Models (LLMs):
 
-.. figure:: ..\Images\diagram_data_synt_import.png
-   :width: 80%
-   :align: center
-   :alt: Alternative text for the image
+.. .. figure:: ../Images/diagram_data_synt_import.png
+..    :width: 80%
+..    :align: center
+..    :alt: Alternative text for the image
 
 1. Overcoming Data Scarcity
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -89,7 +89,7 @@ Agent-based Modeling (ABM):
 Agent-based modeling is a simulation technique where individual agents interact with each other in a complex system. ABM is useful for examining interactions between agents such as people, cells, or computer programs. Python packages such as Mesa can quickly create agent-based models using built-in core components and visualize them in a browser-based interface.
 For example simulating predator-prey dynamics in an ecosystem.
 
-.. figure:: ..\Images\Models_syn.png
+.. figure:: ../Images/Models_syn.png
    :width: 50%
    :align: center
    :alt: 
