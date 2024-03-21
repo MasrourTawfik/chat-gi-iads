@@ -88,7 +88,7 @@ To demonstrate the importance of context we will be looking at
 a classic example of a sentence that can be understood in two different ways:
 
 .. figure:: ../Images/telescope.png
-   :width: 80%
+   :width: 60%
    :alt: Alternative text for the image
    :align: center
 
