@@ -11,6 +11,14 @@ Practical uses of NLP encompass speech recognition, machine translation, sentime
 
 Large Language Models (LLMs), a significant advancement in NLP, leverage increased computing capabilities, abundant data, and machine learning innovations. By digesting vast text corpora, these models discern language patterns, grammatical rules, world knowledge, and reasoning capabilities.
 
+.. figure:: ../Images/nlp.png
+   :width: 80%
+   :alt: Alternative text for the image
+   :align: center
+
+   NLp use cases.
+
+
 Sentiment Analysis
 ------------------
 Sentiment analysis not only assesses the general sentiment polarity of text (positive, negative, neutral) but also goes into detecting specific emotions (e.g., joy, frustration, anger, sorrow), levels of urgency (urgent, non-urgent), and intentions (interested vs. uninterested)
@@ -48,6 +56,7 @@ This analysis focuses on identifying sentiments related to specific aspects or f
 For instance, in the review, "The battery life of this laptop is too short", aspect-based analysis would pinpoint the negative sentiment directed towards the laptop's battery life.
 
 Example:Sentiment Analysis with Python and NLTK
+
 Objective:To determine the sentiment of a given text (positive, negative, or neutral) using the NLTK library.
 
 `Hands on for Sentiment Analysis`_.
@@ -76,6 +85,7 @@ To learn what is and is not a relevant entity and how to categorize them, a mode
 
 
 Example:Named Entity Recognition (NER)
+
 Objective:NER capabilities using spaCy to identify various types of entities in a text, such as persons, organizations, locations...
 
 `Hands On for NER`_.
@@ -86,6 +96,12 @@ Objective:NER capabilities using spaCy to identify various types of entities in 
 Part-Of-Speech Tagging (PoS)
 ---------------------------
 Part-of-speech tagging, a fundamental aspect of natural language processing, involves assigning syntactic tags to each word in a sentence based on its context. Also known as grammatical tagging, this process categorizes words into grammatical groups like verbs, adjectives, nouns, etc.
+
+.. figure:: ../Images/Tagged.png
+   :alt: Alternative text for the image
+   :align: center
+   
+   Use of ML/DL in PoS
 
 
 .. table:: Example of Part of Speech Tags
@@ -116,6 +132,7 @@ Defining a set of rules for assigning POS tags to words. For example:
 +If the word is a verb ending in “-ing,” assign the tag “verb.”
 
 Example:PoS tagging
+
 Objective:how to perform PoS tagging on a given sentence, assigning grammatical parts of speech to each word, such as nouns, verbs, adjectives, etc.
 
 `Hands on for Pos Tagging`_
@@ -149,6 +166,7 @@ Defining a set of rules for transforming the tags of words in the text.
 +Iterate through the words in the text and apply the rules in a specific order.
 
 For example: 
+
 In the sentence “The cat sat on the mat ”, the word “sat” would be changed from a verb to a noun based on the first rule.
 In the sentence “The red cat sat on the mat ”, the word “red” would be changed from an adjective to a noun based on the second rule.
 
@@ -163,6 +181,7 @@ The primary steps in the machine translation process are:
 -We then need to re-encode this meaning in the target language, which also needs the same in-depth knowledge as the source language to replicate the meaning in the target language.
 
 Example:Machine Translation
+
 Objective:emonstrating how to translate text from English to French using a pre-trained model..
 
 `Hands on for Machine Translation`_
@@ -200,6 +219,7 @@ Now, if we want to translate a new English sentence using the EBMT approach:
 English: "The cat sat by the window".
 
 The EBMT system will:
+
 1. Identify segments from the known examples that can be reused:
  -"The cat sat" can be matched with "Le chat s'est assis" from the first pair.
  
