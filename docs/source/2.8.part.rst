@@ -35,11 +35,11 @@ Selecting the right LLM, conducting a benchmarking process based on these criter
    3. Domain-Specific Performance. 
    4. Availability of computational resources for training and deployment.
 
-Exploitation of the already carried out benchmarking: 
+Use of the already carried out benchmarking: 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 In this part, we explored the work of last promotion and we tried to search other new LLMs especially the most popular and recent ones. ^
-.. image:: docs\Images\bensh.png
+.. image::../Images/bensh.png
    :width: 100px
    :height: 100px
    :align: center
@@ -66,13 +66,13 @@ Gemma’s performance:
 
 The most notable aspect of Gemma is its impressive performance compared to other popular and widely used open-source models, such as Llama 2 7B and Mistral, as shown in the figure below.
 
-.. figure:: docs\Images\89c53026-6b1d-47eb-a3e9-5bdd73538128.png
+.. figure:: ../Images/89c53026-6b1d-47eb-a3e9-5bdd73538128.png
    :width: 100px
    :height: 100px
    :align: center
    Annotated performance comparison from the Gemma technical report (https://storage.googleapis.com/deepmind-media/gemma/gemma-report.pdf).
 
-.. question:: What contributes to Gemma's outstanding performance? 
+question:: What contributes to Gemma's outstanding performance? 
 
 The reasons are not explicitly stated in the paper, but we assume it's due to:
 
@@ -82,13 +82,13 @@ The reasons are not explicitly stated in the paper, but we assume it's due to:
 Gemma Architecture
 --------------------------
 
-.. question:: What are some of the interesting design choices behind Gemma? 
+question:: What are some of the interesting design choices behind Gemma? 
 
 As mentioned in first question, its vocabulary size (and consequently the embedding matrix size) is very large. 
 
 Next that we discussed the raisons behind GEMMA, This figure shows an architecture overview comparing Gemma to LLama 2 7B and OLMo 7B.
 
-.. figure:: docs\Images\gemma_olmo.png
+.. figure:: ../Images/gemma_olmo.png
    :width: 100px
    :height: 100px
    :align: center
@@ -118,18 +118,18 @@ Production:
    For information or data related to production, you should specify the industry or type of production you're interested in, along with any aspects you want to know more about, such as efficiency, technology, or methodologies. A detailed prompt ensures more accurate and useful responses.
 
 
-.. Prompt:: Input: Can you provide an overview of the latest advancements in automotive production technology, focusing on how these have improved efficiency and reduced costs? Please include examples of technologies and their impacts.Output: Json file <input, context, output>and the number of Situations is 500
+Prompt:: Input: Can you provide an overview of the latest advancements in automotive production technology, focusing on how these have improved efficiency and reduced costs? Please include examples of technologies and their impacts.Output: Json file <input, context, output>and the number of Situations is 500
 
 Quality:
 ^^^^^^^^^^^^^^^^^^^^
    When seeking insights on quality, clarify whether you're interested in quality control, quality assurance, or a specific aspect of quality related to a product, service, or process. Mentioning the context (industry, product type, etc.) helps generate more relevant information.
-.. Prompt::  Input: Describe the best practices for maintaining high-quality standards in the software development industry, including any innovative tools or methodologies currently being adopted to ensure product quality.Output: Json file <input, context, output>and the number of situations is 500
+Prompt::  Input: Describe the best practices for maintaining high-quality standards in the software development industry, including any innovative tools or methodologies currently being adopted to ensure product quality.Output: Json file <input, context, output>and the number of situations is 500
 
 Maintenance:
 ^^^^^^^^^^^^^^^^^^^^
    For maintenance, specify the type of maintenance you're referring to (e.g., preventive, corrective, predictive) and the context (e.g., machinery, software, infrastructure). Detailing the scope will guide the model to provide targeted strategies, technologies, or case studies.
 
-.. Prompt:: Input: What are the most effective predictive maintenance strategies for heavy machinery in the construction industry? Please detail technologies used, how they are applied, and the benefits of adopting these strategies.Output: Json file <input, context, output>and the number of questions is 500
+Prompt:: Input: What are the most effective predictive maintenance strategies for heavy machinery in the construction industry? Please detail technologies used, how they are applied, and the benefits of adopting these strategies.Output: Json file <input, context, output>and the number of questions is 500
 
 .. note:: General Tips for Prompting:
     • Be Specific: The more detailed your prompt, the more tailored and useful the response will be.

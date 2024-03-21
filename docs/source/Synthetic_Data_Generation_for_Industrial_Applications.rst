@@ -11,10 +11,10 @@ Synthetic data is very important for industrial uses because of several key reas
 Here is a mindmap diagram illustrating the importance of data synthesis for industrial 
 applications, specifically for fine-tuning Large Language Models (LLMs):
 
-.. figure:: ..\Images\diagram_data_synt_import.png
-   :width: 80%
-   :align: center
-   :alt: Alternative text for the image
+.. .. figure:: ../Images/diagram_data_synt_import.png
+..    :width: 80%
+..    :align: center
+..    :alt: Alternative text for the image
 
 1. Overcoming Data Scarcity
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -89,7 +89,7 @@ Agent-based Modeling (ABM):
 Agent-based modeling is a simulation technique where individual agents interact with each other in a complex system. ABM is useful for examining interactions between agents such as people, cells, or computer programs. Python packages such as Mesa can quickly create agent-based models using built-in core components and visualize them in a browser-based interface.
 For example simulating predator-prey dynamics in an ecosystem.
 
-.. figure:: ..\Images\Models_syn.png
+.. figure:: ../Images/Models_syn.png
    :width: 50%
    :align: center
    :alt: 
@@ -101,9 +101,9 @@ For example simulating predator-prey dynamics in an ecosystem.
 Prompts:
 --------
 
-.. Prompt:: Produce 10 exemplars for sentiment analysis. Examples are categorized as either positive or negative. Produce 2 negative examples and 8 positive examples. Use this format for the examples: Q: <sentence> A: <sentiment>
+Prompt:: Produce 10 exemplars for sentiment analysis. Examples are categorized as either positive or negative. Produce 2 negative examples and 8 positive examples. Use this format for the examples: Q: <sentence> A: <sentiment>
 
-.. Output:: 
+Output:: 
    - Q: I just got the best news ever! A: Positive
    - Q: We just got a raise at work! A: Positive
    - Q: I'm so proud of what I accomplished today. A: Positive
@@ -120,7 +120,7 @@ This is very useful. We actually use this example for a different test in anothe
 .. note:: 
    In our case, we generated synthetic data from GPT-4, by the use of the following prompt:
 
-   .. Prompt:: 
+   Prompt:: 
       **Instruction**: As an industrial engineer with extensive expertise in your field, your task is to generate a synthetic dataset that accurately reflects the complexities and nuances of industrial engineering.
       
       **Input**: generate synthetic data about production to be near factual, generate real industrial situations.
