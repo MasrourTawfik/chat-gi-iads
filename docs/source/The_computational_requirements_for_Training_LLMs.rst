@@ -65,16 +65,16 @@ data scientists can achieve similar performance with a smaller, more efficient m
 Model Pruning is crucial for several reasons:
  |1. Efficiency: Pruned models require less computational resources and memory, making them
 faster and more efficient to train and deploy
-2. Deployment: Pruned models are easier to deploy on devices with limited resources, such as
+ |2. Deployment: Pruned models are easier to deploy on devices with limited resources, such as
 mobile devices or embedded systems.
-3. Overfitting: Pruning can help reduce overfitting by simplifying the model and reducing its
+ |3. Overfitting: Pruning can help reduce overfitting by simplifying the model and reducing its
 capacity to memorize the training data.
 Model Pruning works by identifying and removing the parameters that contribute least to the
 model’s performance. There are several techniques for model pruning, including:
-1. Weight Pruning: This technique removes the smallest weights in the model. The remaining
+ |1. Weight Pruning: This technique removes the smallest weights in the model. The remaining
 weights are then retrained to compensate for the pruned weights.
-2. Neuron Pruning: This technique removes entire neurons, along with their incoming and outgoing connections. The remaining neurons are then retrained.
-3. Structured Pruning: This technique removes structured sets of parameters, such as entire
+ |2. Neuron Pruning: This technique removes entire neurons, along with their incoming and outgoing connections. The remaining neurons are then retrained.
+ |3. Structured Pruning: This technique removes structured sets of parameters, such as entire
 layers or channels. This can lead to more efficient models, as the remaining structure can be
 more easily optimized by hardware accelerators.
 
@@ -85,4 +85,5 @@ that the pruned model still meets the required performance criteria.
 Model Pruning is widely used in the field of deep learning, especially in the deployment of models
 on edge devices. For example, Google’s MobileNet architecture uses a form of structured pruning to
 create efficient models for mobile devices.
+In this lab example, we focus specifically on magnitude-based weight pruning, a technique that targets the removal of the smallest weights within a model. By selectively eliminating these less influential parameters and subsequently fine-tuning the remaining ones, we aim to demonstrate how this approach can effectively reduce model complexity while preserving performance levels. Through hands-on experimentation, participants will gain practical insights into the intricacies of weight pruning and its implications for model efficiency and deployment in resource-constrained environments.
 
