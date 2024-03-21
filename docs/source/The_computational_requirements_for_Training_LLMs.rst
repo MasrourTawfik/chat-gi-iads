@@ -126,3 +126,9 @@ In this lab, we're diving into something called 4-bit LLM Quantization with GPTQ
 .. button::
    :text: Hands on Lab
    :link: https://colab.research.google.com/drive/1g-D8rQlVZ-rMqSot3JZGd4MiQOzk-lUx?usp=sharing
+
+Parallelization
+~~~~~~~~~~~~~~~
+One way to reduce the per-device memory footprint of the model weights is to distribute the model over several GPUs. Spreading the memory and compute footprint enables running larger models, or larger batches of inputs. Model parallelization is a necessity to train or infer on a model requiring more memory than available on a single device, and to make training times and inference measures (latency or throughput) suitable for certain use cases. There are several ways of parallelizing the model based on how the model weights are split. 
+
+Note that data parallelism is also a technique often mentioned in the same context as the others listed below. In this, weights of the model are copied over multiple devices, and the (global) batch size of inputs is sharded across each of the devices into microbatches. It reduces the overall execution time by processing larger batches. However, it is a training time optimization that is less relevant during inference.
