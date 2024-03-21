@@ -153,6 +153,7 @@ layer—be it self-attention or feedforward neural network- to its output prior 
 allows the direct flow of gradients throughout the network, mitigating the van-
 ishing gradient problem and enabling the training of deeper and more complex
 models.
+
 In simpler words:
 Residual connections help the model preserve information from initial layers and
 seamlessly integrating it with the knowledge gained in subsequent layers.
@@ -175,11 +176,9 @@ Output Layer
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The final output is a probability distribution over the vocabulary, representing
-the likelihood of each token being the next word in the sequence.This distribu-
-tion is derived by channeling the output from the last Transformer block through
+the likelihood of each token being the next word in the sequence.This distribution is derived by channeling the output from the last Transformer block through
 a linear layer, which is then processed by a softmax function. This sequence
-of operations transforms the linear layer’s output into a comprehensive proba-
-bility distribution, effectively predicting the next word in the sequence with a
+of operations transforms the linear layer’s output into a comprehensive probability distribution, effectively predicting the next word in the sequence with a
 quantifiable likelihood for each possible token.
 
 `Full example here`_
