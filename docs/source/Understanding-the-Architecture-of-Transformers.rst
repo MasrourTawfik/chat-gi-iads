@@ -101,7 +101,7 @@ through learned self-attention weights that are refined during the training pro-
 cess. by adjusting these weights the model can capture implicit patterns and
 dependencies.
 
-.. figure:: ../Images/attentionnn.png
+.. figure:: ../Images/Attention.png
    :alt: Attention weights
    :align: center
 
