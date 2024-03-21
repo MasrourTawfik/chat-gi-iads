@@ -65,7 +65,7 @@ Example:Abstractive Summarization
 
 Objective: Using the Hugging Face Transformers library in Python to perform abstractive summarization on a piece of text.
 
-`Hands on for EAbstactive Summarization`_.
+`Hands on for Abstactive Summarization`_.
 
 .. _Hands on for Abstractive Summarization: https://colab.research.google.com/drive/1HLyGPjFfAHGt-XFTU0DSt1Gpiz4bbTtW#scrollTo=LMkQR7V1dn1V
 
