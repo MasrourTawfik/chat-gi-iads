@@ -12,8 +12,6 @@ Welcome to CHAT GI-IADS's documentation!
    2.5-Data-Preprocessing-for-LLMs
    file1
    Understanding-the-Architecture-of-Transformers
-   Synthetic data generation for industrial applications
-   2.8. Building an LLM Chatbot Specialized in Industrial Engineering
 
 
    

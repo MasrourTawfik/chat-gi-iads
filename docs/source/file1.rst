@@ -11,6 +11,14 @@ Practical uses of NLP encompass speech recognition, machine translation, sentime
 
 Large Language Models (LLMs), a significant advancement in NLP, leverage increased computing capabilities, abundant data, and machine learning innovations. By digesting vast text corpora, these models discern language patterns, grammatical rules, world knowledge, and reasoning capabilities.
 
+.. figure:: ../Images/nlp.png
+   :width: 80%
+   :alt: Alternative text for the image
+   :align: center
+
+   NLp use cases
+
+
 Sentiment Analysis
 ------------------
 Sentiment analysis not only assesses the general sentiment polarity of text (positive, negative, neutral) but also goes into detecting specific emotions (e.g., joy, frustration, anger, sorrow), levels of urgency (urgent, non-urgent), and intentions (interested vs. uninterested)
@@ -48,11 +56,12 @@ This analysis focuses on identifying sentiments related to specific aspects or f
 For instance, in the review, "The battery life of this laptop is too short", aspect-based analysis would pinpoint the negative sentiment directed towards the laptop's battery life.
 
 Example:Sentiment Analysis with Python and NLTK
+
 Objective:To determine the sentiment of a given text (positive, negative, or neutral) using the NLTK library.
 
-`Click here for example`_.
+`Hands on for Sentiment Analysis`_.
 
-.. _Click here for example: https://jupyter.org/try-jupyter/notebooks/?path=Sentiment_analysis.ipynb
+.. _Hands on for Sentiment Analysis: https://colab.research.google.com/drive/1_YIDvSwWqgXW8OasKAA3IW1gYSnAfs_o?authuser=0#scrollTo=XwDS1lJj3r2G
 
 Named Entity Recognition (NER)
 ------------------------------
@@ -76,16 +85,23 @@ To learn what is and is not a relevant entity and how to categorize them, a mode
 
 
 Example:Named Entity Recognition (NER)
+
 Objective:NER capabilities using spaCy to identify various types of entities in a text, such as persons, organizations, locations...
 
-`Hands On for Tokenization`_.
+`Hands On for NER`_.
 
-.. _Hands On for Tokenization: https://jupyter.org/try-jupyter/notebooks/?path=NameEntityRecognition.ipynb
+.. _Hands On for NER: https://colab.research.google.com/drive/1qF4IBkVMKc9XLOCJIi21uo6aVIddhQCC#scrollTo=jH7gBXJA6Bcy
 
 
 Part-Of-Speech Tagging (PoS)
 ---------------------------
 Part-of-speech tagging, a fundamental aspect of natural language processing, involves assigning syntactic tags to each word in a sentence based on its context. Also known as grammatical tagging, this process categorizes words into grammatical groups like verbs, adjectives, nouns, etc.
+
+.. figure:: ../Images/Tagged.png
+   :alt: Alternative text for the image
+   :align: center
+   
+   Use of ML/DL in PoS
 
 
 .. table:: Example of Part of Speech Tags
@@ -116,11 +132,12 @@ Defining a set of rules for assigning POS tags to words. For example:
 +If the word is a verb ending in “-ing,” assign the tag “verb.”
 
 Example:PoS tagging
+
 Objective:how to perform PoS tagging on a given sentence, assigning grammatical parts of speech to each word, such as nouns, verbs, adjectives, etc.
 
-`Click here for example`_
+`Hands on for Pos Tagging`_
 
-.. _Click here for example: https://jupyter.org/try-jupyter/notebooks/? path=PartOfSpeechTagging.ipynb
+.. _Hands on for Pos Tagging: https://colab.research.google.com/drive/1TrphG2ueaYbu1TOD0lk_koTp55LGJiLs#scrollTo=myAoNkvTCdf-
 
 Artificial Neural Networks (ANN)
 ^^^^^^^^^^^^^^^^^^^^^^^^
@@ -132,10 +149,7 @@ ANNs for POS tagging involve preprocessing to prepare input for the network. The
    Use of ML/DL in PoS
    
 
-Hidden Markov Model (HMM)
-^^^^^^^^^^^^^^^^^
-HMM, a prevalent stochastic method, uses a state transition framework where the tags are inferred from observable outputs dependent on hidden states.It follows a factual Markov model in which the tagger framework being demonstrated is thought to be explored from one state to another with an inconspicuous state.
-Unlike the Markov model, in HMM, the state is not directly observable to the observer, but the output that depends on the hidden state is visible. Hidden Markov Model is a familiar statistical model that is used to find the most frequent tag sequence T=(t1, t2, t3… tn) for a word sequence in sentence W=(w1, w2, w3…wn).
+
 
 Transformation-Based Tagging (TBT)
 ^^^^^^^^^^^^^^^^^^^^^^^^
@@ -152,6 +166,7 @@ Defining a set of rules for transforming the tags of words in the text.
 +Iterate through the words in the text and apply the rules in a specific order.
 
 For example: 
+
 In the sentence “The cat sat on the mat ”, the word “sat” would be changed from a verb to a noun based on the first rule.
 In the sentence “The red cat sat on the mat ”, the word “red” would be changed from an adjective to a noun based on the second rule.
 
@@ -166,12 +181,12 @@ The primary steps in the machine translation process are:
 -We then need to re-encode this meaning in the target language, which also needs the same in-depth knowledge as the source language to replicate the meaning in the target language.
 
 Example:Machine Translation
+
 Objective:emonstrating how to translate text from English to French using a pre-trained model..
 
 `Hands on for Machine Translation`_
 
-.. _Hands on for Machine Translation: https://jupyter.org/try-jupyter/notebooks/?path=MachineTranslation.ipynb
-
+.. _Hands on for Machine Translation: https://colab.research.google.com/drive/1LYFiiQ8Isl5P3-pv6V9eF5EFkzoasOEf#scrollTo=ww1ZHb--KScs
 Rule-based Machine Translation or RBMT
 ^^^^^^^^^^^^^^^^^^^^^^
 Also called knowledge-based machine translation, these are the earliest set of classical methods used for machine translation.
@@ -204,6 +219,7 @@ Now, if we want to translate a new English sentence using the EBMT approach:
 English: "The cat sat by the window".
 
 The EBMT system will:
+
 1. Identify segments from the known examples that can be reused:
  -"The cat sat" can be matched with "Le chat s'est assis" from the first pair.
  
