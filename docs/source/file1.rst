@@ -126,9 +126,13 @@ Rule-Based POS Tagging
 This traditional method utilizes a lexicon to suggest possible tags for each word. Disambiguation is achieved through hand-written rules considering the word's context and neighboring words.
 
 Defining a set of rules for assigning POS tags to words. For example:
+
 +If the word ends in “-tion,” assign the tag “noun.”
+
 +If the word ends in “-ment,” assign the tag “noun.”
+
 +If the word is all uppercase, assign the tag “proper noun.”
+
 +If the word is a verb ending in “-ing,” assign the tag “verb.”
 
 Example:PoS tagging
@@ -162,12 +166,15 @@ Here is an example of how a TBT system might work:
 Defining a set of rules for transforming the tags of words in the text.
 
 +If the word is a verb and appears after a determiner, change the tag to “noun”.
+
 +If the word is a noun and appears after an adjective, change the tag to “adjective”.
+
 +Iterate through the words in the text and apply the rules in a specific order.
 
 For example: 
 
 In the sentence “The cat sat on the mat ”, the word “sat” would be changed from a verb to a noun based on the first rule.
+
 In the sentence “The red cat sat on the mat ”, the word “red” would be changed from an adjective to a noun based on the second rule.
 
 Machine Translation
@@ -176,8 +183,11 @@ Machine Translation (MT) is a domain of computational linguistics that uses comp
 The basic requirement in the complex cognitive process of machine translation is to understand the meaning of a text in the original (source) language and then restore it to the target (sink) language.
 
 The primary steps in the machine translation process are:
+
 -We need to decode the meaning of the source text in its entirety.
+
 -We also require an in-depth knowledge of the grammar, semantics, syntax, idioms, etc. of the source language for this process.
+
 -We then need to re-encode this meaning in the target language, which also needs the same in-depth knowledge as the source language to replicate the meaning in the target language.
 
 Example:Machine Translation
@@ -208,15 +218,22 @@ The principle of translation by analogy is encoded to the example-based machine 
 Here's a simplified example using English and French:
 Suppose we have a bilingual corpus with the following sentence pairs:
 
-English : "The cat sat on the mat".
-French: "Le chat s'est assis sur le tapis".
+.. figure:: ../Images/english.png
+   :width: 80%
+   :alt: Alternative text for the image
+   :align: center
+   
+   
 
-English:"She sat by the river".
-French: "Elle s'est assise au bord de la rivière."
+
 
 Now, if we want to translate a new English sentence using the EBMT approach:
 
-English: "The cat sat by the window".
+.. figure:: ../Images/eng.png
+   :width: 80%
+   :alt: Alternative text for the image
+   :align: center
+  
 
 The EBMT system will:
 
@@ -231,6 +248,12 @@ The EBMT system will:
 3. Assemble the translated segments:
 -"Le chat s'est assis" + "à" + "la fenêtre" (where "la fenêtre" is the translation of "the window").
 
-4. Generate the translated sentence:-"Le chat s'est assis à la fenêtre."
+4. Generate the translated sentence:
+
+.. figure:: ../Images/french.png
+   :width: 80%
+   :alt: Alternative text for the image
+   :align: center
+  
 
 Here, the EBMT system uses fragments of known translations to construct the translation of a new sentence. It requires a comprehensive bilingual corpus to increase the accuracy and fluency of the translations it produces.

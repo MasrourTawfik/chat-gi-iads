@@ -12,9 +12,9 @@ Here is a mindmap diagram illustrating the importance of data synthesis for indu
 applications, specifically for fine-tuning Large Language Models (LLMs):
 
 .. figure:: ..\Images\diagram_data_synt_import.png
-   :width: 50%
+   :width: 80%
    :align: center
-   :alt: Mindmap diagram illustrating the importance of data synthesis for industrial applications
+   :alt: Alternative text for the image
 
 1. Overcoming Data Scarcity
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
