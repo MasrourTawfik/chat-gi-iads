@@ -282,7 +282,7 @@ BPE lab
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 .. button::
    :text: BPE LAB
-   :link: https://colab.research.google.com/drive/1pWYPIPiazp8btdIDxOYl_zeRnNa_G3Jv#scrollTo=7H6paTWiF14B
+   :link: https://colab.research.google.com/drive/1pWYPIPiazp8btdIDxOYl_zeRnNa_G3Jv?usp=sharing
 
 
 Sentence Piece Tokenization
@@ -334,6 +334,9 @@ Skip-gram is a slightly different word embedding technique in comparison to CBOW
     :align: center
     :alt: SentencePiece Tokenization
 
+.. button::
+   :text: CBOW & Skip-gram LAB
+   :link: https://colab.research.google.com/drive/1CyXTqirDsrtinleQc-s6ArX-Dpi0Lo7Q?usp=sharing
 
 
    
