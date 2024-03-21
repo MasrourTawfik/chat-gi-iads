@@ -31,8 +31,8 @@ Tokenization
 Tokenization is the process of systematically decomposing input text into a sequence of tokens, which can include words, subwords, punctuation marks, and
 individual characters. Each token is then mapped to a unique identifier, linking it to a comprehensive and predefined vocabulary.
 
-Note: The tokenizer used during training should be the same one used for
-generating text.
+.. Note::
+   The tokenizer used during training should be the same one used for generating text.
 
 .. figure:: ../Images/tokenizationfinal1.png
    :width: 80%
@@ -101,6 +101,12 @@ through learned self-attention weights that are refined during the training pro-
 cess. by adjusting these weights the model can capture implicit patterns and
 dependencies.
 
+.. figure:: ../Images/attention.png
+   :alt: Attention weights
+   :align: center
+
+   Example of an attention map
+
 `Hands on for Self-Attention Layer`_
 
 .. _Hands on for Self-Attention Layer: https://colab.research.google.com/drive/1fdr45ZpzuSXa0d3rgkxNrcRiCHMoJQO6#scrollTo=BobDOsxZnhY5
@@ -147,6 +153,7 @@ layer—be it self-attention or feedforward neural network- to its output prior 
 allows the direct flow of gradients throughout the network, mitigating the van-
 ishing gradient problem and enabling the training of deeper and more complex
 models.
+
 In simpler words:
 Residual connections help the model preserve information from initial layers and
 seamlessly integrating it with the knowledge gained in subsequent layers.
@@ -165,15 +172,13 @@ covariate shift, thereby facilitating faster convergence.
 .. _Hands on for Residual Connections & Layer Normalization: https://colab.research.google.com/drive/1FqrBfqYe6ouMoWvC_zQaDIyEGsUO0xNR#scrollTo=nPt5jtl67eLQ
 
 
-output Layer
+Output Layer
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The final output is a probability distribution over the vocabulary, representing
-the likelihood of each token being the next word in the sequence.This distribu-
-tion is derived by channeling the output from the last Transformer block through
+the likelihood of each token being the next word in the sequence.This distribution is derived by channeling the output from the last Transformer block through
 a linear layer, which is then processed by a softmax function. This sequence
-of operations transforms the linear layer’s output into a comprehensive proba-
-bility distribution, effectively predicting the next word in the sequence with a
+of operations transforms the linear layer’s output into a comprehensive probability distribution, effectively predicting the next word in the sequence with a
 quantifiable likelihood for each possible token.
 
 `Full example here`_
@@ -195,7 +200,7 @@ architectures designed primarily for understanding and interpreting text. Unlike
 their encoder-decoder counterparts, they do not generate new text but focus on
 analyzing and extracting meaning from input sequences.
 
-.. table:: Examples of Existing Models
+.. table:: Encoder-only models
    :name: tab:roberta_bert
 
    +-------------------------------+---------------------------------------------+
@@ -268,7 +273,7 @@ input sequence, often used in tasks like language modeling and text generation.
 
 
 
-.. table:: Examples of Existing Models
+.. table:: Decoder-only models
    :name: tab:gpt_bloom
 
    +-------------------------------+------------------------------------------+
@@ -343,7 +348,7 @@ erating text, by combining two main components: an encoder that processes the
 input sequence and a decoder that generates the output sequence.
 
 
-.. table:: Examples of Existing Models
+.. table:: Encoder-decoder models
    :name: tab:existing_models
 
    +-------------------------------+-----------------------------------------+
