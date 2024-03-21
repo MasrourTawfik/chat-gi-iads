@@ -200,7 +200,7 @@ architectures designed primarily for understanding and interpreting text. Unlike
 their encoder-decoder counterparts, they do not generate new text but focus on
 analyzing and extracting meaning from input sequences.
 
-.. table:: Examples of Existing Models
+.. table:: Encoder-only models
    :name: tab:roberta_bert
 
    +-------------------------------+---------------------------------------------+
@@ -273,7 +273,7 @@ input sequence, often used in tasks like language modeling and text generation.
 
 
 
-.. table:: Examples of Existing Models
+.. table:: Decoder-only models
    :name: tab:gpt_bloom
 
    +-------------------------------+------------------------------------------+
@@ -348,7 +348,7 @@ erating text, by combining two main components: an encoder that processes the
 input sequence and a decoder that generates the output sequence.
 
 
-.. table:: Examples of Existing Models
+.. table:: Encoder-decoder models
    :name: tab:existing_models
 
    +-------------------------------+-----------------------------------------+
