@@ -73,6 +73,25 @@ The average time taken by the chatbot to respond to user inputs. Faster response
 
 Benchmarking LLM Performance
 ----------------------
+Do's and dont's section
+*********
+The following table outlines essential do's and dont's for effective benchmarking in AI:
+
+.. list-table::
+   :widths: 50 50
+   :header-rows: 1
+
+   * - Do's
+     - Don'ts
+   * - Utilize diverse and representative datasets for evaluation
+     - Rely solely on synthetic or biased datasets
+   * - Ensure transparency and fairness in the benchmarking process
+     - Overlook the influence of biases and confounding factors in evaluations
+   * - Implement standardized evaluation methodologies and metrics
+     - Neglect the continuous assessment and re-evaluation of benchmarking practices
+   * - Consider the impact of contextual factors in performance assessments
+     - Overemphasize single-point performance metrics without holistic consideration
+
 
 1. Comparison with Baselines
 ****************
