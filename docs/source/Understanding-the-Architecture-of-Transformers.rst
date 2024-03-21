@@ -101,6 +101,12 @@ through learned self-attention weights that are refined during the training pro-
 cess. by adjusting these weights the model can capture implicit patterns and
 dependencies.
 
+.. figure:: ../Images/attentionnn.png
+   :alt: Attention weights
+   :align: center
+
+   Example of an attention map
+
 `Hands on for Self-Attention Layer`_
 
 .. _Hands on for Self-Attention Layer: https://colab.research.google.com/drive/1fdr45ZpzuSXa0d3rgkxNrcRiCHMoJQO6#scrollTo=BobDOsxZnhY5
