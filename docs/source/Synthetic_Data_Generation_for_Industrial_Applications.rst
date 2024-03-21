@@ -106,8 +106,7 @@ Prompts:
 This is very useful. We actually use this example for a different test in another section of the guides.
 
 
-.. Hint:: In our case, we generated sythetic data from GTP4, by the use of the following prompt:
-
+.. note:: In our case, we generated sythetic data from GTP4, by the use of the following prompt:
 .. Prompt:: ## instruction: As an industrial engineer with extensive expertise in your field, your task is to generate a synthetic dataset that accurately reflects the complexities and nuances of industrial engineering. ## input: generate synthetic data about production near to be factual, generate real industrial situation.## output: Json file <input, context, output>and the number of questions is 500 
 .. Output:: The output was our json file containing sythetic data.
 
