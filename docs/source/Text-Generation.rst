@@ -15,7 +15,8 @@ Text summarization, on the other hand, aims to condense a larger body of text in
    :alt: Alternative text for the image
    :align: center
 
-   Flowchart explaining Extractive Vs Abstractive Summarization
+   Flowchart explaining Extractive VS Abstractive Summarization
+
 
 Extractive Summarization
 ^^^^^^^^^^^^^^^^^^^^^^^^
