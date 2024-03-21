@@ -219,6 +219,7 @@ Here's a simplified example using English and French:
 Suppose we have a bilingual corpus with the following sentence pairs:
 
 .. figure:: ../Images/english.png
+   :width: 80%
    :alt: Alternative text for the image
    :align: center
    
@@ -229,6 +230,7 @@ Suppose we have a bilingual corpus with the following sentence pairs:
 Now, if we want to translate a new English sentence using the EBMT approach:
 
 .. figure:: ../Images/eng.png
+   :width: 80%
    :alt: Alternative text for the image
    :align: center
   
@@ -249,6 +251,7 @@ The EBMT system will:
 4. Generate the translated sentence:
 
 .. figure:: ../Images/french.png
+   :width: 80%
    :alt: Alternative text for the image
    :align: center
   
