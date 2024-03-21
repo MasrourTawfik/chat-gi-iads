@@ -69,3 +69,38 @@ Reflects how well the chatbot maintains users' interest or participation over ti
 6. Response Time
 ************
 The average time taken by the chatbot to respond to user inputs. Faster response times are typically associated with better user experiences but must also balance the need for accurate and thoughtful responses.
+
+
+Benchmarking LLM Performance
+----------------------
+
+1. Comparison with Baselines
+****************
+
+When introducing a new LLM, it’s essential to compare its performance against established baselines. These baselines are typically previous models or well-known standards in the industry that represent the minimum expected performance. To make this comparison:
+
++ Identify standard tasks that the LLM should perform (e.g., text classification, question answering).
+
++ Use the same datasets and metrics that were used to evaluate the baseline models to ensure comparability.
+
++ Run the LLM on these tasks and compare the outcomes with the results from the baseline models.
+
++ Report improvements or regressions in performance, providing a clear picture of where the new LLM stands.
+
+2. Task-Specific Benchmarks
+******************
+
+Task-specific benchmarks involve evaluating the LLM’s performance on a variety of tasks that are representative of its expected usage. This might include:
+
+- NLP tasks such as sentiment analysis, named entity recognition, or language translation.
+
+- Specialized tasks that are relevant to the domain where the LLM will be applied, such as industrial applications.
+
+- Standardized benchmarks such as GLUE or SuperGLUE that aggregate multiple NLP tasks to provide a comprehensive assessment.
+
+- Performance is then quantified using appropriate metrics like accuracy, F1 score, BLEU score for translation, or ROUGE for summarization.
+
+3. LLM’s efficiency in resource utilization
+**************
+
+Efficiency in resource utilization assesses how well the LLM uses computational resources relative to the performance it achieves. This aspect is increasingly important due to the large environmental and economic costs of training and running LLMs(Look at The computational requirements for Training LLMs section for more details).
