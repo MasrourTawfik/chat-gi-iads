@@ -31,8 +31,8 @@ Tokenization
 Tokenization is the process of systematically decomposing input text into a sequence of tokens, which can include words, subwords, punctuation marks, and
 individual characters. Each token is then mapped to a unique identifier, linking it to a comprehensive and predefined vocabulary.
 
-Note: The tokenizer used during training should be the same one used for
-generating text.
+.. Note::
+   The tokenizer used during training should be the same one used for generating text.
 
 .. figure:: ../Images/tokenizationfinal1.png
    :width: 80%
