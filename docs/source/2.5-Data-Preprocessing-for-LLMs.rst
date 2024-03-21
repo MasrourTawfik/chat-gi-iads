@@ -237,6 +237,8 @@ Removing noise from text and standardizing it are crucial steps for improving th
       res = ''.join([i for i in ini_string if not i.isdigit()])
       print("final string : ", res)
 
+After preprocessing our data, the next step will be to feed it into our large language model. The concern here is whether our LLM will have a very good understanding of our cleaned data. In this context, we will discuss an important concept known as Tokenization.
+
 Tokenization and word embedding
 --------------------------------
 Tokenization, in the realm of Natural Language Processing (NLP) and machine learning, refers to the process of converting a sequence of text into smaller parts, known as tokens. These tokens can be as small as characters or as long as words.
@@ -252,7 +254,6 @@ Preprocessing lab
    :text: LAB
    :link: https://colab.research.google.com/drive/1Fn0fZ2HdctgrS_kcgwhaf1nYbqptrjsu?usp=sharing
 
-After preprocessing our data, the next step will be to feed it into our large language model. The concern here is whether our LLM will have a very good understanding of our cleaned data. In this context, we will discuss an important concept known as Tokenization.
 
 Tokenization algorithms
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
