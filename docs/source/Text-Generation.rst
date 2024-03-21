@@ -10,7 +10,7 @@ Text generation involves creating coherent and contextually relevant text based 
 
 Text summarization, on the other hand, aims to condense a larger body of text into a concise summary, preserving the original message and critical information.
 
-.. figure:: ../Images/texttotext.png
+.. figure:: ../Images/textotext.png
    :width: 80%
    :alt: Alternative text for the image
    :align: center
