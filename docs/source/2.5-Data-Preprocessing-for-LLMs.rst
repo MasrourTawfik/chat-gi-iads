@@ -335,7 +335,7 @@ Skip-gram is a slightly different word embedding technique in comparison to CBOW
     :alt: SentencePiece Tokenization
 
 .. button::
-   :text: CBOW & Skip-gram LAB
+   :text: LAB
    :link: https://colab.research.google.com/drive/1CyXTqirDsrtinleQc-s6ArX-Dpi0Lo7Q?usp=sharing
 
 

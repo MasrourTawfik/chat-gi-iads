@@ -101,9 +101,9 @@ For example simulating predator-prey dynamics in an ecosystem.
 Prompts:
 --------
 
-.. Prompt:: Produce 10 exemplars for sentiment analysis. Examples are categorized as either positive or negative. Produce 2 negative examples and 8 positive examples. Use this format for the examples: Q: <sentence> A: <sentiment>
+Prompt:: Produce 10 exemplars for sentiment analysis. Examples are categorized as either positive or negative. Produce 2 negative examples and 8 positive examples. Use this format for the examples: Q: <sentence> A: <sentiment>
 
-.. Output:: 
+Output:: 
    - Q: I just got the best news ever! A: Positive
    - Q: We just got a raise at work! A: Positive
    - Q: I'm so proud of what I accomplished today. A: Positive
@@ -120,7 +120,7 @@ This is very useful. We actually use this example for a different test in anothe
 .. note:: 
    In our case, we generated synthetic data from GPT-4, by the use of the following prompt:
 
-   .. Prompt:: 
+   Prompt:: 
       **Instruction**: As an industrial engineer with extensive expertise in your field, your task is to generate a synthetic dataset that accurately reflects the complexities and nuances of industrial engineering.
       
       **Input**: generate synthetic data about production to be near factual, generate real industrial situations.
