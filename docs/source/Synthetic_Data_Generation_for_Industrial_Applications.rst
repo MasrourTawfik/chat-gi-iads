@@ -11,10 +11,10 @@ Synthetic data is very important for industrial uses because of several key reas
 Here is a mindmap diagram illustrating the importance of data synthesis for industrial 
 applications, specifically for fine-tuning Large Language Models (LLMs):
 
-.. figure:: ../Images/diagram_data_synt_import.png
-   :width: 80%
-   :align: center
-   :alt: Alternative text for the image
+.. .. figure:: ../Images/diagram_data_synt_import.png
+..    :width: 80%
+..    :align: center
+..    :alt: Alternative text for the image
 
 1. Overcoming Data Scarcity
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
