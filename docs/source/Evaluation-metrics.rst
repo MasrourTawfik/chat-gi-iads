@@ -70,6 +70,9 @@ Reflects how well the chatbot maintains users' interest or participation over ti
 ************
 The average time taken by the chatbot to respond to user inputs. Faster response times are typically associated with better user experiences but must also balance the need for accurate and thoughtful responses.
 
+`Hands on for Evaluation Metrics`_
+
+.. _Hands on for Evaluation Metrics: https://colab.research.google.com/drive/1UGrTp6g64OEzD0a27X7D8HhqwZc--hN_?usp=sharing
 
 Benchmarking LLM Performance
 ----------------------
