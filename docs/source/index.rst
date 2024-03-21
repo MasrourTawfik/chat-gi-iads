@@ -18,6 +18,7 @@ Welcome to CHAT GI-IADS's documentation!
    Synthetic_Data_Generation_for_Industrial_Applications
    2.8.part
    Evaluation-metrics
+   
 
    
    

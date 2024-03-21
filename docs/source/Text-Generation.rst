@@ -35,8 +35,7 @@ A ranking algorithm is used, which assigns scores to each of the sentences in th
 There are various ways through which the ranking of sentences can be performed.
  -TF-IDF (term frequency-inverse document frequency)
  -Graph-based methods such as TextRank
- -Machine learning-based methods such as Support Vector Machines (SVM)
-and Random Forests.
+ -Machine learning-based methods such as Support Vector Machines (SVM) and Random Forests.
 
 Example:Extractive Summarization
 
