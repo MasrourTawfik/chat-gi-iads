@@ -20,7 +20,7 @@ Input
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 In a Transformer model, the input is a sequence of words or tokens, commonly referred to as the context or prompt. 
 
-.. figure:: ../Images/inputs.png
+.. figure:: ../Images/input.png
    :width: 80%
    :alt: Transformer architecture
    :align: center
@@ -28,22 +28,20 @@ In a Transformer model, the input is a sequence of words or tokens, commonly ref
 
 Tokenization
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Tokenization is the process of systematically decomposing input text into a se-
-quence of tokens, which can include words, subwords, punctuation marks, and
-individual characters. Each token is then mapped to a unique identifier, linking
-it to a comprehensive and predefined vocabulary.
+Tokenization is the process of systematically decomposing input text into a sequence of tokens, which can include words, subwords, punctuation marks, and
+individual characters. Each token is then mapped to a unique identifier, linking it to a comprehensive and predefined vocabulary.
+
 Note: The tokenizer used during training should be the same one used for
 generating text.
 
-.. figure:: ../Images/Tokenization.png
+.. figure:: ../Images/tokenizationfinal1.png
    :width: 80%
    :alt: Transformer architecture
    :align: center
 
 
    
-
-`Hands On for Tokenization`_.
+`Hands On for Tokenization`_
 
 .. _Hands On for Tokenization: https://colab.research.google.com/drive/1SF_meHmrbrTq7oxVtXQ24GaO67pzjmHl
 
@@ -66,11 +64,9 @@ meaning and contextual nuances of each token within the input sequence.
    From Words to Contextual Embeddings
 
 
+`Hands On for words embeddings`_
 
-`Hands On for words embeddings`_.
-
-.. _Hands On for words embeddings:https://colab.research.google.com/drive/1ZLZ8UTUnAsJHeTW3sZw73XLDBvgJKqhY
-
+.. _Hands On for words embeddings: https://colab.research.google.com/drive/1ZLZ8UTUnAsJHeTW3sZw73XLDBvgJKqhY
 
 
 Positional Encoding
@@ -87,10 +83,10 @@ each position, although other methods can also be used.
    :alt: Positional encoding
    :align: center
 
-   
-`Hands on for Positional encoding`_.
 
-.. _Hands on for Positional encoding:https://colab.research.google.com/drive/10vdBYhhd19sH3Vp5H5SiRpMykBMll_Je
+`Hands on for Positional encoding`_
+
+.. _Hands on for Positional encoding: https://colab.research.google.com/drive/10vdBYhhd19sH3Vp5H5SiRpMykBMll_Je
 
 Core Mechanisms
 ------------------------------
@@ -105,9 +101,16 @@ through learned self-attention weights that are refined during the training pro-
 cess. by adjusting these weights the model can capture implicit patterns and
 dependencies.
 
-`Hands on for Self-Attention Layer`_.
+.. figure:: ../Images/attention.png
+   :alt: Attention weights
+   :align: center
 
-.. _Hands on for Self-Attention Layer:https://colab.research.google.com/drive/1fdr45ZpzuSXa0d3rgkxNrcRiCHMoJQO6#scrollTo=BobDOsxZnhY5
+   Example of an attention map
+
+`Hands on for Self-Attention Layer`_
+
+.. _Hands on for Self-Attention Layer: https://colab.research.google.com/drive/1fdr45ZpzuSXa0d3rgkxNrcRiCHMoJQO6#scrollTo=BobDOsxZnhY5
+
 
 Multi-Head Attention
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -118,9 +121,10 @@ dependently. This design aims for the simultaneous comprehension of various
 language facets, with the number of attention heads varying across models.
 Each head captures different dimensions of the input sequence’s information.
 
-`Hands on for Multi-Head Attention`_.
+`Hands on for Multi-Head Attention`_
 
-.. _Hands on for Multi-Head Attention:{https://colab.research.google.com/drive/1lRHUApEDwL77pG8mmObFovXX_yDSrt1W#scrollTo=Oe_QiFpYw4Mn
+.. _Hands on for Multi-Head Attention: https://colab.research.google.com/drive/1lRHUApEDwL77pG8mmObFovXX_yDSrt1W#scrollTo=Oe_QiFpYw4Mn
+
 Network Layers
 ------------------------------
 
@@ -136,9 +140,9 @@ corresponding tokens in the tokenizer’s dictionary. To make sure that the mode
 not only identifies key patterns through attention but also evaluates and pre-
 dicts the sequence’s structure and content accurately.
 
-`Hands on for Feedforward Neural Network`_.
+`Hands on for Feedforward Neural Network`_
 
-.. _Hands on for Feedforward Neural Network:https://colab.research.google.com/drive/1E70FTFNzPFhO44_FySWmMzZLEa-yI79G
+.. _Hands on for Feedforward Neural Network: https://colab.research.google.com/drive/1E70FTFNzPFhO44_FySWmMzZLEa-yI79G
 
 
 Residual Connections
@@ -149,6 +153,7 @@ layer—be it self-attention or feedforward neural network- to its output prior 
 allows the direct flow of gradients throughout the network, mitigating the van-
 ishing gradient problem and enabling the training of deeper and more complex
 models.
+
 In simpler words:
 Residual connections help the model preserve information from initial layers and
 seamlessly integrating it with the knowledge gained in subsequent layers.
@@ -162,23 +167,25 @@ ensure a mean of zero and a standard deviation of one. This normalization
 process aids in stabilizing the training of deep neural networks by mitigating
 covariate shift, thereby facilitating faster convergence.
 
-`Hands on for Residual Connections & Layer Normalization`_.
+`Hands on for Residual Connections & Layer Normalization`_
 
 .. _Hands on for Residual Connections & Layer Normalization: https://colab.research.google.com/drive/1FqrBfqYe6ouMoWvC_zQaDIyEGsUO0xNR#scrollTo=nPt5jtl67eLQ
-output Layer
+
+
+Output Layer
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The final output is a probability distribution over the vocabulary, representing
-the likelihood of each token being the next word in the sequence.This distribu-
-tion is derived by channeling the output from the last Transformer block through
+the likelihood of each token being the next word in the sequence.This distribution is derived by channeling the output from the last Transformer block through
 a linear layer, which is then processed by a softmax function. This sequence
-of operations transforms the linear layer’s output into a comprehensive proba-
-bility distribution, effectively predicting the next word in the sequence with a
+of operations transforms the linear layer’s output into a comprehensive probability distribution, effectively predicting the next word in the sequence with a
 quantifiable likelihood for each possible token.
 
-`Full example here`_.
+`Full example here`_
 
-.. _full example here:https://colab.research.google.com/drive/1X4GlWya1NUkZlucbe6hc_y9_3u8Yzb5h#scrollTo=jpkEME0q9x5c
+.. _full example here: https://colab.research.google.com/drive/1X4GlWya1NUkZlucbe6hc_y9_3u8Yzb5h#scrollTo=jpkEME0q9x5c
+
+
 Types of Transformer Architectures
 ====================================
 

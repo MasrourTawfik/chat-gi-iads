@@ -1,0 +1,141 @@
+Building an LLM Chatbot Specialized in Industrial Engineering
+===================================
+
+Defining the Scope and Objectives:
+------------------------------
+
+Understanding Industrial Engineering Needs:
+^^^^^^^^^^^^^^^^^^
+
+•	Figuring out what industrial engineers deal with, like optimizing processes, managing supply chains, ensuring quality, designing facilities, and overseeing operations.
+•	Spotting the challenges they face, such as analyzing data, solving problems, making decisions, and managing projects.
+•	Identifying common questions and issues they encounter, from technical queries to industry trends.
+
+Role of the Chatbot:
+^^^^^^^^^^^^^^^^^^
+•	Providing quick and accurate help to industrial engineers on various topics related to their field especially production, maintenance and quality.
+•	Giving personalized assistance based on users' specific needs and preferences.
+•	Helping industrial engineers connect with others, share knowledge, and support each other.
+•	Making work easier by automating routine tasks and speeding up responses.
+
+Measurable Objectives:
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+•	Make users happier: Collect feedback to ensure the chatbot meets users' needs.
+•	Respond faster: Aim to reduce the time it takes to answer users' questions.
+•	Keep users engaged: Monitor how often users interact with the chatbot and for how long.
+•	Provide reliable information: Keep the chatbot's knowledge up-to-date and accurate.
+•	Improve productivity: Measure how the chatbot affects industrial engineers' efficiency and performance.
+
+Selecting the right LLM, conducting a benchmarking process based on these criteria:
+------------------------------------
+
+   1. Model Size and Complexity. 
+   2. Pre-training and Fine-tuning Capabilities. 
+   3. Domain-Specific Performance. 
+   4. Availability of computational resources for training and deployment.
+
+Exploitation of the already carried out benchmarking: 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+In this part, we explored the work of last promotion and we tried to search other new LLMs especially the most popular and recent ones. ^
+.. image:: docs\Images\bensh.png
+   :width: 100px
+   :height: 100px
+   :align: center
+
+.. Hint::
+      Since the last update of the projet benshmarking last semester to this moment, a lot of open source LLMs saw daylight mainly these two. Now let see how they perform and allign with our needs compared to the previous ones. For more details refer to the LLMs benchmarking.
+
+We will now focus our attention on these models.
+
++--------+------------+-------------+-----------+--------------+
+| Model  | Parameters | Release Date| Use cases | RAM required |
++========+============+=============+===========+==============+
+| Gemma  | 7B         | 02/2024     |           | 24 GB        |
++--------+------------+-------------+-----------+--------------+
+| OLMO   | 7B         | 02/2024     |           | 27.5 GB      |
++--------+------------+-------------+-----------+--------------+
+
+Let discuss the perfomances of GEMMA:
+
+NB: Gemma is Google’s latest open-weight LLM.
+
+Gemma’s performance:
+------------------------
+
+The most notable aspect of Gemma is its impressive performance compared to other popular and widely used open-source models, such as Llama 2 7B and Mistral, as shown in the figure below.
+
+.. figure:: docs\Images\89c53026-6b1d-47eb-a3e9-5bdd73538128.png
+   :width: 100px
+   :height: 100px
+   :align: center
+   Annotated performance comparison from the Gemma technical report (https://storage.googleapis.com/deepmind-media/gemma/gemma-report.pdf).
+
+.. question:: What contributes to Gemma's outstanding performance? 
+
+The reasons are not explicitly stated in the paper, but we assume it's due to:
+
+   1.	The large vocabulary size of 256,000 words (in contrast, Llama has a vocabulary of 32,000 words);
+   2.	The extensive 6 trillion token training dataset (Llama was trained on only one-third of that amount).
+
+Gemma Architecture
+--------------------------
+
+.. question:: What are some of the interesting design choices behind Gemma? 
+
+As mentioned in first question, its vocabulary size (and consequently the embedding matrix size) is very large. 
+
+Next that we discussed the raisons behind GEMMA, This figure shows an architecture overview comparing Gemma to LLama 2 7B and OLMo 7B.
+
+.. figure:: docs\Images\gemma_olmo.png
+   :width: 100px
+   :height: 100px
+   :align: center
+
+Model size:
+-----------------------------
+
+Something else worth noting is that Gemma 2B utilized multi-query attention, whereas Gemma 7B did not. Additionally, Gemma 7B features a relatively large feedforward layer compared to Llama 2, despite having fewer layers in total (28 versus 32). However, despite having fewer layers, the number of parameters in Gemma is quite large.
+Although it is called Gemma 7B, it actually has 9.3 billion parameters in total, and 8.5 billion parameters if your account for weight tying. Weight tying means that it shares the same weights in the input embedding and output projection layer, like GPT-2 and OLMo 1B (OLMO 7B was trained without weight tying).
+
+.. Hint:: GEGLU activation function, for more details...
+
+Data Collection and Preparation:
+--------------------------------------------------
+Gathering Data about three main domains. 
+    • Production.
+    • Quality. 
+    • Maintenance.
+
+
+
+To generate data or insights from GPT-4 regarding "Production," "Quality," and "Maintenance," you can craft specific and structured prompts that guide the model to provide the type of information you're looking for. Here’s how you might approach each topic:
+
+Production:
+^^^^^^^^^^
+
+   For information or data related to production, you should specify the industry or type of production you're interested in, along with any aspects you want to know more about, such as efficiency, technology, or methodologies. A detailed prompt ensures more accurate and useful responses.
+
+
+.. Prompt:: Input: Can you provide an overview of the latest advancements in automotive production technology, focusing on how these have improved efficiency and reduced costs? Please include examples of technologies and their impacts.Output: Json file <input, context, output>and the number of Situations is 500
+
+Quality:
+^^^^^^^^^^^^^^^^^^^^
+   When seeking insights on quality, clarify whether you're interested in quality control, quality assurance, or a specific aspect of quality related to a product, service, or process. Mentioning the context (industry, product type, etc.) helps generate more relevant information.
+.. Prompt::  Input: Describe the best practices for maintaining high-quality standards in the software development industry, including any innovative tools or methodologies currently being adopted to ensure product quality.Output: Json file <input, context, output>and the number of situations is 500
+
+Maintenance:
+^^^^^^^^^^^^^^^^^^^^
+   For maintenance, specify the type of maintenance you're referring to (e.g., preventive, corrective, predictive) and the context (e.g., machinery, software, infrastructure). Detailing the scope will guide the model to provide targeted strategies, technologies, or case studies.
+
+.. Prompt:: Input: What are the most effective predictive maintenance strategies for heavy machinery in the construction industry? Please detail technologies used, how they are applied, and the benefits of adopting these strategies.Output: Json file <input, context, output>and the number of questions is 500
+
+.. note:: General Tips for Prompting:
+    • Be Specific: The more detailed your prompt, the more tailored and useful the response will be.
+    • Provide Context: Mentioning the industry, product type, or specific area of interest helps in generating relevant answers.
+    • Request Examples: Asking for examples or case studies makes the information more practical and applicable.
+    • Clarify the Type of Data: If you're looking for quantitative data, trends, or qualitative insights, state that in your prompt.
+
+
+
