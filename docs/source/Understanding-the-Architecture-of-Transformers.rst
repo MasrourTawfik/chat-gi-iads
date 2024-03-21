@@ -140,6 +140,11 @@ corresponding tokens in the tokenizer’s dictionary. To make sure that the mode
 not only identifies key patterns through attention but also evaluates and pre-
 dicts the sequence’s structure and content accurately.
 
+.. figure:: ../Images/ffnn.png
+   :width: 100%
+   :alt: FFNN objectives
+   :align: center 
+
 `Hands on for Feedforward Neural Network`_
 
 .. _Hands on for Feedforward Neural Network: https://colab.research.google.com/drive/1E70FTFNzPFhO44_FySWmMzZLEa-yI79G
@@ -150,8 +155,7 @@ Residual Connections
 
 Residual connections or skip connections are used to add the input of each sub-
 layer—be it self-attention or feedforward neural network- to its output prior to the application of layer normalization. this technique is important because it
-allows the direct flow of gradients throughout the network, mitigating the van-
-ishing gradient problem and enabling the training of deeper and more complex
+allows the direct flow of gradients throughout the network, mitigating the vanishing gradient problem and enabling the training of deeper and more complex
 models.
 
 In simpler words:
