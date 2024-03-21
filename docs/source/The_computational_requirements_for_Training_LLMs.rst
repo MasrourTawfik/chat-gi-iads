@@ -71,9 +71,9 @@ mobile devices or embedded systems.
 capacity to memorize the training data.
 Model Pruning works by identifying and removing the parameters that contribute least to the
 model’s performance. There are several techniques for model pruning, including:
- |1. Weight Pruning: This technique removes the smallest weights in the model. The remaining weights are then retrained to compensate for the pruned weights.
- |2. Neuron Pruning: This technique removes entire neurons, along with their incoming and outgoing connections. The remaining neurons are then retrained.
- |3. Structured Pruning: This technique removes structured sets of parameters, such as entire layers or channels. This can lead to more efficient models, as the remaining structure can be more easily optimized by hardware accelerators.
+ |1. Weight Pruning: This technique removes the smallest weights in the model, the remaining weights are then retrained to compensate for the pruned weights.
+ |2. Neuron Pruning: This technique removes entire neurons, along with their incoming and outgoing connections, the remaining neurons are then retrained.
+ |3. Structured Pruning: This technique removes structured sets of parameters, such as entire layers or channels, this can lead to more efficient models, as the remaining structure can be more easily optimized by hardware accelerators.
 
  |In practice, model pruning often involves a trade-off between model size and performance. While
 pruning can significantly reduce the size of a model, it can also lead to a decrease in performance.
@@ -85,5 +85,5 @@ create efficient models for mobile devices.
 In this lab example, we focus specifically on magnitude-based weight pruning, a technique that targets the removal of the smallest weights within a model. By selectively eliminating these less influential parameters and subsequently fine-tuning the remaining ones, we aim to demonstrate how this approach can effectively reduce model complexity while preserving performance levels. Through hands-on experimentation, participants will gain practical insights into the intricacies of weight pruning and its implications for model efficiency and deployment in resource-constrained environments.
 
 .. button::
-   :text: CHAT GI-IADS
+   :text: Hands on Lab
    :link: https://colab.research.google.com/drive/1ghXOWNWC8kmzKTDMm_YgBcOFkG3Jow_9?usp=drive_link
