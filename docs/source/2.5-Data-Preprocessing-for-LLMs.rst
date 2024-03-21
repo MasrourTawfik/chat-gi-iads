@@ -278,6 +278,13 @@ BPE algorithm
 
    <iframe width="560" height="315" src="https://www.youtube.com/embed/i0D5GbudU6c" frameborder="0" allowfullscreen></iframe>
 
+BPE lab
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. button::
+   :text: BPE LAB
+   :link: https://colab.research.google.com/drive/1pWYPIPiazp8btdIDxOYl_zeRnNa_G3Jv#scrollTo=7H6paTWiF14B
+
+
 Sentence Piece Tokenization
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 SentencePiece is an unsupervised text tokenizer(a tokenizer breaks down text into smaller subword units) and detokenizer(a detokenizer reconstructs the original text from a sequence of subword units, ensuring proper formatting and coherence) primarily designed for Neural Network-based text generation tasks. It supports multiple languages with a single model and can tokenize text into subwords, making it versatile for various NLP tasks.
