@@ -91,3 +91,22 @@ In this lab example, we focus specifically on magnitude-based weight pruning, a 
 .. button::
    :text: Hands on Lab
    :link: https://colab.research.google.com/drive/1ghXOWNWC8kmzKTDMm_YgBcOFkG3Jow_9?usp=drive_link
+
+Quantization
+~~~~~~~~~~~~
+The term quantization referes to the process of mapping continuous infinite values to a smaller set of
+discrete finite values. In the context of LLMs, it refers to the process of converting the weights of the
+model from higher precision data types to lower-precision ones. Quantization significantly decreases the model’s size by reducing the number of bits required for each model weight. A typical scenario
+would be the reduction of the weights from FP16 (16-bit Floating-point) to INT4 (4-bit Integer). This
+allows for models to run on cheaper hardware and/or with higher speed. By reducing the precision of
+the weights, the overall quality of the LLM can also suffer some impact.
+Studies show that this impact varies depending on the techniques used and that larger models suffer
+less from change in precision. Larger models (over 70B) are able to maintain their capacities even
+when converted to 4-bit, with some techniques such as the NF4 suggesting no impact on their performance. Therefore, 4-bit appears to be the best compromise between performance and size/speed for
+these larger models, while 6 or 8-bit might be better for smaller models
+
+.. figure:: ../Images/quantization.png
+   :width: 80%
+   :align: center
+   :alt: Alternative text for the image
+   
