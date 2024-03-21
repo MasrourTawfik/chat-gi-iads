@@ -120,7 +120,7 @@ This is very useful. We actually use this example for a different test in anothe
 .. note:: 
    In our case, we generated synthetic data from GPT-4, by the use of the following prompt:
 
-   .. Prompt:: 
+   Prompt:: 
       **Instruction**: As an industrial engineer with extensive expertise in your field, your task is to generate a synthetic dataset that accurately reflects the complexities and nuances of industrial engineering.
       
       **Input**: generate synthetic data about production to be near factual, generate real industrial situations.
