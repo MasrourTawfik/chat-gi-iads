@@ -13,6 +13,10 @@ Welcome to CHAT GI-IADS's documentation!
    file1
    Understanding-the-Architecture-of-Transformers
    The_computational_requirements_for_Training_LLMs
+   Synthetic data generation for industrial applications
+   2.8. Building an LLM Chatbot Specialized in Industrial Engineering
+
+
 
 
    
