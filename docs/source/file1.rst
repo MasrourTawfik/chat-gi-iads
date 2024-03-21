@@ -16,7 +16,7 @@ Large Language Models (LLMs), a significant advancement in NLP, leverage increas
    :alt: Alternative text for the image
    :align: center
 
-   NLp use cases
+   NLp use cases.
 
 
 Sentiment Analysis
