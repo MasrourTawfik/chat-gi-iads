@@ -171,7 +171,7 @@ covariate shift, thereby facilitating faster convergence.
 .. _Hands on for Residual Connections & Layer Normalization: https://colab.research.google.com/drive/1FqrBfqYe6ouMoWvC_zQaDIyEGsUO0xNR#scrollTo=nPt5jtl67eLQ
 
 
-output Layer
+Output Layer
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The final output is a probability distribution over the vocabulary, representing
