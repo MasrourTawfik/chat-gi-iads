@@ -16,9 +16,6 @@ applications, specifically for fine-tuning Large Language Models (LLMs):
    :align: center
    :alt: Alternative text for the image
 
-
-
-
 1. Overcoming Data Scarcity
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
