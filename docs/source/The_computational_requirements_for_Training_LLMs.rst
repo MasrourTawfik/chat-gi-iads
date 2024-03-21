@@ -63,13 +63,20 @@ or weights. This technique is particularly useful in deep learning where models 
 parameters, leading to high computational costs and memory requirements. By pruning these models,
 data scientists can achieve similar performance with a smaller, more efficient model.
 Model Pruning is crucial for several reasons:
- |1. Efficiency: Pruned models require less computational resources and memory, making them faster and more efficient to train and deploy
+
+ |1. Efficiency: Pruned models require less computational resources and memory, making them faster and more efficient to train and deploy.
+
  |2. Deployment: Pruned models are easier to deploy on devices with limited resources, such as mobile devices or embedded systems.
+
  |3. Overfitting: Pruning can help reduce overfitting by simplifying the model and reducing its capacity to memorize the training data.
+
 Model Pruning works by identifying and removing the parameters that contribute least to the
 model’s performance. There are several techniques for model pruning, including:
+
  |1. Weight Pruning: This technique removes the smallest weights in the model, the remaining weights are then retrained to compensate for the pruned weights.
+
  |2. Neuron Pruning: This technique removes entire neurons, along with their incoming and outgoing connections, the remaining neurons are then retrained.
+
  |3. Structured Pruning: This technique removes structured sets of parameters, such as entire layers or channels, this can lead to more efficient models, as the remaining structure can be more easily optimized by hardware accelerators.
 
 In practice, model pruning often involves a trade-off between model size and performance. While
