@@ -128,13 +128,21 @@ How AI Uses Context for Text Generation?
 ^^^^^^^^^^^^^^^^^
 
 Preceding Text:
+***********
+
 The AI uses the sentences or paragraphs that come before the ambiguous sentence to gauge the topic and the direction of the narrative. Is the focus on astronomy, or is it on people and their actions?
 
 Subsequent Text:
+**************
+
 If there's text following the ambiguous sentence, the AI can also use that information to retroactively understand the context better and align its continuations accordingly.
 
 Training Data:
+**********
+
 The vast amount of text data on which these models are trained includes numerous examples of similar structures used in different contexts. This training helps the model predict the most likely continuation based on the probabilities learned from this data.
 
 Prompt Design:
+********
+
 The way a prompt is structured can significantly influence the AI's interpretation. By explicitly mentioning the context or adding details leading up to the ambiguous sentence, one can guide the AI towards the intended meaning.
