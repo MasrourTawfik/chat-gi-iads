@@ -69,21 +69,22 @@ Removing noise and normalization
 Removing noise from text and standardizing it are crucial steps for improving the quality of our textual data and enhancing the performance of the natural language processing tasks. Many techniques are used to fix this issue.
 
 1. Lowercasing
+~~~~~~~~~~~~~~~~~~~~~~
 
    Lowercasing is a text preprocessing step where all letters in the text are converted to lowercase. This step is implemented so that the algorithm does not treat the same words differently in different situations.
    
    .. code-block:: python
-      :linenos:
+      
 
       string = "ConvErT ALL tO LoWErCASe"
       print(string.lower())
 
 2. Removing Punctuation and Special Characters
-
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    Punctuation and special characters removal is a text preprocessing step where you remove all punctuation marks (such as periods, commas, exclamation marks, emojis etc.) from the text to simplify it and focus on the words themselves.
    
    .. code-block:: python
-      :linenos:
+      
 
       test_str = "Gfg, is best : for ! Geeks ;"
       print("The original string is : " + test_str)
@@ -94,12 +95,12 @@ Removing noise from text and standardizing it are crucial steps for improving th
       print("The string after punctuation filter : " + test_str)
 
 3. Stop-words Removal 
-
+~~~~~~~~~~~~~~~~~~~~~~~~~
    Stop-words are the most common words in any language (like articles, prepositions, pronouns, conjunctions, etc) and do not add much information to the text. Examples of a few stop words in English are “the”, “a”, “an”, “so”, “what”.
    For this technique, we will use the NLTK library.
       
    .. code-block:: python
-      :linenos:
+      
 
       from nltk.corpus import stopwords
       from nltk.tokenize import word_tokenize
@@ -117,11 +118,11 @@ Removing noise from text and standardizing it are crucial steps for improving th
       print(filtered_sentence)
 
 4. Removing URL
-
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    This preprocessing step is to remove any URLs present in the data.
       
    .. code-block:: python
-      :linenos:
+      
 
       import re
       def remove_urls(text, replacement_text="[URL REMOVED]"):
@@ -137,11 +138,11 @@ Removing noise from text and standardizing it are crucial steps for improving th
       print(output_text)
 
 5. Removal of HTML Tags
-
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    It’s important to remove HTML tags from the text data. Indeed, if we work with text data obtained from HTML sources, the text may contain HTML tags, which are not desirable for text analysis. 
       
    .. code-block:: python
-      :linenos:
+      
 
       import re
       from bs4 import BeautifulSoup
@@ -157,11 +158,11 @@ Removing noise from text and standardizing it are crucial steps for improving th
       print("Text after HTML tag removal (BeautifulSoup):", cleaned_text_bs4)
 
 6. Stemming
-
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    Stemming is a linguistic normalization that simplifies words to their base form or root by removing prefixes and suffixes, helping the natural language processing and information retrieval.
    
    .. code-block:: python
-      :linenos:
+      
 
       import nltk
       from nltk.stem import PorterStemmer
@@ -174,6 +175,7 @@ Removing noise from text and standardizing it are crucial steps for improving th
          print("{0:20}{1:20}".format(word, ps.stem(word)))
 
 7. Lemmatization
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
    Lemmatization simplifies words to their base or root form, known as the lemma, making it easier to analyze a word. The difference between stemming and lemmatization is that the latter transforms words to their standardized form and aims to return a valid word by applying linguistic rules and context.
    
@@ -184,7 +186,7 @@ Removing noise from text and standardizing it are crucial steps for improving th
 
 
    .. code-block:: python
-      :linenos:
+      
 
       from nltk.stem import WordNetLemmatizer
       nltk.download("wordnet")
@@ -196,11 +198,12 @@ Removing noise from text and standardizing it are crucial steps for improving th
          print("{0:20}{1:20}".format(word, wnl.lemmatize(word, pos="v")))
 
 8.Removing redundant whitespace
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
  Removing redundant whitespace is  an essential step in text preprocessing to ensure a clean and standardized representation of the text. Extra whitespaces can lead to inconsistencies and negatively impact the performance of natural language processing (NLP) tasks.
 
    .. code-block:: python
-      :linenos:
+      
 
       import re
 
@@ -210,8 +213,9 @@ Removing noise from text and standardizing it are crucial steps for improving th
       print("The strings after extra space removal : " + str(res))
 
 9.Removing numbers
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    .. code-block:: python
-      :linenos:
+      
 
       ini_string = "Giant12for17giant"
       print("initial string : ", ini_string)
