@@ -24,30 +24,41 @@ Data cleaning methods
 ------------------------
 1. Handling missing values
 ------------------------------
-   Missing values can occur when there is no data for some observations or features in a dataset. These gaps in data can lead to inaccurate predictions or a biased model.
-   To handle missing value, we have the following techniques:
+   In any dataset, missing values can crop up when certain observations or features lack data. These gaps pose a significant challenge, potentially skewing predictions and introducing bias into our models. To prevent this, we need to address missing values effectively, ensuring our predictions remain reliable and accurate.
 
 
 2. Noise reduction
 -----------------------------------
-   Noise in data refers to irrelevant or random information that can distort the true pattern and lead to inaccurate model predictions.
+Think of data noise as those pesky distractions – irrelevant or random bits of information that sneak into our dataset. They're like static on a radio, distorting the true signal and making it harder for our models to predict accurately. By filtering out this noise, we can unveil the genuine patterns hiding within our data and make more reliable predictions.
 
 3. Consistency checks
 -----------------------------------
-   Consistency checks ensure the data across the dataset adheres to consistent formats, rules, or conventions. Inconsistencies are caused by data entry errors or system glitches. These inconsistencies can lead to misleading results when training models.
+Consistency checks are like quality control for data, making sure everything follows the same formats and rules. When data doesn't match up due to errors or glitches, it can cause confusion and inaccuracies in model training.
 
 4. Deduplication
 -----------------------------------
-   Duplicated data can occur for various reasons including data entry errors or system glitches. These duplicates can skew the data distribution and lead to biased model training. By removing duplicates, the dataset becomes more accurate and representative, improving the performance of the LLM.
+Duplicates in data often stem from errors during data entry or glitches in the system. These duplicates can skew the distribution of data and result in biased model training. By eliminating duplicates, we ensure the dataset is more accurate and representative, thereby improving the performance of the LLM.
 
-      .. code-block:: python
-         :linenos:
+.. code-block:: python
+    :linenos:
 
-         data = {'Name': ['John', 'Alice', 'Bob', 'Charlie', 'John', 'Eve', 'Alice'],'Age': [25, 30, 22, 35, 25, 28, 30]}
-         d1= pd.DataFrame(data)
-         print(d1)
-         d2 = d1.drop_duplicates()
-         print(d2)
+    import pandas as pd
+
+    # Create a DataFrame from a dictionary
+    data = {'Name': ['John', 'Alice', 'Bob', 'Charlie', 'John', 'Eve', 'Alice'],
+            'Age': [25, 30, 22, 35, 25, 28, 30]}
+    df = pd.DataFrame(data)
+
+    # Display the original DataFrame
+    print("Original DataFrame:")
+    print(df)
+
+    # Remove duplicate rows
+    df_no_duplicates = df.drop_duplicates()
+
+    # Display the DataFrame after removing duplicates
+    print("DataFrame after removing duplicates:")
+    print(df_no_duplicates)
 
 Text cleaning and normalization
 ========================================
