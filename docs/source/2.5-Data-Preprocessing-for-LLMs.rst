@@ -24,52 +24,21 @@ Data cleaning is a fundamental aspect of data pre-processing for training LLMs. 
 Data cleaning methods 
 ------------------------
 1. Handling missing values
-   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+------------------------------
    Missing values can occur when there is no data for some observations or features in a dataset. These gaps in data can lead to inaccurate predictions or a biased model.
    To handle missing value, we have the following techniques:
-       
-   1. Data imputation: is the substitution of an estimated value that is as realistic as possible for a missing or problematic data item.
-        
-      .. code-block:: python
-         :linenos:
 
-         import pandas as pd
-         import numpy as np
-         from sklearn.impute import SimpleImputer
-         
-         data = {'A': [1, 2, np.nan, 6, 14],'B': [11, np.nan, 14, 13, 10],'C': [2, 24, np.nan, 33, 84]}
-         df = pd.DataFrame(data)
-         print(df)
-         
-         imputer_mean = SimpleImputer(strategy='mean')
-         df_mean_imputed = pd.DataFrame(imputer_mean.fit_transform(df), columns=df.columns)
-         print(df_mean_imputed)
-       
-   2. Deletion: This involves removing rows or columns with missing values.
-
-      .. code-block:: python
-         :linenos:
-
-         import pandas as pd
-         import numpy as np
-
-         data = {'A': [1, 2, np.nan, 6, 14],'B': [11, np.nan, 14, 13, 10],'C': [2, 24, np.nan, 33, 84]}
-         df = pd.DataFrame(data)
-         print(df)
-
-         imputed = df.dropna()
-         print(imputed)
 
 2. Noise reduction
-   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-----------------------------------
    Noise in data refers to irrelevant or random information that can distort the true pattern and lead to inaccurate model predictions.
 
 3. Consistency checks
-   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-----------------------------------
    Consistency checks ensure the data across the dataset adheres to consistent formats, rules, or conventions. Inconsistencies are caused by data entry errors or system glitches. These inconsistencies can lead to misleading results when training models.
 
 4. Deduplication
-   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-----------------------------------
    Duplicated data can occur for various reasons including data entry errors or system glitches. These duplicates can skew the data distribution and lead to biased model training. By removing duplicates, the dataset becomes more accurate and representative, improving the performance of the LLM.
 
       .. code-block:: python
