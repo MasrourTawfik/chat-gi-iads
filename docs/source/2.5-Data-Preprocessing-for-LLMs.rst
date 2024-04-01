@@ -1,13 +1,16 @@
 Data preprocessing for LLMs
 ==================================
-
-Data is a collection of discrete values that convey information, describing quantity, quality, fact, statistics, other basic units of meaning, or simply sequences of symbols that may be further interpreted.
+Data: What's It All About?
+---------------------------
+Data is information collected or generated for analysis and interpretation. It encompasses a wide range of formats, including numerical values, textual content, images, and more. In the realm of computing and analysis, data serves as the cornerstone for deriving insights, facilitating informed decision-making, and driving innovation.
 
 .. figure:: ../Images/DataTypes.jpeg
    :width: 80%
    :align: center
    :alt: Alternative text for the image
 
+Data Preprocessing and LLMs
+-----------------------------
 Data preprocessing is a pivotal phase in our pipeline, essential for achieving high-quality results. It encompasses refining raw text data to ensure smoother training, faster convergence, and superior model performance. By standardizing input data and employing specialized techniques tailored for large language models, we effectively reduce complexity and enhance overall efficiency.
 
 
