@@ -8,9 +8,8 @@ Data is a collection of discrete values that convey information, describing quan
    :align: center
    :alt: Alternative text for the image
 
-Data preprocessing is a crucial step in our pipeline since a bad data preprocessing leads to bad results. It involves a series of steps to prepare the raw text data for training. 
-Effective preprocessing contributes to smoother training, faster convergence, and improved model performance. The goal is to standardize the input data to reduce the complexity that the model needs to handle.
-Data preprocessing for large language model involves prominent techniques to pre-process its data.
+Data preprocessing is a pivotal phase in our pipeline, essential for achieving high-quality results. It encompasses refining raw text data to ensure smoother training, faster convergence, and superior model performance. By standardizing input data and employing specialized techniques tailored for large language models, we effectively reduce complexity and enhance overall efficiency.
+
 
 .. figure:: ../Images/Data-Preprocessing-for-LLMs.jpg
    :width: 80%
