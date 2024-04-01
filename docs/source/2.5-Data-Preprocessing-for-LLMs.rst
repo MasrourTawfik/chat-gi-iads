@@ -18,7 +18,7 @@ Data preprocessing for large language model involves prominent techniques to pre
    :alt: Alternative text for the image
 
 Data cleaning
-------------------------
+============================
 Data cleaning is a fundamental aspect of data pre-processing for training LLMs. This technique involves identifying and rectifying inaccuracies, inconsistencies, and irrelevant elements within the raw text data. 
 
 Data cleaning methods 
@@ -51,7 +51,7 @@ Data cleaning methods
          print(d2)
 
 Text cleaning and normalization
--------------------------------
+========================================
 Removing noise and normalization 
 -----------------------------
 Removing noise from text and standardizing it are crucial steps for improving the quality of our textual data and enhancing the performance of the natural language processing tasks. Many techniques are used to fix this issue.
