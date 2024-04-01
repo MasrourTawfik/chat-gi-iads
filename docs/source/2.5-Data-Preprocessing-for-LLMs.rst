@@ -20,7 +20,7 @@ Data cleaning
 ============================
 Data cleaning is a fundamental aspect of data pre-processing for training LLMs. This technique involves identifying and rectifying inaccuracies, inconsistencies, and irrelevant elements within the raw text data. 
 
-Data cleaning methods 
+Data cleaning methods :
 ------------------------
 1. Handling missing values
 ------------------------------
@@ -29,15 +29,15 @@ Data cleaning methods
 
 2. Noise reduction
 -----------------------------------
-Think of data noise as those pesky distractions – irrelevant or random bits of information that sneak into our dataset. They're like static on a radio, distorting the true signal and making it harder for our models to predict accurately. By filtering out this noise, we can unveil the genuine patterns hiding within our data and make more reliable predictions.
+   Think of data noise as those pesky distractions – irrelevant or random bits of information that sneak into our dataset. They're like static on a radio, distorting the true signal and making it harder for our models to predict accurately. By filtering out this noise, we can unveil the genuine patterns hiding within our data and make more reliable predictions.
 
 3. Consistency checks
 -----------------------------------
-Consistency checks are like quality control for data, making sure everything follows the same formats and rules. When data doesn't match up due to errors or glitches, it can cause confusion and inaccuracies in model training.
+   Consistency checks are like quality control for data, making sure everything follows the same formats and rules. When data doesn't match up due to errors or glitches, it can cause confusion and inaccuracies in model training.
 
 4. Deduplication
 -----------------------------------
-Duplicates in data often stem from errors during data entry or glitches in the system. These duplicates can skew the distribution of data and result in biased model training. By eliminating duplicates, we ensure the dataset is more accurate and representative, thereby improving the performance of the LLM.
+   Duplicates in data often stem from errors during data entry or glitches in the system. These duplicates can skew the distribution of data and result in biased model training. By eliminating duplicates, we ensure the dataset is more accurate and representative, thereby improving the performance of the LLM.
 
 .. code-block:: python
     :linenos:
@@ -62,6 +62,7 @@ Duplicates in data often stem from errors during data entry or glitches in the s
 
 Text cleaning and normalization
 ========================================
+
 Removing noise and normalization 
 -----------------------------
 Removing noise from text and standardizing it are crucial steps for improving the quality of our textual data and enhancing the performance of the natural language processing tasks. Many techniques are used to fix this issue.
