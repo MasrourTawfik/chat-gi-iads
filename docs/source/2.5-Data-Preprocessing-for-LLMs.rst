@@ -29,7 +29,6 @@ Data cleaning methods :
 ------------------------------
    In any dataset, missing values can crop up when certain observations or features lack data. These gaps pose a significant challenge, potentially skewing predictions and introducing bias into our models. To prevent this, we need to address missing values effectively, ensuring our predictions remain reliable and accurate.
 
-
 2. Noise reduction
 -----------------------------------
    Think of data noise as those pesky distractions – irrelevant or random bits of information that sneak into our dataset. They're like static on a radio, distorting the true signal and making it harder for our models to predict accurately. By filtering out this noise, we can unveil the genuine patterns hiding within our data and make more reliable predictions.
