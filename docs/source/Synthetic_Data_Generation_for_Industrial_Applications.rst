@@ -90,7 +90,7 @@ Agent-based modeling is a simulation technique where individual agents interact 
 For example simulating predator-prey dynamics in an ecosystem.
 
 .. figure:: ../Images/Models_syn.png
-   :width: 50%
+   :width: 100%
    :align: center
    :alt: 
 
@@ -127,7 +127,8 @@ This is very useful. We actually use this example for a different test in anothe
       
       **Output**: Json file <input, context, output> and the number of questions is 500.
    
-   The output was our json file containing synthetic data.
+   The output was our json file containing synthetic data. 
+
 
 
 
