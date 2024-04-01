@@ -43,8 +43,7 @@ Data cleaning methods :
    Duplicates in data often stem from errors during data entry or glitches in the system. These duplicates can skew the distribution of data and result in biased model training. By eliminating duplicates, we ensure the dataset is more accurate and representative, thereby improving the performance of the LLM.
 
 .. code-block:: python
-    :linenos:
-
+    
     import pandas as pd
 
     # Create a DataFrame from a dictionary
