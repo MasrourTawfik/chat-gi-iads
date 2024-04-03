@@ -1,4 +1,4 @@
-Mistral 7B Tutorial: A Step-by-Step Guide to Using and Fine-Tuning Mistral 7B
+Mistral 7B:Use and fine-tune
 =============================================================
 Know that you leard from this documentation, it is time to applicate. 
 This part, covers accessing, quatizing, fintuning, merging, and saving this powerful 7.3 billion parameter open-source language model.
@@ -298,3 +298,4 @@ Let’s generate the response for another prompt.
     prompt = "What is Datacamp Career track?"
     result = pipe(f"<s>[INST] {prompt} [/INST]")
     print(result[0]['generated_text'])
+
