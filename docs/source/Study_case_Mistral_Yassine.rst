@@ -10,7 +10,7 @@ Mistral 7B is a new 7.3 billion parameter language model that represents a major
 
 .. note:: 
 
-    Remarkably, Mistral 7B approaches the performance of CodeLlama 7B on code tasks while remaining highly capable at English language tasks. This balanced performance is achieved through two key mechanisms. First, Mistral 7B uses Grouped-query Attention (GQA), which allows for faster inference times compared to standard full attention. Second, Sliding Window Attention (SWA) gives Mistral 7B the ability to handle longer text sequences at a low cost.
+    Remarkably, Mistral 7B approaches the performance of Code Llama 7B on code tasks while remaining highly capable at English__ language__ tasks__. This balanced performance is achieved through two key mechanisms. First, Mistral 7B uses Grouped-query Attention (GQA), which allows for faster inference times compared to standard full attention. Second, Sliding Window Attention (SWA) gives Mistral 7B the ability to handle longer text sequences at a low cost.
 
 Both code and various versions of the models are released under an Apache 2.0 license, allowing it to be used without restrictions. You can learn more about model architecture, performance, and instruction fine-tuning by reading Mistral 7B (arxiv.org) research paper.
 
