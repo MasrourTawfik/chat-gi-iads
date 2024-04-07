@@ -27,5 +27,3 @@ Large Language Models (LLMs) have a wide range of applications across various do
 - **Text Completion and Autocorrection** 
 
 - **Personalized Recommendations** 
-
-- **Legal and Medical Document Analysis** 
