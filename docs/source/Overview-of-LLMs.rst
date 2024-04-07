@@ -8,7 +8,7 @@ Large Language Models (LLMs) can be fine-tuned for specific tasks, improving per
  Applications of Large Language Models
 -------------------------------------
 
-Large Language Models (LLMs) have a wide range of applications across various domains. Here are some key areas where LLMs are commonly used:
+Large Language Models (LLMs) are commonly used in :
 
 - **Natural Language Processing (NLP)**
 
