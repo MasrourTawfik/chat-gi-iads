@@ -149,6 +149,7 @@ After that, we will load the necessary modules for effective fine-tuning of the 
     Note that we are using Kaggle Notebook to fine-tune our model. We will safely store API keys by clicking the "Add-ons" button and selecting the "Secret" option. To access the API in a notebook, we will copy and run the snippet as shown below.
 
 In our case, we will save Hugging Face and Weights and Biases API keys and access them in the Kaggle notebook.
+
 .. code-block:: python
 
     from kaggle_secrets import UserSecretsClient
@@ -157,6 +158,7 @@ In our case, we will save Hugging Face and Weights and Biases API keys and acces
     secret_wandb = user_secrets.get_secret("wandb")
 
 We will use the Hugging Face API to save and push the model to the Hugging Face Hub.
+
 .. code-block:: bash
 
     huggingface-cli login --token $secret_hf
@@ -317,7 +319,7 @@ Let’s generate the response for another prompt.
 
 
 .. code-block:: python
-    
+
     prompt = "What is Datacamp Career track?"
     result = pipe(f"<s>[INST] {prompt} [/INST]")
     print(result[0]['generated_text'])
