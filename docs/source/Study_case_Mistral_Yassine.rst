@@ -321,7 +321,7 @@ Model evaluation
 You can view system metrics and model performance 
 
 To perform model inference, we need to provide both the model and tokenizer objects to the pipeline. Then, we can provide the prompt in dataset style to the pipeline object.
-^
+
 .. code-block:: python
 
     logging.set_verbosity(logging.CRITICAL)
@@ -330,6 +330,7 @@ To perform model inference, we need to provide both the model and tokenizer obje
     pipe = pipeline(task="text-generation", model=model, tokenizer=tokenizer, max_length=200)
     result = pipe(f"<s>[INST] {prompt} [/INST]")
     print(result[0]['generated_text'])
+
 
 Let’s generate the response for another prompt.
 
