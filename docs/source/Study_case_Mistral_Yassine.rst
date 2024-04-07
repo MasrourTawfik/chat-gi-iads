@@ -1,5 +1,5 @@
 Mistral 7B:Use and fine-tune
-=============================================================
+============================
 Know that you learned from this documentation, it is time to applicate. 
 This part, covers accessing, quatizing, fintuning, merging, and saving this powerful 7.3 billion parameter open-source language model.
 In this part, you will get an overview of how to use and fine-tune the Mistral 7B model to enhance your natural language processing projects. You will learn how to load the model in Kaggle, run inference, quantize, fine-tune, merge it, and push the model to the Hugging Face Hub.
@@ -7,22 +7,24 @@ In this part, you will get an overview of how to use and fine-tune the Mistral 7
 Understanding Mistral 7B
 ---------------------------
 Mistral 7B is a new 7.3 billion parameter language model that represents a major advance in large language model (LLM) capabilities. It has outperformed the 13 billion parameter Llama 2 model on all tasks and outperforms the 34 billion parameter Llama 1 on many benchmarks.
+.. note:: 
 
-Remarkably, Mistral 7B approaches the performance of CodeLlama 7B on code tasks while remaining highly capable at English language tasks. This balanced performance is achieved through two key mechanisms. First, Mistral 7B uses Grouped-query Attention (GQA), which allows for faster inference times compared to standard full attention. Second, Sliding Window Attention (SWA) gives Mistral 7B the ability to handle longer text sequences at a low cost.
+    Remarkably, Mistral 7B approaches the performance of CodeLlama 7B on code tasks while remaining highly capable at English language tasks. This balanced performance is achieved through two key mechanisms. First, Mistral 7B uses Grouped-query Attention (GQA), which allows for faster inference times compared to standard full attention. Second, Sliding Window Attention (SWA) gives Mistral 7B the ability to handle longer text sequences at a low cost.
 
 Both code and various versions of the models are released under an Apache 2.0 license, allowing it to be used without restrictions. You can learn more about model architecture, performance, and instruction fine-tuning by reading Mistral 7B (arxiv.org) research paper.
 
 Accessing Mistral 7B
----------------------------------
-We can access the Mistral 7B on HuggingFace, Vertex AI, Replicate, Sagemaker Jumpstart, and Baseten.
+--------------------
+We can access the Mistral 7B on **HuggingFace**, **Vertex AI**, **Replicate**, **Sagemaker Jumpstart**, and **Baseten**.
 
 There is also a new and better way to access the model via Kaggle's new feature called Models. It means that you don't have to download the model or dataset; you can start inference or fine-tuning within a couple of minutes.
 
 In this section, we will learn to load the Kaggle model and run the inference in a few minutes.
+
 Before we start, we have to update the essential libraries to avoid the KeyError: 'mistral error.
 
 .. code-block:: bash
-    
+
     pip install -q -U transformers
     pip install -q -U accelerate
     pip install -q -U bitsandbytes
@@ -43,6 +45,7 @@ After that, we will create 4-bit quantization with NF4-type configuration using 
 We will now learn to add the Mistral 7B model to our Kaggle Notebook.
 
 .. figure:: 00.JPG
+
    :width: 100%
    :align: center
    :alt: Alternative text for the image
@@ -54,6 +57,7 @@ iii. Select the correct variation “7b-v0.1-hf” and the version.
 iv. After that, copy the directory path and add it to your notebook.
 
 .. figure:: steps
+
    :width: 100%
    :align: center
    :alt: Alternative text for the image
@@ -113,6 +117,7 @@ As we can see, Mistral 7B has generated proper results explaining the process of
 You can duplicate and run the code by using the Mistral 7B 4-bit inference notebook on Kaggle.
 
 .. Note:: 
+
      Kaggle provides enough GPU memory for you to load the model without 4-bit Quantization. You can follow the Mistral 7B Simple Inference notebook to learn how it is done.
 
 
@@ -121,6 +126,7 @@ Mistral 7B Fine-tuning
 know that we creeted enviroment, we fine-tune the Mistral 7B model on our favorite dataset guanaco-llama2-1k.
 
 .. tip::
+
      You can also read to learn about PEFT, 4-bit quantization, QLoRA, and SFT.
 
 Setting up
@@ -148,6 +154,7 @@ After that, we will load the necessary modules for effective fine-tuning of the 
     from trl import SFTTrainer
 
 .. note:: 
+
     Note that we are using Kaggle Notebook to fine-tune our model. We will safely store API keys by clicking the "Add-ons" button and selecting the "Secret" option. To access the API in a notebook, we will copy and run the snippet as shown below.
 
 In our case, we will save Hugging Face and Weights and Biases API keys and access them in the Kaggle notebook.
@@ -179,6 +186,7 @@ To monitor LLM performance, we will initialize Weights and Biases experiments us
 In this section, we will set the base model, dataset, and new model name. The name of the new model will be used to save a fine-tuned model.
 
 .. Note::
+
      If you are using the free version of Colab, you should load the sharded version of the model (someone13574/Mistral-7B-v0.1-sharded).
 
 You can also load the model from Hugging Face Hub using the base model name: mistralai/Mistral-7B-v0.1
@@ -288,6 +296,7 @@ After setting up everything, we will train our model.
     trainer.train()
 
 .. Note::
+
      that you are using the T4 x2 version of the GPU, which can reduce training time to 1 hour and 30 minutes.
 
 Saving the fine-tuned model
