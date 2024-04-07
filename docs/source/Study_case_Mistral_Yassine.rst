@@ -22,6 +22,7 @@ In this section, we will learn to load the Kaggle model and run the inference in
 Before we start, we have to update the essential libraries to avoid the KeyError: 'mistral error.
 
 .. code-block:: bash
+    
     pip install -q -U transformers
     pip install -q -U accelerate
     pip install -q -U bitsandbytes
