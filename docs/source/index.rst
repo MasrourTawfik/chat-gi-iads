@@ -10,6 +10,7 @@ Welcome to CHAT GI-IADS's documentation!
 
    intro
    The_computational_requirements_for_Training_LLMs
+   Overview-of-Large-Language-Models
    2.5-Data-Preprocessing-for-LLMs
    file1
    Text-Generation
@@ -18,8 +19,7 @@ Welcome to CHAT GI-IADS's documentation!
    Synthetic_Data_Generation_for_Industrial_Applications
    2.8.part
    Evaluation-metrics
-   Mistral 7B:Use and fine-tune
-
+    Mistral 7B:Use and fine-tune
    
    
 

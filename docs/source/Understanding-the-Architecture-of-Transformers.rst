@@ -225,8 +225,11 @@ analyzing and extracting meaning from input sequences.
 
 
 
+
 Masked Language Modeling in Encoder-Only Models
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
 
 
 Encoder-only models, such as BERT (Bidirectional Encoder Representations
@@ -234,41 +237,55 @@ from Transformers), use a training technique called ”masked language model-
 ing” (MLM) to learn bidirectional representations of the input text.
 
 
+
 Masking Tokens
-^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^
+
+
 
 During the training phase, some tokens in the input sequence are randomly
 selected and replaced with a special [MASK] token. The model’s task is to
 predict these masked tokens based on the context provided by the surrounding
 (unmasked) tokens.
 
+
+
 Bidirectional Context
-^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^
+
+
 
 
 Encoder-only models leverage the context from both directions (bidirectional),the
 model considers both the preceding and following tokens to predict the masked
 token.
 
+
 Objective function
 ^^^^^^^^^^^^^^^^^^^^
+
 
 The objective of the masked language modeling task is to minimize the pre-
 diction error of the masked tokens. The model’s predictions are compared to
 the actual tokens, and the parameters of the model are updated to reduce the
 difference between the predicted and actual tokens.
 
+
 Denoising
 ^^^^^^^^^^^^^^^^^^^^
+
 
 The model performs a denoising task, where it attempts to reconstruct the
 original sentence from a corrupted version (with masked tokens).
 
+
 Decoder-Only Models
 --------------------------
 
+
 Overview
 ~~~~~~~~~~~~~~~~~~~~~~~
+
 
 Decoder-only models or Auto-regressive models are a class of Transformer-based
 architectures designed primarily for generating text. Unlike their encoder-
@@ -300,20 +317,23 @@ input sequence, often used in tasks like language modeling and text generation.
 
 
 Causal Language Modeling in Decoder-Only Models
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 Decoder-only models, such as GPT (Generative Pretrained Transformer), use a
 training technique called ”causal language modeling” (CLM) to learn sequential
 representations of the input text.
 
+
 Sequential Prediction
-^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^
+
 
 During the training phase, the model predicts each token in the input sequence
 based on the preceding tokens. Unlike masked language modeling, which pre-
 dicts randomly masked tokens, causal language modeling predicts each token in
 the sequence in order.
+
 
 Unidirectional Context
 ^^^^^^^^^^^^^^^^^^^^^^^
@@ -322,6 +342,7 @@ Unidirectional Context
 Decoder-only models leverage context from only one direction (unidirectional)
 by considers only the preceding tokens to predict the next token, ensuring that
 the prediction for each token is causally dependent only on known tokens.
+
 
 Objective Function
 ^^^^^^^^^^^^^^^^^^^^^
@@ -332,19 +353,23 @@ quence. The model’s predictions are compared to the actual tokens, and the
 parameters of the model are updated to reduce the difference between the pre-
 dicted and actual tokens.
 
+
 Text Generation
 ^^^^^^^^^^^^^^^^^^^^
+
 
 The autoregressive nature of causal language modeling makes decoder-only mod-
 els particularly well-suited for text generation tasks, after the training the model
 can generate new text by predicting one token at a time, using its own previous
 outputs as part of the input for the next token’s prediction.
 
+
 Encoder-Decoder Models
 ----------------------------
 
+
 Overview
-~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~
 
 Encoder-decoder models or Sequence-to-Sequence are a class of Transformer-
 based architectures designed for tasks that involve both understanding and gen-
