@@ -86,6 +86,7 @@ To make our life easy, we will use the pipeline function from the Transformers l
     )
 
 We will then provide the prompt to the pipeline object and set additional parameters to create the maximum number of tokens and improve our response.
+
 .. code-block:: python
 
     prompt = "As a data scientist, can you explain the concept of regularization in machine learning?"
@@ -190,6 +191,7 @@ You can also load the model from Hugging Face Hub using the base model name: mis
 Data loading
 ^^^^^^^^^^^^^^^^^^^^^^
 We will now load the dataset from Hugging Face Hub and visualize the 100th row.
+
 .. code-block:: python
 
     #Importing the dataset
@@ -198,7 +200,9 @@ We will now load the dataset from Hugging Face Hub and visualize the 100th row.
 
 Loading the Mistral 7B model
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 We will now load a model using 4-bit precision from Kaggle for faster training. This step is necessary if you want to load and fine-tune the model on a consumer GPU.^
+
 .. code-block::python
 
         bnb_config = BitsAndBytesConfig(  
@@ -234,6 +238,7 @@ Next, we will load the tokenizer and configure it to fix the issue with fp16.
 Adding the adopter to the layer
 ^^^^^^^^^^^^^^^^^^^^^^
 In the next step, we will include an adopter layer in our model. This will enable us to fine-tune the model using a small number of parameters, making the entire process faster and more memory-efficient. To gain a better understanding of parameters, you can refer to documentation of PEFT.
+
 .. code-block::python
 
     model = prepare_model_for_kbit_training(model)
