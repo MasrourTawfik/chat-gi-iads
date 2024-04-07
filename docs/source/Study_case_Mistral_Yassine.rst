@@ -7,6 +7,7 @@ In this part, you will get an overview of how to use and fine-tune the Mistral 7
 Understanding Mistral 7B
 ---------------------------
 Mistral 7B is a new 7.3 billion parameter language model that represents a major advance in large language model (LLM) capabilities. It has outperformed the 13 billion parameter Llama 2 model on all tasks and outperforms the 34 billion parameter Llama 1 on many benchmarks.
+
 .. note:: 
 
     Remarkably, Mistral 7B approaches the performance of CodeLlama 7B on code tasks while remaining highly capable at English language tasks. This balanced performance is achieved through two key mechanisms. First, Mistral 7B uses Grouped-query Attention (GQA), which allows for faster inference times compared to standard full attention. Second, Sliding Window Attention (SWA) gives Mistral 7B the ability to handle longer text sequences at a low cost.
