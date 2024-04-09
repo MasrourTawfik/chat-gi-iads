@@ -110,3 +110,49 @@ Neural networks have revolutionized NLP by providing models that can understand 
 
 
 
+The Emergence of Large Language Models
+=======================================
+
+Rise of Transformer-Based Models
+--------------------------------
+
+
+The transformer architecture, introduced in the seminal paper Attention is All You Need <https://arxiv.org/abs/1706.03762>_ by Vaswani et al. in 2017, marked a significant shift in the field of natural language processing (NLP). This architecture departed from the recurrent and convolutional neural networks that were prevalent at the time, introducing a novel approach based on self-attention mechanisms.
+
+impact:
+~~~~~~~
+
+The introduction of the transformer architecture has revolutionized NLP, leading to the development of highly effective models like BERT, GPT, and their successors, it also paved the way for significant advancements in language understanding, translation, and generation, setting new standards for performance in the field.
+
+Breakthroughs with BERT and GPT
+--------------------------------
+
+Following the advent of the transformer architecture, the field of NLP witnessed significant developments, especially with the emergence of BERT (Bidirectional Encoder Representations from Transformers) and the GPT (Generative Pretrained Transformer) series.
+
+
+BERT 
+~~~~~
+BERT was developed by researchers at Google in 2018, BERT introduced the concept of bidirectional training in transformers, allowing the model to understand the context of words in a sentence more effectively, it could set new benchmarks for performance in a wide range of NLP tasks, including question answering, sentiment analysis, and language inference.
+
+
+
+
+GPT 
+~~~~
+The GPT series, developed by OpenAI, started with GPT in 2018, followed by more advanced versions, these models are known for their ability to generate human-like text, perform language translation, and answer questions with remarkable accuracy.
+
+
+Recent Advances
+----------------
+
+The landscape of LLMs is now characterized by diverse transformer models and innovative techniques like Fine-Tuning, Retrieval-Augmented Generation (RAG), Adapters, Quantization, and more. 
+
+
+Notable Models:
+~~~~~~~~~~~~~~~
+
+- **GPT Series:** GPT-3, GPT-J-6B, and GPT-NeoX-20B have set benchmarks in model size and human-like text generation.
+- **T5 Variants:** T5-3B, T5-Large, and T5-Base are excelling in various NLP tasks.
+- **Innovative Models:** Bloom, StableLM-Alpha, LLaMA 2, and Falcon represent breakthroughs in language understanding and generation.
+- **Specialized Models:** FastChat-T5, h2oGPT, and RedPajama-INCITE showcase the application of large models in specific domains.
+- **Emerging Models:**  SOLAR, phi-2, OLMo, Gemma, and Zephyr showcase ongoing potential in the field.
