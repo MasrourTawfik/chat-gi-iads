@@ -9,13 +9,15 @@ Welcome to CHAT GI-IADS's documentation!
 .. toctree::
 
    intro
+   Overview-of-Large-Language-Models
+   History-of-Large-Language-Models
+   Understanding-the-Architecture-of-Transformers
    The_computational_requirements_for_Training_LLMs
    Overview-of-Large-Language-Models
    2.5-Data-Preprocessing-for-LLMs
    file1
    Text-Generation
    ChatAI-and-Chatbots
-   Understanding-the-Architecture-of-Transformers
    Synthetic_Data_Generation_for_Industrial_Applications
    2.8.part
    Evaluation-metrics
