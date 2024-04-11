@@ -12,14 +12,18 @@ Welcome to CHAT GI-IADS's documentation!
    Overview-of-Large-Language-Models
    History-of-Large-Language-Models
    Understanding-the-Architecture-of-Transformers
-   The_computational_requirements_for_Training_LLMs
-   Overview-of-Large-Language-Models
-   2.5-Data-Preprocessing-for-LLMs
-   file1
+   Applications-of-LLMs
    Text-Generation
    ChatAI-and-Chatbots
+   The_computational_requirements_for_Training_LLMs
+   2.5-Data-Preprocessing-for-LLMs
    Synthetic_Data_Generation_for_Industrial_Applications
-   2.8.part
+   intro-finetuning
+   prompt-engineering
+   rag
+   peft
+   rlhf
+   Building-an-LLM-Chatbot
    Evaluation-metrics
    Study_case_Mistral_Yassine
    
