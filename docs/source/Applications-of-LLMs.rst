@@ -2,8 +2,8 @@ Applications of LLMs
 ===================
 
 
-NLP Tasks Overview
-------------------
+Natural Language Processing (NLP) Tasks
+---------------------------------------
 
 Natural Language Processing (NLP) is a branch of artificial intelligence (AI) aimed at reaching human-computer interaction through the natural language. Its goal is to enable computers to understand, interpret, and respond to human language in a meaningful manner.
 
@@ -230,7 +230,7 @@ Suppose we have a bilingual corpus with the following sentence pairs:
 Now, if we want to translate a new English sentence using the EBMT approach:
 
 .. figure:: ../Images/eng.png
-   :width: 80%
+   :width: 60%
    :alt: Alternative text for the image
    :align: center
   
@@ -251,7 +251,7 @@ The EBMT system will:
 4. Generate the translated sentence:
 
 .. figure:: ../Images/french.png
-   :width: 80%
+   :width: 60%
    :alt: Alternative text for the image
    :align: center
   
