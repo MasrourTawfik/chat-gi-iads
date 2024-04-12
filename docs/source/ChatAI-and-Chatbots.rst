@@ -1,7 +1,8 @@
 Question Answering and Chatbots
-=============================
-Examples of Existing LLM-powered chatbots
 --------------------------
+
+Examples of Existing LLM-powered chatbots
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 .. table:: Example of Part of Speech Tags
@@ -20,7 +21,7 @@ Examples of Existing LLM-powered chatbots
    +----------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Applications of LLM-powered Chatbots
---------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Customer Support:
 *********
 LLM-powered chatbots are deployed on websites and in apps to provide immediate responses to customer inquiries, reducing wait times and improving customer service efficiency.

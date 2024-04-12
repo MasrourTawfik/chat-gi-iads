@@ -1,5 +1,5 @@
 Text Generation and Summarization
----------------------------------
+-------------------------------------
 
 Text Summarization Techniques ( extractive and abstractive summarization methods enabled by LLMs)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -19,7 +19,7 @@ Text summarization, on the other hand, aims to condense a larger body of text in
 
 
 Extractive Summarization
-^^^^^^^^^^^^^^^^^^^^^^^^
+***********************
 
 Extractive Summarization simply takes out the important sentences or phrases from the original text and joins them to form a summary.
 
@@ -47,7 +47,7 @@ text summarization.
 .. _Hands on for Extractive Summarization: https://colab.research.google.com/drive/1pUVjSR3izak6yhVH0ohC1MGMBnmpfT3-#scrollTo=v864N5gCt06T
 
 Abstractive Summarization
-^^^^^^^^^^^^^^^^^^^^^^^^
+***********************
 
 The abstractive summarization method is an outline/summary or the basic idea
 of a voluminous thing(text).
@@ -71,7 +71,7 @@ Objective: Using the Hugging Face Transformers library in Python to perform abst
 
 
 LLMs relevance in context-aware Text Generation
---------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Large Language Models (LLMs) are important in generating context-aware text, as they excel in understanding and predicting language patterns based on extensive training data. These models can produce text that is not only grammatically correct but also contextually appropriate. 
 
@@ -126,7 +126,7 @@ If the context suggests that the focus is on a man who has a telescope, the AI m
 
 
 How AI Uses Context for Text Generation?
-^^^^^^^^^^^^^^^^^
+****************************************
 
 Preceding Text:
 ***********
