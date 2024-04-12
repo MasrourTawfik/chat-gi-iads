@@ -16,7 +16,7 @@ Welcome to CHAT GI-IADS's documentation!
    Text-Generation
    ChatAI-and-Chatbots
    The_computational_requirements_for_Training_LLMs
-   2.5-Data-Preprocessing-for-LLMs
+   Data-Preprocessing-for-LLMs
    Synthetic_Data_Generation_for_Industrial_Applications
    intro-finetuning
    prompt-engineering
