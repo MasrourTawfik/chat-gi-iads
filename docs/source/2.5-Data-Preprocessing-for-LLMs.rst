@@ -4,7 +4,7 @@ Data: What's It All About?
 ---------------------------
 Data is information collected or generated for analysis and interpretation. It encompasses a wide range of formats, including numerical values, textual content, images, and more. In the realm of computing and analysis, data serves as the cornerstone for deriving insights, facilitating informed decision-making, and driving innovation.
 
-.. figure:: ../Images/DataTypes.jpeg
+.. figure:: ../Images/dessin.png
    :width: 80%
    :align: center
    :alt: Alternative text for the image
@@ -14,14 +14,15 @@ Data Preprocessing and LLMs
 Data preprocessing is a pivotal phase in our pipeline, essential for achieving high-quality results. It encompasses refining raw text data to ensure smoother training, faster convergence, and superior model performance. By standardizing input data and employing specialized techniques tailored for large language models, we effectively reduce complexity and enhance overall efficiency.
 
 
-.. figure:: ../Images/Data-Preprocessing-for-LLMs.jpg
+.. figure:: ../Images/wwww.png
    :width: 80%
    :align: center
    :alt: Alternative text for the image
 
 Data cleaning
 ============================
-Data cleaning is a fundamental aspect of data pre-processing for training LLMs. This technique involves identifying and rectifying inaccuracies, inconsistencies, and irrelevant elements within the raw text data. 
+.. note::
+   Data cleaning is a fundamental aspect of data pre-processing for training LLMs. This technique involves identifying and rectifying inaccuracies, inconsistencies, and irrelevant elements within the raw text data. 
 
 Data cleaning methods :
 ------------------------
@@ -35,31 +36,12 @@ Data cleaning methods :
 
 3. Consistency checks
 -----------------------------------
+.. warning::
    Consistency checks are like quality control for data, making sure everything follows the same formats and rules. When data doesn't match up due to errors or glitches, it can cause confusion and inaccuracies in model training.
 
 4. Deduplication
 -----------------------------------
    Duplicates in data often stem from errors during data entry or glitches in the system. These duplicates can skew the distribution of data and result in biased model training. By eliminating duplicates, we ensure the dataset is more accurate and representative, thereby improving the performance of the LLM.
-
-.. code-block:: python
-    
-    import pandas as pd
-
-    # Create a DataFrame from a dictionary
-    data = {'Name': ['John', 'Alice', 'Bob', 'Charlie', 'John', 'Eve', 'Alice'],
-            'Age': [25, 30, 22, 35, 25, 28, 30]}
-    df = pd.DataFrame(data)
-
-    # Display the original DataFrame
-    print("Original DataFrame:")
-    print(df)
-
-    # Remove duplicate rows
-    df_no_duplicates = df.drop_duplicates()
-
-    # Display the DataFrame after removing duplicates
-    print("DataFrame after removing duplicates:")
-    print(df_no_duplicates)
 
 Text cleaning and normalization
 ========================================
@@ -162,8 +144,6 @@ Removing noise from text and standardizing it are crucial steps for improving th
    Stemming is a linguistic normalization that simplifies words to their base form or root by removing prefixes and suffixes, helping the natural language processing and information retrieval.
    
    .. code-block:: python
-      
-
       import nltk
       from nltk.stem import PorterStemmer
 
