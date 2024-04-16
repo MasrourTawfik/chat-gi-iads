@@ -43,7 +43,7 @@ individual characters. Each token is then mapped to a unique identifier, linking
    
 `Hands On for Tokenization`_
 
-.. _Hands On for Tokenization: ../Notebooks/tokenization.ipynb
+.. _Hands On for Tokenization: ../notebooks/tokenization.ipynb
 
 
 
