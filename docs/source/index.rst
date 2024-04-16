@@ -15,11 +15,13 @@ Welcome to CHAT GI-IADS's documentation!
    Applications-of-LLMs
    The_computational_requirements_for_Training_LLMs
    2.5-Data-Preprocessing-for-LLMs
-   
-   Text-Generation
-   ChatAI-and-Chatbots
    Synthetic_Data_Generation_for_Industrial_Applications
-   2.8.part
+   intro-finetuning
+   prompt-engineering
+   rag
+   peft
+   rlhf
+   Building-an-LLM-Chatbot
    Evaluation-metrics
    Study_case_Mistral_Yassine
    
