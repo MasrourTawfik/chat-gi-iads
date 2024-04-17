@@ -20,7 +20,7 @@ Welcome to CHAT GI-IADS's documentation!
    prompt-engineering
    rag
    peft
-   rlhf
+   rlhfs
    Building-an-LLM-Chatbot
    Evaluation-metrics
    Study_case_Mistral_Yassine
