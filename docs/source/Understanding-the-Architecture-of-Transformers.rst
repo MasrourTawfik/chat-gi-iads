@@ -38,12 +38,10 @@ individual characters. Each token is then mapped to a unique identifier, linking
    :width: 80%
    :alt: Transformer architecture
    :align: center
-
-
    
 `Hands On for Tokenization`_
 
-.. _Hands On for Tokenization: ../Notebooks/tokenization.ipynb
+.. _Hands On for Tokenization: https://colab.research.google.com/drive/1SF_meHmrbrTq7oxVtXQ24GaO67pzjmHl
 
 
 
