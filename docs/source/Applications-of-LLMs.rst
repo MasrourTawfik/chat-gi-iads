@@ -405,9 +405,18 @@ The AI uses the sentences or paragraphs that come before the ambiguous sentence 
 Subsequent Text
 **************
 **Role in Context Refinement**
-Definition and Importance: Subsequent text refers to the sentences or paragraphs that follow a specific point in a text. This is critical for AI models as it provides additional information that can refine or even redefine the context initially inferred from the preceding text.
-Mechanism: AI models can use subsequent text to "look ahead" and make more informed decisions about the current text. This capability is especially important in tasks like summarization or when the text must be adjusted based on future content.
-Practical Example: In a discussion that initially seems to focus on historical events but later references recent technological advancements, an AI model can use the subsequent text to adjust its understanding and responses to align with a more modern context.
+
+Definition and Importance:
+
+Subsequent text refers to the sentences or paragraphs that follow a specific point in a text. This is critical for AI models as it provides additional information that can refine or even redefine the context initially inferred from the preceding text.
+
+Mechanism:
+
+AI models can use subsequent text to "look ahead" and make more informed decisions about the current text. This capability is especially important in tasks like summarization or when the text must be adjusted based on future content.
+
+Practical Example: 
+
+In a discussion that initially seems to focus on historical events but later references recent technological advancements, an AI model can use the subsequent text to adjust its understanding and responses to align with a more modern context.
 **Implications for Retroactive Contextualization**
 Significance in Text Interpretation: Being able to consider future text allows AI models to retrospectively adjust their understanding of an ambiguous term or sentence. This dynamic adjustment is crucial for maintaining coherence and relevance in generated content.
 Operational Method: This involves revisiting and potentially revising the interpretation of earlier text based on new information. Models achieve this by maintaining a flexible representation of the text context that can be updated as new data comes in.
@@ -416,23 +425,55 @@ Illustrative Case: If a dialogue begins with ambiguous references that could rel
 Training Data
 **********
 **Foundation of Knowledge**
-Definition and Importance: Training data consists of the vast datasets used to train AI models. The quality, diversity, and size of this data directly influence the model's ability to understand and generate language.
-Mechanism: AI models learn from patterns in the training data through techniques such as statistical modeling, neural network training, and machine learning algorithms. These patterns teach the AI typical and atypical uses of language, which it then applies to new text generation tasks.
-Practical Example: A model trained on a broad dataset including literary works, scientific papers, and online forums will have a well-rounded capability to generate text that feels natural in a variety of contexts.
+Definition and Importance: 
+
+Training data consists of the vast datasets used to train AI models. The quality, diversity, and size of this data directly influence the model's ability to understand and generate language.
+
+Mechanism: 
+
+AI models learn from patterns in the training data through techniques such as statistical modeling, neural network training, and machine learning algorithms. These patterns teach the AI typical and atypical uses of language, which it then applies to new text generation tasks.
+
+Practical Example: 
+
+A model trained on a broad dataset including literary works, scientific papers, and online forums will have a well-rounded capability to generate text that feels natural in a variety of contexts.
 **Learning from Examples**
-Significance in Model Training: Exposure to diverse contexts in training helps the model learn the flexibility and nuance of language. It learns not only vocabulary but also the various structures and styles of communication.
-Operational Method: During training, the AI analyzes how words and phrases are used across different texts and learns to predict likely continuations based on context.
-Illustrative Case: By seeing multiple examples where "apple" is used to mean a fruit in a cooking context and a tech company in a business context, the model learns to adjust its use of the word based on surrounding text cues.
+Significance in Model Training: 
+
+Exposure to diverse contexts in training helps the model learn the flexibility and nuance of language. It learns not only vocabulary but also the various structures and styles of communication.
+
+Operational Method: 
+
+During training, the AI analyzes how words and phrases are used across different texts and learns to predict likely continuations based on context.
+
+Illustrative Case: 
+
+By seeing multiple examples where "apple" is used to mean a fruit in a cooking context and a tech company in a business context, the model learns to adjust its use of the word based on surrounding text cues.
 Prompt Design
 ************
 **Influence on Interpretation**
-Definition and Importance: The design of a prompt—how it is structured and what details it includes—can significantly steer an AI's interpretation of what the generated text should focus on.
-Mechanism: By strategically including or omitting certain information in a prompt, the designer can guide the AI towards more specific interpretations or creative directions.
-Practical Example: A prompt explicitly mentioning a historical figure and a significant event will likely lead the AI to generate text focused on that figure and event, rather than on unrelated topics.
+Definition and Importance: 
+
+The design of a prompt—how it is structured and what details it includes—can significantly steer an AI's interpretation of what the generated text should focus on.
+
+Mechanism: 
+
+By strategically including or omitting certain information in a prompt, the designer can guide the AI towards more specific interpretations or creative directions.
+
+Practical Example: 
+
+A prompt explicitly mentioning a historical figure and a significant event will likely lead the AI to generate text focused on that figure and event, rather than on unrelated topics.
 **Guidance through Explicit Context**
-Significance in Text Generation: Providing clear, explicit context in a prompt can drastically reduce ambiguity and increase the relevance of the AI's output.
-Operational Method: This involves using carefully chosen words and phrases to set boundaries or highlight specific themes that the AI should consider when generating text.
-Illustrative Case: If a prompt is designed to generate a story about space exploration, mentioning specific terms like "Mars rover" and "space station" can ensure the AI maintains focus on space-related themes rather than veering off-topic.
+Significance in Text Generation: 
+
+Providing clear, explicit context in a prompt can drastically reduce ambiguity and increase the relevance of the AI's output.
+
+Operational Method: 
+
+This involves using carefully chosen words and phrases to set boundaries or highlight specific themes that the AI should consider when generating text.
+
+Illustrative Case: 
+
+If a prompt is designed to generate a story about space exploration, mentioning specific terms like "Mars rover" and "space station" can ensure the AI maintains focus on space-related themes rather than veering off-topic.
 
 Question Answering and Chatbots
 --------------------------
