@@ -43,14 +43,23 @@ After that, we will create 4-bit quantization with NF4-type configuration using 
         bnb_4bit_use_double_quant=True,
     )
 
+.. raw:: html
 
-We will now learn to add the Mistral 7B model to our Kaggle Notebook.
-
+    <p style= "text-qlign:"><span style="color:blue;">
+    We will now learn to add the Mistral 7B model to our Kaggle Notebook.
+    </p></span>
 
 .. image:: /docs/Images/11.png
    :width: 700
    :align: center
    :alt: Alternative text for the image
+
+.. raw:: html
+
+    <p style= "text-qlign:">
+    We will now learn to add the Mistral 7B model to our Kaggle Notebook.
+    </p>
+
 
 
 i. Click on the “+Add Models” button on the right side panel.
