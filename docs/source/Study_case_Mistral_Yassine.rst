@@ -43,29 +43,17 @@ After that, we will create 4-bit quantization with NF4-type configuration using 
         bnb_4bit_use_double_quant=True,
     )
 
-.. raw:: html
-
-    <p style= "text-qlign:"><span style="color:blue;">
-    We will now learn to add the Mistral 7B model to our Kaggle Notebook.
-    </p></span>
+We will now learn to add the Mistral 7B model to our Kaggle Notebook.
 
 
 
 
-.. figure:: ../Images/image.jpeg
+.. figure:: ../Images/11.png
    :width: 700
    :align: center
    :alt: Alternative text for the image
 
 
-
-
-
-.. raw:: html
-
-    <p style= "text-qlign:">
-    We will now learn to add the Mistral 7B model to our Kaggle Notebook.
-    </p>
 
 
 
@@ -77,11 +65,15 @@ iv. After that, copy the directory path and add it to your notebook.
 
 
 
-.. figure:: 12.png
 
-   :width: 100%
+
+.. figure:: ../Images/12.png
+   :width: 700
    :align: center
    :alt: Alternative text for the image
+
+
+
 
 We will now load the model and tokenizer using the transformer library.
 
@@ -178,11 +170,17 @@ After that, we will load the necessary modules for effective fine-tuning of the 
 
     Note that we are using Kaggle Notebook to fine-tune our model. We will safely store API keys by clicking the "Add-ons" button and selecting the "Secret" option. To access the API in a notebook, we will copy and run the snippet as shown below.
 
-.. figure:: 13.png
 
-   :width: 100%
+
+
+
+.. figure:: ../Images/13.png
+   :width: 700
    :align: center
    :alt: Alternative text for the image
+
+
+
 
 In our case, we will save Hugging Face and Weights and Biases API keys and access them in the Kaggle notebook.
 
@@ -234,11 +232,16 @@ We will now load the dataset from Hugging Face Hub and visualize the 100th row.
     dataset = load_dataset(dataset_name, split="train")
     dataset["text"][100]
 
-.. figure:: 14.png
 
-   :width: 100%
+
+
+.. figure:: ../Images/14.png
+   :width: 700
    :align: center
    :alt: Alternative text for the image
+
+
+
 
 Loading the Mistral 7B model
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -328,21 +331,30 @@ After setting up everything, we will train our model.
 
     trainer.train()
 
-.. figure:: 15.png
 
-   :width: 100%
+
+
+.. figure:: ../Images/15.png
+   :width: 700
    :align: center
    :alt: Alternative text for the image
+
+
 
 .. Note::
 
      that you are using the T4 x2 version of the GPU, which can reduce training time to 1 hour and 30 minutes.
 
-.. figure:: 16.png
 
-   :width: 100%
+
+
+.. figure:: ../Images/16.png
+   :width: 700
    :align: center
    :alt: Alternative text for the image
+
+
+
 
 Saving the fine-tuned model
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -354,11 +366,16 @@ Ultimately, we will save a pre-trained adopter and finish the W&B run.
     wandb.finish()
     model.config.use_cache = True
 
-.. figure:: 17.png
 
-   :width: 100%
+
+
+.. figure:: ../Images/17.png
+   :width: 700
    :align: center
    :alt: Alternative text for the image
+
+
+
 
 We can easily upload our model to the Hugging Face Hub with a single line of code, allowing us to access it from any machine.
 
@@ -366,11 +383,17 @@ We can easily upload our model to the Hugging Face Hub with a single line of cod
 
     trainer.model.push_to_hub(new_model, use_temp_dir=False)
 
-.. figure:: 18.png
 
-   :width: 100%
+
+
+
+.. figure:: ../Images/18.png
+   :width: 700
    :align: center
    :alt: Alternative text for the image
+
+
+
 
 Model evaluation
 ^^^^^^^^^^^^^^^^^^^^^^^^
