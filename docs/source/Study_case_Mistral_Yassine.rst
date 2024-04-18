@@ -52,10 +52,13 @@ We will now learn to add the Mistral 7B model to our Kaggle Notebook.
    :alt: Alternative text for the image
 
 
-i. Click on the “+Add Models” button on the right side panel.
+i.  on the “+Add Models” button on the right side panel.
 ii. Search for your model and click on the Plus button to add it.
 iii. Select the correct variation “7b-v0.1-hf” and the version.
 iv. After that, copy the directory path and add it to your notebook.
+
+
+
 
 .. figure:: 12.png
 
