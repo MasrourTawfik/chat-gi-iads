@@ -49,10 +49,17 @@ After that, we will create 4-bit quantization with NF4-type configuration using 
     We will now learn to add the Mistral 7B model to our Kaggle Notebook.
     </p></span>
 
-.. figure:: /docs/Images/image.jpeg
+
+
+
+.. figure:: ../Images/image.jpeg
    :width: 700
    :align: center
    :alt: Alternative text for the image
+
+
+
+
 
 .. raw:: html
 
