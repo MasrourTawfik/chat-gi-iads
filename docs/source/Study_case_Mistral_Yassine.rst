@@ -46,13 +46,13 @@ After that, we will create 4-bit quantization with NF4-type configuration using 
 We will now learn to add the Mistral 7B model to our Kaggle Notebook.
 
 
-.. figure:: /docs/Images/11.png
-   :width: 100%
+.. image:: /docs/Images/11.png
+   :width: 700
    :align: center
    :alt: Alternative text for the image
 
 
-i.  on the “+Add Models” button on the right side panel.
+i. Click on the “+Add Models” button on the right side panel.
 ii. Search for your model and click on the Plus button to add it.
 iii. Select the correct variation “7b-v0.1-hf” and the version.
 iv. After that, copy the directory path and add it to your notebook.
