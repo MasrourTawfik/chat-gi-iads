@@ -43,6 +43,7 @@ After that, we will create 4-bit quantization with NF4-type configuration using 
         bnb_4bit_use_double_quant=True,
     )
 
+
 We will now learn to add the Mistral 7B model to our Kaggle Notebook.
 
 
