@@ -1,4 +1,4 @@
-Transformers Overview
+Transformer Architecture Overview
 ===================================
 Introduction
 ------------------------------------
@@ -38,8 +38,6 @@ individual characters. Each token is then mapped to a unique identifier, linking
    :width: 80%
    :alt: Transformer architecture
    :align: center
-
-
    
 `Hands On for Tokenization`_
 

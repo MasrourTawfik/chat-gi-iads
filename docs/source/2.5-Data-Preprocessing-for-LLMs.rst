@@ -4,7 +4,7 @@ Data: What's It All About?
 ---------------------------
 Data is information collected or generated for analysis and interpretation. It encompasses a wide range of formats, including numerical values, textual content, images, and more. In the realm of computing and analysis, data serves as the cornerstone for deriving insights, facilitating informed decision-making, and driving innovation.
 
-.. figure:: ../Images/DataTypes.jpeg
+.. figure:: ../Images/dessin.png
    :width: 80%
    :align: center
    :alt: Alternative text for the image
@@ -14,14 +14,15 @@ Data Preprocessing and LLMs
 Data preprocessing is a pivotal phase in our pipeline, essential for achieving high-quality results. It encompasses refining raw text data to ensure smoother training, faster convergence, and superior model performance. By standardizing input data and employing specialized techniques tailored for large language models, we effectively reduce complexity and enhance overall efficiency.
 
 
-.. figure:: ../Images/Data-Preprocessing-for-LLMs.jpg
+.. figure:: ../Images/wwww.png
    :width: 80%
    :align: center
    :alt: Alternative text for the image
 
 Data cleaning
 ============================
-Data cleaning is a fundamental aspect of data pre-processing for training LLMs. This technique involves identifying and rectifying inaccuracies, inconsistencies, and irrelevant elements within the raw text data. 
+.. note::
+   Data cleaning is a fundamental aspect of data pre-processing for training LLMs. This technique involves identifying and rectifying inaccuracies, inconsistencies, and irrelevant elements within the raw text data. 
 
 Data cleaning methods :
 ------------------------
@@ -35,194 +36,83 @@ Data cleaning methods :
 
 3. Consistency checks
 -----------------------------------
+.. warning::
    Consistency checks are like quality control for data, making sure everything follows the same formats and rules. When data doesn't match up due to errors or glitches, it can cause confusion and inaccuracies in model training.
 
 4. Deduplication
 -----------------------------------
    Duplicates in data often stem from errors during data entry or glitches in the system. These duplicates can skew the distribution of data and result in biased model training. By eliminating duplicates, we ensure the dataset is more accurate and representative, thereby improving the performance of the LLM.
 
-.. code-block:: python
-    
-    import pandas as pd
-
-    # Create a DataFrame from a dictionary
-    data = {'Name': ['John', 'Alice', 'Bob', 'Charlie', 'John', 'Eve', 'Alice'],
-            'Age': [25, 30, 22, 35, 25, 28, 30]}
-    df = pd.DataFrame(data)
-
-    # Display the original DataFrame
-    print("Original DataFrame:")
-    print(df)
-
-    # Remove duplicate rows
-    df_no_duplicates = df.drop_duplicates()
-
-    # Display the DataFrame after removing duplicates
-    print("DataFrame after removing duplicates:")
-    print(df_no_duplicates)
-
 Text cleaning and normalization
 ========================================
 
 Removing noise and normalization 
 -----------------------------
-Removing noise from text and standardizing it are crucial steps for improving the quality of our textual data and enhancing the performance of the natural language processing tasks. Many techniques are used to fix this issue.
+Removing noise from text and standardizing it are essential for enhancing the quality of our textual data, which in turn improves the performance of natural language processing tasks. Various techniques and tools are available to address these challenges.
+.. note::
+   To effectively manage this task, we can utilize several libraries that are designed to help clean and standardize text data. These libraries provide robust functionalities for preprocessing text, making it cleaner and more uniform for subsequent analysis.
+
+
+
 
 1. Lowercasing
 ~~~~~~~~~~~~~~~~~~~~~~
 
    Lowercasing is a text preprocessing step where all letters in the text are converted to lowercase. This step is implemented so that the algorithm does not treat the same words differently in different situations.
    
-   .. code-block:: python
-      
-
-      string = "ConvErT ALL tO LoWErCASe"
-      print(string.lower())
 
 2. Removing Punctuation and Special Characters
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    Punctuation and special characters removal is a text preprocessing step where you remove all punctuation marks (such as periods, commas, exclamation marks, emojis etc.) from the text to simplify it and focus on the words themselves.
    
-   .. code-block:: python
-      
-
-      test_str = "Gfg, is best : for ! Geeks ;"
-      print("The original string is : " + test_str)
-      punc = '''!()-[]{};:'"\,<>./?@#$%^&*_~'''
-      for ele in test_str:
-         if ele in punc:
-            test_str = test_str.replace(ele, "")
-      print("The string after punctuation filter : " + test_str)
-
 3. Stop-words Removal 
 ~~~~~~~~~~~~~~~~~~~~~~~~~
    Stop-words are the most common words in any language (like articles, prepositions, pronouns, conjunctions, etc) and do not add much information to the text. Examples of a few stop words in English are “the”, “a”, “an”, “so”, “what”.
    For this technique, we will use the NLTK library.
       
-   .. code-block:: python
-      
-
-      from nltk.corpus import stopwords
-      from nltk.tokenize import word_tokenize
-
-      nltk.download('punkt')
-      example_sent = """This is a sample sentence, showing off the stop words filtration."""
-      stop_words = set(stopwords.words('english'))
-      word_tokens = word_tokenize(example_sent)
-      filtered_sentence = [w for w in word_tokens if not w.lower() in stop_words]
-      filtered_sentence = []
-      for w in word_tokens:
-         if w not in stop_words:
-            filtered_sentence.append(w)
-      print(word_tokens)
-      print(filtered_sentence)
 
 4. Removing URL
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    This preprocessing step is to remove any URLs present in the data.
-      
-   .. code-block:: python
-      
-
-      import re
-      def remove_urls(text, replacement_text="[URL REMOVED]"):
-         url_pattern = re.compile(r'https?://\S+|www\.\S+')
-         text_without_urls = url_pattern.sub(replacement_text, text)
-         return text_without_urls
-      # Example
-      input_text = "Visit on GeeksforGeeks Website: https://www.geeksforgeeks.org/"
-      output_text = remove_urls(input_text)
-      print("Original Text:")
-      print(input_text)
-      print("\nText with URLs Removed:")
-      print(output_text)
 
 5. Removal of HTML Tags
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    It’s important to remove HTML tags from the text data. Indeed, if we work with text data obtained from HTML sources, the text may contain HTML tags, which are not desirable for text analysis. 
       
-   .. code-block:: python
-      
-
-      import re
-      from bs4 import BeautifulSoup
-
-      def remove_html_tags_beautifulsoup(text):
-         soup = BeautifulSoup(text, 'html.parser')
-         return soup.get_text()
-
-      html_text = "<p>This is <b>HTML</b> text.</p>"
-      cleaned_text_bs4 = remove_html_tags_beautifulsoup(html_text)
-
-      print("Original HTML text:", html_text)
-      print("Text after HTML tag removal (BeautifulSoup):", cleaned_text_bs4)
-
 6. Stemming
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    Stemming is a linguistic normalization that simplifies words to their base form or root by removing prefixes and suffixes, helping the natural language processing and information retrieval.
    
-   .. code-block:: python
-      
-
-      import nltk
-      from nltk.stem import PorterStemmer
-
-      nltk.download("punkt")
-      ps = PorterStemmer()
-      example_words = ["program", "programming", "programer", "programs", "programmed"]
-      print("{0:20}{1:20}".format("--Word--", "--Stem--"))
-      for word in example_words:
-         print("{0:20}{1:20}".format(word, ps.stem(word)))
-
 7. Lemmatization
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
    Lemmatization simplifies words to their base or root form, known as the lemma, making it easier to analyze a word. The difference between stemming and lemmatization is that the latter transforms words to their standardized form and aims to return a valid word by applying linguistic rules and context.
+   
+   .. warning::
+      The difference between  Lemmatization and Stemming is simple :Lemmatization reduces words to their canonical form,while stemming reduces them to their root form
+   
    
    .. figure:: ../Images/DifferencebetweenStemmingandLemmatization.jpg
     :width: 80%
     :align: center
     :alt: Alternative text for the image
 
-
-   .. code-block:: python
-      
-
-      from nltk.stem import WordNetLemmatizer
-      nltk.download("wordnet")
-      nltk.download("omw-1.4") 
-      wnl = WordNetLemmatizer()
-      example_words = ["program", "programming", "programer", "programs", "programmed"]
-      print("{0:20}{1:20}".format("--Word--", "--Lemma--"))
-      for word in example_words:
-         print("{0:20}{1:20}".format(word, wnl.lemmatize(word, pos="v")))
-
 8.Removing redundant whitespace
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
  Removing redundant whitespace is  an essential step in text preprocessing to ensure a clean and standardized representation of the text. Extra whitespaces can lead to inconsistencies and negatively impact the performance of natural language processing (NLP) tasks.
 
-   .. code-block:: python
-      
-
-      import re
-
-      test_str = "GfG is good         website"
-      print("The original string is : " + test_str)
-      res = re.sub(' +', ' ', test_str)
-      print("The strings after extra space removal : " + str(res))
-
 9.Removing numbers
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   .. code-block:: python
-      
 
-      ini_string = "Giant12for17giant"
-      print("initial string : ", ini_string)
-      res = ''.join([i for i in ini_string if not i.isdigit()])
-      print("final string : ", res)
+Preprocessing lab
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. button::
+   :text: LAB
+   :link: https://colab.research.google.com/drive/1Fn0fZ2HdctgrS_kcgwhaf1nYbqptrjsu?usp=sharing
 
-After preprocessing our data, the next step will be to feed it into our large language model. The concern here is whether our LLM will have a very good understanding of our cleaned data. In this context, we will discuss an important concept known as Tokenization.
+.. note::
+   After preprocessing our data, the next step will be to feed it into our large language model. The concern here is whether our LLM will have a very good understanding of our cleaned data. In this context, we will discuss an important concept known as Tokenization.
 
 Tokenization and word embedding
 --------------------------------
@@ -232,12 +122,6 @@ The aim of tokenization is to represent text in a manner that's meaningful for m
     :width: 80%
     :align: center
     :alt: Alternative text for the image
-
-Preprocessing lab
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. button::
-   :text: LAB
-   :link: https://colab.research.google.com/drive/1Fn0fZ2HdctgrS_kcgwhaf1nYbqptrjsu?usp=sharing
 
 
 Tokenization algorithms
@@ -259,10 +143,6 @@ BPE algorithm
 4.Repeat: Repeat steps 2 and 3 for a fixed number of iterations or until a certain condition is met (e.g., reaching a predefined vocabulary size).
 
 5.Encoding: Once the vocabulary is constructed, encode the input text by replacing each token with its corresponding token in the vocabulary.
-
-.. raw:: html
-
-   <iframe width="560" height="315" src="https://www.youtube.com/embed/i0D5GbudU6c" frameborder="0" allowfullscreen></iframe>
 
 BPE lab
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
