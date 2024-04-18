@@ -420,6 +420,13 @@ If a narrative leading up to a particular sentence involves detailed description
 
 The AI uses the sentences or paragraphs that come before the ambiguous sentence to gauge the topic and the direction of the narrative. Is the focus on astronomy, or is it on people and their actions?
 
+Here is a Hands on example to truly understand preceding text and context understanding in LLMs.
+
+`Hands on for Preceding Text`_.
+
+.. _Hands on for Preceding Text: https://colab.research.google.com/drive/14iMIAzJ2tBGM4OzX2qXqlWuvKtOo0umR#scrollTo=QDFLBcO59HdQ
+
+
 Subsequent Text
 **************
 
@@ -450,6 +457,10 @@ This involves revisiting and potentially revising the interpretation of earlier 
 *Illustrative Case:* 
 
 If a dialogue begins with ambiguous references that could relate to either sports or business (like "draft"), but subsequent text clearly discusses teams and players, the AI would reinterpret the initial mention as sports-related.
+
+`Hands on Subsequent Text`_.
+
+.. _Hands on for Subsequent Text: https://colab.research.google.com/drive/10yNC_zPCL2lK1GsJLuqzZLibit8JLbd4#scrollTo=XOIBeElr_2ux
 
 Training Data
 **********
