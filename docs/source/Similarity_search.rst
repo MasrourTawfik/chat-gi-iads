@@ -118,3 +118,28 @@ Compare the scores from the pretrained and fine-tuned models. Significant improv
     cosine_sim = cosine_similarity(df, df)
     print(cosine_sim)
 
+
+The output is as follows:
+
+
+.. figure:: ../Images/output_sim.png
+   :width: 80%
+   :alt: Alternative text for the image
+   :align: center
+
+
+The cosine similarity matrix indicates the following:
+
++ The pretrained LLM and fine-tuned LLM have a moderate similarity (0.456) with each other.
+
++ The pretrained LLM has a low similarity (0.270) with the dataset answer.
+
++ The fine-tuned LLM has a very low similarity (0.085) with the dataset answer.
+
+These results suggest that the fine-tuned LLM has diverged significantly from both the pretrained LLM and the dataset answer, indicating that the fine-tuning process has not aligned the model closely with the expected dataset answers. Further refinement may be needed to improve alignment.
+
+In practice, human evaluation plays a crucial role in assessing the quality of the model's outputs. Humans can judge nuances, context, and appropriateness of responses in ways that metrics cannot fully capture. 
+
+
+
+This highlights the necessity of combining human evaluation with quantitative metrics to ensure a comprehensive assessment of the fine-tuning process. Human evaluators can provide insights into the correctness, relevance, and coherence of the generated text, ensuring that the fine-tuned model truly meets the desired standards.
