@@ -23,6 +23,7 @@ Welcome to CHAT GI-IADS's documentation!
    rlhfs
    Building-an-LLM-Chatbot
    Evaluation-metrics
+   Similarity_search
    Study_case_Mistral_Yassine
    
    
