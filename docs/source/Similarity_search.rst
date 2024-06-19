@@ -50,7 +50,7 @@ Today is a good day.
 
 
 
-Here we can see the cosine similarity search method identifies similarities (and their lack) between texts and return as an output the cosine of the angle between the vector embeddings of each text.
+Here, we can see the cosine similarity search method identifying similarities (and their lack-of) between texts ,and return as an output ,the cosine of the angle between the vector embeddings of each text.
 
 BLEU Score
 *********
