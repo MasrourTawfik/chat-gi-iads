@@ -23,7 +23,7 @@ Cosine Similarity is a metric used to measure how similar two vectors are by cal
 
 **Formula:** The cosine similarity between two vectors A and B is calculated as:
 
-.. image:: images/cosin.jpg
+.. image:: images/cosin.png
    :alt: cosin
    :align: center
 
@@ -40,7 +40,7 @@ The dog is sitting on the floor.
 
 Today is a good day.
 
-.. image:: images/simpic.jpg
+.. image:: images/simpic.png
    :alt: simpic
    :align: center
 
