@@ -19,6 +19,7 @@ Welcome to CHAT GI-IADS's documentation!
    intro-finetuning
    prompt-engineering
    rag
+   langchain
    peft
    rlhfs
    Building-an-LLM-Chatbot
