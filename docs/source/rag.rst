@@ -35,4 +35,4 @@ Putting it all together:
 -------------------------
 
 The RAG model is a powerful framework for knowledge-intensive NLP tasks that combines the strengths of parametric and non-parametric memory. It can be fine-tuned for a wide array of tasks, including question answering, text summarization, and dialogue generation. The RAG model has shown impressive performance on a variety of benchmarks and is a promising direction for future research in NLP.
-You can also check this `Notebook <https://colab.research.google.com/drive/1otEUVgCygtV96NuymO1fq-tpF8F3WS5l?usp=sharing>`_ for more details.
+You can also check this `Notebook <https://colab.research.google.com/drive/16gycGIgO-_TyaoLupUBJfHvpIYNGZ1p7?usp=sharing>`_ for more details.
