@@ -347,7 +347,7 @@ Bag of Words (BOW) is a simple but powerful approach to vectorizing text. As the
       
       Note that the size of the document-term matrix is: number of documents * size of vocabulary.
       
-      The vector size of each token equals the number of documents in the corpus. With this BOW approach, a large corpus has long vectors, and a small corpus has short vectors (as in the Surfin’ Bird example above, where each vector only has three numbers).
+   The vector size of each token equals the number of documents in the corpus. With this BOW approach, a large corpus has long vectors, and a small corpus has short vectors (as in the Surfin’ Bird example above, where each vector only has three numbers).
 
    .. note::
       A corpus is a set of texts or documents. A document is any distinct text varying in size, format, or structure and can include sentences, paragraphs, tweets, SMS, comments, reviews, articles, books, etc.
