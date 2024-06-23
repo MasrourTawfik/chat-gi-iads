@@ -325,9 +325,9 @@ Example:Abstractive Summarization
 
 Objective: Using the Hugging Face Transformers library in Python to perform abstractive summarization on a piece of text.
 
-`Hands on for Abstactive Summarization`_.
+`Hands on for Extractive Summarization`_.
 
-.. _Hands on for Abstractive Summarization: https://colab.research.google.com/drive/1zuaTp-KivcLojIMNN_VO0Yki6y3meDJi
+.. _Hands on for Extractive Summarization: https://colab.research.google.com/drive/1pUVjSR3izak6yhVH0ohC1MGMBnmpfT3-#scrollTo=v864N5gCt06T
 
 LLMs relevance in context-aware Text Generation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
