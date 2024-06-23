@@ -108,7 +108,7 @@ Preprocessing lab
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 .. button::
    :text: LAB
-   :link: https://colab.research.google.com/drive/1Fn0fZ2HdctgrS_kcgwhaf1nYbqptrjsu?usp=sharing
+   :link: https://colab.research.google.com/drive/1oynsTOvfSveEwih5dNWZUd4lXSd-f9hk#scrollTo=N9QdpBd0X4BM
 
 .. note::
    After preprocessing our data, the next step will be to feed it into our large language model. The concern here is whether our LLM will have a very good understanding of our cleaned data. In this context, we will discuss an important concept known as Tokenization.
@@ -322,7 +322,7 @@ Skip-gram is a slightly different word embedding technique in comparison to CBOW
 
 .. button::
    :text: LAB
-   :link: https://colab.research.google.com/drive/1CyXTqirDsrtinleQc-s6ArX-Dpi0Lo7Q?usp=sharing
+   :link: https://colab.research.google.com/drive/1GXDTqJEN4uVJRulBBas7_rSK9CdUBU_w
 
 3. **Bag of Words (BOW)**
 -----------------------
