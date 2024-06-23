@@ -327,7 +327,7 @@ Objective: Using the Hugging Face Transformers library in Python to perform abst
 
 `Hands on for Extractive Summarization`_.
 
-.. _Hands on for Extractive Summarization: https://colab.research.google.com/drive/1pUVjSR3izak6yhVH0ohC1MGMBnmpfT3-#scrollTo=v864N5gCt06T
+.. _Hands on for Extractive Summarization: https://colab.research.google.com/drive/1zuaTp-KivcLojIMNN_VO0Yki6y3meDJi
 
 LLMs relevance in context-aware Text Generation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
