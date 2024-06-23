@@ -459,7 +459,7 @@ If a dialogue begins with ambiguous references that could relate to either sport
 
 `Hands on Subsequent Text`_.
 
-.. _Hands on for Subsequent Text: https://colab.research.google.com/drive/10yNC_zPCL2lK1GsJLuqzZLibit8JLbd4#scrollTo=XOIBeElr_2ux
+.. _Hands on for Subsequent Text: https://colab.research.google.com/drive/1th3DHBxWU037wzDfFdpPxHoZ8wH_UntY#scrollTo=xG_V08zQDpo3
 
 Training Data
 **********
