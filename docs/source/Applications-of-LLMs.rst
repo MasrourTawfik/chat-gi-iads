@@ -457,7 +457,7 @@ This involves revisiting and potentially revising the interpretation of earlier 
 
 If a dialogue begins with ambiguous references that could relate to either sports or business (like "draft"), but subsequent text clearly discusses teams and players, the AI would reinterpret the initial mention as sports-related.
 
-`Hands on Subsequent Text`_.
+`Hands on for Subsequent Text`_.
 
 .. _Hands on for Subsequent Text: https://colab.research.google.com/drive/1th3DHBxWU037wzDfFdpPxHoZ8wH_UntY
 
