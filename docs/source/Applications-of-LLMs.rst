@@ -325,10 +325,9 @@ Example:Abstractive Summarization
 
 Objective: Using the Hugging Face Transformers library in Python to perform abstractive summarization on a piece of text.
 
-`Hands on for Abstactive Summarization`_.
+`Hands on for Abstractive Summarization`_.
 
-.. _Hands on for Abstractive Summarization: https://colab.research.google.com/drive/1zuaTp-KivcLojIMNN_VO0Yki6y3meDJi#scrollTo=6qxpTgLZgSYs
-
+.. _Hands on for Abstractive Summarization: https://colab.research.google.com/drive/1bXIjYm6HmCufFX56u1bVldrZhqlAEwkY#scrollTo=1k8XFVzQAtWN
 
 LLMs relevance in context-aware Text Generation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -458,9 +457,9 @@ This involves revisiting and potentially revising the interpretation of earlier 
 
 If a dialogue begins with ambiguous references that could relate to either sports or business (like "draft"), but subsequent text clearly discusses teams and players, the AI would reinterpret the initial mention as sports-related.
 
-`Hands on Subsequent Text`_.
+`Hands on for Subsequent Text`_.
 
-.. _Hands on for Subsequent Text: https://colab.research.google.com/drive/10yNC_zPCL2lK1GsJLuqzZLibit8JLbd4#scrollTo=XOIBeElr_2ux
+.. _Hands on for Subsequent Text: https://colab.research.google.com/drive/1th3DHBxWU037wzDfFdpPxHoZ8wH_UntY
 
 Training Data
 **********
@@ -552,22 +551,49 @@ Customer Support
 *********
 LLM-powered chatbots are deployed on websites and in apps to provide immediate responses to customer inquiries, reducing wait times and improving customer service efficiency.
 
+*24/7 Availability*: Chatbots can handle customer inquiries around the clock, ensuring that users receive assistance even outside of regular business hours.
+*Handling FAQs*: They can respond to frequently asked questions, such as inquiries about shipping times, return policies, or account issues.
+*Ticket Routing*: More complex issues can be identified and routed to the appropriate human agents, streamlining the support process.
+*Multilingual Support*: Chatbots can provide support in multiple languages, catering to a global customer base.
+
 Personal Assistants
+
 ***************
 In smartphones and smart home devices, these chatbots help users perform tasks like setting reminders, answering questions, and controlling connected devices with natural language commands.
+
+*Task Management*: Chatbots can set reminders, schedule meetings, and create to-do lists.
+*Information Retrieval*: They can answer questions about the weather, news updates, or general knowledge queries.
+*Device Control*: Users can control smart home devices such as lights, thermostats, and security systems using voice commands.
+*Personalized Recommendations*: Based on user behavior, chatbots can suggest music, recipes, or activities.
 
 Education and Tutoring
 ****************
 Chatbots equipped with LLMs can provide personalized tutoring, answer students' questions, and offer explanations on a wide range of topics, facilitating a more interactive learning experience.
 
+*Homework Help*: Students can ask chatbots for assistance with homework problems or for explanations of complex concepts.
+*Personalized Learning*: Chatbots can adapt to the learning pace and style of individual students, offering customized lessons and practice exercises.
+*Language Learning*: They can engage in conversation practice, correct grammar, and provide vocabulary exercises.
+
 Healthcare Assistance
 ******************
 Virtual assistants in healthcare can triage patient inquiries, provide health information, and even offer preliminary diagnostic support based on symptoms described by the user.
+
+*Symptom Checking*: Chatbots can analyze symptoms described by users and suggest possible conditions or next steps.
+*Appointment Scheduling*: They can assist in scheduling, rescheduling, or canceling medical appointments.
+*Medication Reminders*: Chatbots can remind patients to take their medications at prescribed times.
 
 Information Retrieval
 *****************
 LLM-powered chatbots enhance information retrieval systems by understanding complex queries and fetching accurate, relevant information from vast datasets or the internet.
 
+*Data Querying*: Users can ask detailed questions and receive precise answers from large datasets.
+*Research Assistance*: Chatbots can help researchers find relevant papers, articles, and data points.
+*Customer Insights*: In businesses, chatbots can analyze and retrieve insights from customer feedback and reviews.
+
 E-commerce and Shopping
 *******************
 These chatbots assist customers in finding products, offering recommendations, and answering product-related questions, enhancing the online shopping experience.
+
+*Product Discovery*: Chatbots help users find products based on their preferences and past purchases.
+*Personalized Recommendations*: They suggest products that users might be interested in, increasing sales and customer satisfaction.
+*Order Tracking*: Customers can check the status of their orders and receive updates on shipping and delivery.
