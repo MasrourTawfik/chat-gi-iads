@@ -384,29 +384,30 @@ FastText extends Word2Vec by representing each word as an n-gram of characters, 
    - **Limitations**:
      - Increased computational complexity compared to Word2Vec.
 6. **Papers related to Data cleaning**
+----------------------------------------
 1. **Data Cleaning: Overview and Emerging Challenges**
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   **Title**: "Data Cleaning: Overview and Emerging Challenges"  
-   **Authors**: Ihab F. Ilyas, Xu Chu  
-   **Published in**: ACM Journal of Data and Information Quality (JDIQ)  
-   **Year**: 2019  
-   **Abstract**: This paper provides a comprehensive overview of data cleaning, discussing its importance, the challenges faced, and emerging trends. It delves into various data cleaning techniques, frameworks, and tools.  
-   **Link**: `Data Cleaning: Overview and Emerging Challenges <https://dl.acm.org/doi/10.1145/3287310>`_
+   - **Title**: "Data Cleaning: Overview and Emerging Challenges"  
+   - **Authors**: Ihab F. Ilyas, Xu Chu  
+   - **Published in**: ACM Journal of Data and Information Quality (JDIQ)  
+   - **Year**: 2019  
+   - **Abstract**: This paper provides a comprehensive overview of data cleaning, discussing its importance, the challenges faced, and emerging trends. It delves into various data cleaning techniques, frameworks, and tools.  
+   - **Link**: `Data Cleaning: Overview and Emerging Challenges <https://dl.acm.org/doi/10.1145/3287310>`_
 
 2. **Data Cleaning: Problems and Current Approaches**
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   **Title**: "Data Cleaning: Problems and Current Approaches"  
-   **Authors**: Erhard Rahm, Hong Hai Do  
-   **Published in**: IEEE Data Engineering Bulletin  
-   **Year**: 2000  
-   **Abstract**: This paper reviews the data cleaning process, identifies common problems, and evaluates existing approaches to address these problems. It also discusses the integration of data cleaning tools in data warehousing environments.  
-   **Link**: `Data Cleaning: Problems and Current Approaches <https://www.researchgate.net/publication/235707951_Data_Cleaning_Problems_and_Current_Approaches>`_
+   - **Title**: "Data Cleaning: Problems and Current Approaches"  
+   - **Authors**: Erhard Rahm, Hong Hai Do  
+   - **Published in**: IEEE Data Engineering Bulletin  
+   - **Year**: 2000  
+   - **Abstract**: This paper reviews the data cleaning process, identifies common problems, and evaluates existing approaches to address these problems. It also discusses the integration of data cleaning tools in data warehousing environments.  
+   - **Link**: `Data Cleaning: Problems and Current Approaches <https://www.researchgate.net/publication/235707951_Data_Cleaning_Problems_and_Current_Approaches>`_
 
 3. **A System for Interactive Data Cleaning and Transformation**
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-   **Title**: "A System for Interactive Data Cleaning and Transformation"  
-   **Authors**: Tamraparni Dasu, Theodore Johnson, Seung Jin Manku, Divesh Srivastava  
-   **Published in**: IEEE Data Engineering Bulletin  
-   **Year**: 2002  
-   **Abstract**: This paper presents an interactive system designed for data cleaning and transformation. It highlights the importance of user involvement in the data cleaning process and demonstrates the system's capabilities through various case studies.  
-   **Link**: `A System for Interactive Data Cleaning and Transformation <https://ieeexplore.ieee.org/document/1045105>`_
+   - **Title**: "A System for Interactive Data Cleaning and Transformation"  
+   - **Authors**: Tamraparni Dasu, Theodore Johnson, Seung Jin Manku, Divesh Srivastava  
+   - **Published in**: IEEE Data Engineering Bulletin  
+   - **Year**: 2002  
+   - **Abstract**: This paper presents an interactive system designed for data cleaning and transformation. It highlights the importance of user involvement in the data cleaning process and demonstrates the system's capabilities through various case studies.  
+   - **Link**: `A System for Interactive Data Cleaning and Transformation <https://ieeexplore.ieee.org/document/1045105>`_
