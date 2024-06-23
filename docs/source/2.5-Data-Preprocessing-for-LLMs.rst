@@ -49,10 +49,9 @@ Text cleaning and normalization
 Removing noise and normalization 
 -----------------------------
 Removing noise from text and standardizing it are essential for enhancing the quality of our textual data, which in turn improves the performance of natural language processing tasks. Various techniques and tools are available to address these challenges.
+
 .. note::
-   To effectively manage this task, we can utilize several libraries that are designed to help clean and standardize text data. These libraries provide robust functionalities for preprocessing text, making it cleaner and more uniform for subsequent analysis.
-
-
+To effectively manage this task, we can utilize several libraries that are designed to help clean and standardize text data. These libraries provide robust functionalities for preprocessing text, making it cleaner and more uniform for subsequent analysis.
 
 
 1. Lowercasing
