@@ -258,6 +258,89 @@ Libraries for Tokenization
 
      BERT Tokenization: ['hello', 'world', '.', 'how', 'are', 'you', '?']
 
+2.Word Embedding
+---------------
+Definition
+~~~~~~~~~~
+Word embedding is a technique to represent words in continuous vector space where semantically similar words are mapped to nearby points.
+
+Purpose
+~~~~~~~
+- To capture the semantic meaning of words.
+- To reduce the dimensionality of text data for easier processing by machine learning models.
+Types of Word Embeddings
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+1. **One-Hot Encoding**
+-----------------------
+
+One-hot encoding is a basic and straightforward method to represent words. Each word in the vocabulary is represented as a binary vector, where only the index corresponding to that word is set to 1, and all other indices are set to 0.
+
+   - **Example**: In a vocabulary of three words ["cat", "dog", "fish"], the one-hot encodings would be:
+     - "cat" -> [1, 0, 0]
+     - "dog" -> [0, 1, 0]
+     - "fish" -> [0, 0, 1]
+   
+   - **Advantages**:
+     - Simple to implement.
+     - Intuitive and easy to understand.
+   
+   - **Limitations**:
+     - High dimensionality: For a large vocabulary, the vectors become very large and sparse.
+     - No semantic meaning: Does not capture any relationship between words. "cat" and "dog" are as dissimilar as "cat" and "fish".
+
+2. **Word2Vec**
+-----------------------
+Word2Vec is a popular word embedding technique that produces dense, continuous vector representations of words. It uses neural networks to learn the embeddings from large corpora of text. Word2Vec offers two models:
+
+   - **CBOW (Continuous Bag of Words)**:
+     - Predicts the target word from the context words.
+     - Faster and works well with frequent words.
+   
+   - **Skip-gram**:
+     - Predicts the context words from the target word.
+     - Better for smaller datasets and rare words.
+1.1 Continuous Bag of Words
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CBOW aims to predict a target word based on its context, which consists of the surrounding words in a given window.
+It a feedforward neural network with a single hidden layer. The input layer represents the context words, and the output layer represents the target word. The hidden layer contains the learned continuous vector representations (word embeddings) of the input words.
+    
+.. figure:: ../Images/cbow.png
+    :width: 80%
+    :align: center
+    :alt: SentencePiece Tokenization
+
+1.2 Skip-gram
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Skip-gram is a slightly different word embedding technique in comparison to CBOW as it does not predict the current word based on the context.This variant takes only one word as an input and then predicts the closely related context words. That is the reason it can efficiently represent rare words.
+
+.. figure:: ../Images/skipgram.png
+    :width: 80%
+    :align: center
+    :alt: SentencePiece Tokenization
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Tokenization algorithms
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
   1.Byte pair encoding (BPE)
