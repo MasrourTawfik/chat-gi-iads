@@ -356,9 +356,33 @@ Bag of Words (BOW) is a simple but powerful approach to vectorizing text. As the
    :text: LAB
    :link: https://colab.research.google.com/drive/1T2wHpvwLmNlF7WMms_wSTArLqhhTbCxK#scrollTo=K4o_HqpCWO0u
    
+4. **GloVe (Global Vectors for Word Representation)**
+-----------------------------------------------------
 
+GloVe is a word embedding technique that combines the advantages of both matrix factorization techniques and local context window methods. It leverages word co-occurrence statistics from a corpus to learn word vectors.
 
+   - **Example**: GloVe creates word vectors based on the frequency of words appearing together in a context window across the entire corpus.
+   
+   - **Advantages**:
+     - Captures both global statistical information and local context.
+     - Efficient and produces meaningful embeddings.
+   
+   - **Limitations**:
+     - Context-independent: Similar to Word2Vec, it doesn't capture different meanings of words in different contexts.
 
+5. **FastText**
+--------------
+
+FastText extends Word2Vec by representing each word as an n-gram of characters, which helps in generating embeddings for words that were not seen during training (out-of-vocabulary words).
+
+   - **Example**: The word "unhappiness" can be represented as character n-grams ["un", "unh", "hap", "happ", "ppiness", "iness"].
+   
+   - **Advantages**:
+     - Handles out-of-vocabulary words better.
+     - Produces more fine-grained embeddings by considering subword information.
+   
+   - **Limitations**:
+     - Increased computational complexity compared to Word2Vec.
 
 
 
