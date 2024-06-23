@@ -93,6 +93,8 @@ Drawbacks:
 - Vanishing Gradient Problem
 - Training RNNs can be computationally intensive and time-consuming.
 
+Scientific paper about RNN : <https://arxiv.org/pdf/1912.05911>
+
 Convolutional Neural Networks (CNNs)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -108,6 +110,8 @@ Drawbacks:
 
 Neural networks have revolutionized NLP by providing models that can understand and generate human language with unprecedented accuracy.
 
+Scientific paper about CNN :<https://arxiv.org/abs/1511.08458>
+
 
 
 The Emergence of Large Language Models
@@ -119,7 +123,7 @@ Rise of Transformer-Based Models
 
 The transformer architecture, introduced in the seminal paper Attention is All You Need <https://arxiv.org/abs/1706.03762>_ by Vaswani et al. in 2017, marked a significant shift in the field of natural language processing (NLP). This architecture departed from the recurrent and convolutional neural networks that were prevalent at the time, introducing a novel approach based on self-attention mechanisms.
 
-impact:
+Impact:
 ~~~~~~~
 
 The introduction of the transformer architecture has revolutionized NLP, leading to the development of highly effective models like BERT, GPT, and their successors, it also paved the way for significant advancements in language understanding, translation, and generation, setting new standards for performance in the field.

@@ -22,7 +22,7 @@ data loading, preprocessing, and model configuration tasks. However, for the act
 the GPU’s parallel processing capabilities take center stage.The two recommended CPU platforms are
 Intel Xeon W and AMD Threadripper Pro.
 
-random access memory(RAM)
+Random Access Memory(RAM)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 RAM is essential for efficiently handling large datasets and model parameters. During training, the
 model’s architecture, gradients, and intermediate values are stored in memory. Therefore, a sufficient
