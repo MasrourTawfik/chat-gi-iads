@@ -351,6 +351,10 @@ Bag of Words (BOW) is a simple but powerful approach to vectorizing text. As the
 
    .. note::
       A corpus is a set of texts or documents. A document is any distinct text varying in size, format, or structure and can include sentences, paragraphs, tweets, SMS, comments, reviews, articles, books, etc.
+
+.. button::
+   :text: LAB
+   :link: https://colab.research.google.com/drive/1T2wHpvwLmNlF7WMms_wSTArLqhhTbCxK#scrollTo=K4o_HqpCWO0u
    
 
 
