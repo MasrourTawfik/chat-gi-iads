@@ -326,26 +326,31 @@ Skip-gram is a slightly different word embedding technique in comparison to CBOW
 
 3. **Bag of Words (BOW)**
 -----------------------
-Bag-of-words (BOW) is a simple but powerful approach to vectorizing text.As the name may suggest, the bag-of-words technique does not consider the position of a word in a document. Instead, all the words are dropped into a big bag. The idea is to count the number of times each word appears in each document without considering its position or grammatical role.
-Consider the three following sentences from the well-known Surfin’ Bird song, and count the number of times each word appears in each sentence. Let’s first list all the words in the verses:
+Bag of Words (BOW) is a simple but powerful approach to vectorizing text. As the name suggests, the bag-of-words technique does not consider the position of a word in a document. Instead, all the words are dropped into a big bag. The idea is to count the number of times each word appears in each document without considering its position or grammatical role.
 
-.. figure:: ../Images/BOW.png
-    :width: 80%
-    :align: center
-    :alt: BOW on Surfin’ Bird
+   - **Example**: Consider the three following sentences from the well-known Surfin’ Bird song, and count the number of times each word appears in each sentence. Let’s first list all the words in the verses:
 
-Each word is now associated with its own column of numbers, its own vector:
-.. figure:: ../Images/BOW2.png
-    :width: 80%
-    :align: center
-    :alt: Each word has its own vector
+   .. figure:: ../Images/BOW.png
+      :width: 80%
+      :align: center
+      :alt: BOW on Surfin’ Bird
 
-.. note::
-   The matrix calculated on this simple example of three sentences can be generalized to many documents in the corpus. Each document is a row, and each token is a column. Such a matrix is called the document-term matrix. It describes the frequency of terms that occur in a collection of documents and is used as input to a machine learning classifier.
-   Note that the size of the document-term matrix is:number of documents ∗ size of vocabulary
-The vector size of each token equals the number of documents in the corpus. With this BOW approach, a large corpus has long vectors, and a small corpus has short vectors (as in the Surfin’ Bird example above, where each vector only has three numbers).
-.. note::
-   A corpus is a set of texts or documents. A document is any distinct text varying in size, format, or structure and can include sentences, paragraphs, tweets, SMS, comments, reviews, articles, books, etc. 
+   Each word is now associated with its own column of numbers, its own vector:
+
+   .. figure:: ../Images/BOW2.png
+      :width: 80%
+      :align: center
+      :alt: Each word has its own vector
+
+   .. note::
+      The matrix calculated on this simple example of three sentences can be generalized to many documents in the corpus. Each document is a row, and each token is a column. Such a matrix is called the document-term matrix. It describes the frequency of terms that occur in a collection of documents and is used as input to a machine learning classifier.
+      
+      Note that the size of the document-term matrix is: number of documents * size of vocabulary.
+      
+      The vector size of each token equals the number of documents in the corpus. With this BOW approach, a large corpus has long vectors, and a small corpus has short vectors (as in the Surfin’ Bird example above, where each vector only has three numbers).
+
+   .. note::
+      A corpus is a set of texts or documents. A document is any distinct text varying in size, format, or structure and can include sentences, paragraphs, tweets, SMS, comments, reviews, articles, books, etc.
    
 
 
