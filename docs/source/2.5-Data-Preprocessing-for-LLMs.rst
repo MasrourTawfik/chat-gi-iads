@@ -115,13 +115,148 @@ Preprocessing lab
 
 Tokenization and word embedding
 --------------------------------
+Tokenization and word embedding are crucial steps in natural language processing (NLP) that help convert textual data into numerical formats that can be easily processed by machine learning models.
+
+1.Tokenization
+----------------
+Definition
+~~~~~~~~~~
 Tokenization, in the realm of Natural Language Processing (NLP) and machine learning, refers to the process of converting a sequence of text into smaller parts, known as tokens. These tokens can be as small as characters or as long as words.
 The aim of tokenization is to represent text in a manner that's meaningful for machines without losing its context.
+
+Types of Tokenization
+~~~~~~~~~~~~~~~~~~~~~
+1. **Word Tokenization**: Splits text into individual words.
+   
+   - Example: "Hello, world!" becomes ["Hello", ",", "world", "!"]
+   
+2. **Sentence Tokenization**: Splits text into individual sentences.
+   
+   - Example: "Hello world. How are you?" becomes ["Hello world.", "How are you?"]
+   
+3. **Subword Tokenization**: Breaks words into subword units, often used in transformer models like BERT.
+   
+   - Example: "unhappiness" becomes ["un", "##happiness"]
+   
    .. figure:: ../Images/TypesOfTokenization.jpg
     :width: 80%
     :align: center
     :alt: Alternative text for the image
 
+Libraries for Tokenization
+~~~~~~~~~~~~~~~~~~~~~~~~~
+- **NLTK (Natural Language Toolkit)**: Provides functions for word and sentence tokenization along with additional NLP functionalities like stemming, lemmatization, and POS tagging.
+
+  .. code:: python
+
+     # Importing necessary functions from NLTK
+     import nltk
+     from nltk.tokenize import word_tokenize, sent_tokenize
+
+     # Download the NLTK data files (only the first time)
+     nltk.download('punkt')
+     nltk.download('averaged_perceptron_tagger')
+     nltk.download('wordnet')
+
+     # Input text
+     text = "Hello world. How are you?"
+
+     # Word tokenization
+     words = word_tokenize(text)
+
+     # Sentence tokenization
+     sentences = sent_tokenize(text)
+
+     # Part-of-Speech (POS) tagging
+     pos_tags = nltk.pos_tag(words)
+
+     # Lemmatization
+     from nltk.stem import WordNetLemmatizer
+     lemmatizer = WordNetLemmatizer()
+     lemmas = [lemmatizer.lemmatize(word) for word in words]
+
+     # Output results
+     print("Word Tokenization:", words)
+     print("Sentence Tokenization:", sentences)
+     print("POS Tagging:", pos_tags)
+     print("Lemmatization:", lemmas)
+
+  **Output:**
+
+  .. code:: text
+
+     Word Tokenization: ['Hello', 'world', '.', 'How', 'are', 'you', '?']
+     Sentence Tokenization: ['Hello world.', 'How are you?']
+     POS Tagging: [('Hello', 'NNP'), ('world', 'NN'), ('.', '.'), ('How', 'WRB'), ('are', 'VBP'), ('you', 'PRP'), ('?', '.')]
+     Lemmatization: ['Hello', 'world', '.', 'How', 'are', 'you', '?']
+
+- **spaCy**: Efficient tokenization and additional NLP functionalities such as POS tagging, named entity recognition (NER), and dependency parsing.
+
+  .. code:: python
+
+     # Importing spaCy and loading the English model
+     import spacy
+
+     # Load the small English model
+     nlp = spacy.load("en_core_web_sm")
+
+     # Input text
+     text = "Hello world. How are you?"
+
+     # Processing the text through the spaCy pipeline
+     doc = nlp(text)
+
+     # Extracting tokens
+     tokens = [token.text for token in doc]
+
+     # POS tagging
+     pos_tags = [(token.text, token.pos_) for token in doc]
+
+     # Named Entity Recognition (NER)
+     entities = [(entity.text, entity.label_) for entity in doc.ents]
+
+     # Dependency Parsing
+     dependencies = [(token.text, token.dep_, token.head.text) for token in doc]
+
+     # Output results
+     print("spaCy Tokenization:", tokens)
+     print("POS Tagging:", pos_tags)
+     print("Named Entities:", entities)
+     print("Dependencies:", dependencies)
+
+  **Output:**
+
+  .. code:: text
+
+     spaCy Tokenization: ['Hello', 'world', '.', 'How', 'are', 'you', '?']
+     POS Tagging: [('Hello', 'INTJ'), ('world', 'NOUN'), ('.', 'PUNCT'), ('How', 'ADV'), ('are', 'AUX'), ('you', 'PRON'), ('?', 'PUNCT')]
+     Named Entities: []
+     Dependencies: [('Hello', 'intj', 'Hello'), ('world', 'ROOT', 'world'), ('.', 'punct', 'world'), ('How', 'advmod', 'are'), ('are', 'ROOT', 'are'), ('you', 'nsubj', 'are'), ('?', 'punct', 'are')]
+
+- **transformers**: Tokenization for transformer-based models, and access to pre-trained transformer models for tasks such as text classification, named entity recognition, and question answering.
+
+  .. code:: python
+
+     # Importing the BertTokenizer from transformers library
+     from transformers import BertTokenizer
+
+     # Loading the BERT tokenizer
+     tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
+
+     # Input text
+     text = "Hello world. How are you?"
+
+     # Tokenizing the text using BERT tokenizer
+     tokens = tokenizer.tokenize(text)
+
+     # Output results
+     print("BERT Tokenization:", tokens)
+
+  **Output:**
+
+  .. code:: text
+
+     BERT Tokenization: ['hello', 'world', '.', 'how', 'are', 'you', '?']
 
 Tokenization algorithms
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
