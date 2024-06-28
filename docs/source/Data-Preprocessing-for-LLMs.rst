@@ -20,7 +20,7 @@ Data preprocessing is a pivotal phase in our pipeline, essential for achieving h
    :alt: Alternative text for the image
 
 Data cleaning
-============================
+-------------------------------------------
 .. note::
    Data cleaning is a fundamental aspect of data pre-processing for training LLMs. This technique involves identifying and rectifying inaccuracies, inconsistencies, and irrelevant elements within the raw text data. 
 
