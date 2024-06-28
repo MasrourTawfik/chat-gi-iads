@@ -81,10 +81,10 @@ Compare the scores from the pretrained and fine-tuned models. Significant improv
     import pandas as pd
     from sklearn.metrics.pairwise import cosine_similarity
 
-    dataset_output = "The torque specification is 450 ft-lbs"
+    dataset_output = "To calibrate a pressure gauge, first ensure the gauge is disconnected from any pressure source. Connect the gauge to a known, accurate pressure source or a calibrator. Apply pressure in increments and compare the gauge reading with the known pressure. Adjust the gauge calibration screw to correct any discrepancies. Repeat the process to ensure accuracy. Document the calibration in the maintenance log."
 
 
-    input_sentences = tokenizer("What are the torque specifications for the wheel nuts on the 988H?", return_tensors="pt").to('cuda')
+    input_sentences = tokenizer("How to calibrate a pressure gauge?", return_tensors="pt").to('cuda')
 
     # Generate output using the original pretrained model
     foundational_outputs_sentence = get_outputs(loaded_model, input_sentences, max_new_tokens=50)
