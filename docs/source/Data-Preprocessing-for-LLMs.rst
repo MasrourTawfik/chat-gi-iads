@@ -20,7 +20,7 @@ Data preprocessing is a pivotal phase in our pipeline, essential for achieving h
    :alt: Alternative text for the image
 
 Data cleaning
-============================
+-------------------------------------------
 .. note::
    Data cleaning is a fundamental aspect of data pre-processing for training LLMs. This technique involves identifying and rectifying inaccuracies, inconsistencies, and irrelevant elements within the raw text data. 
 
@@ -108,7 +108,7 @@ Preprocessing lab
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 .. button::
    :text: LAB
-   :link: https://colab.research.google.com/drive/1Fn0fZ2HdctgrS_kcgwhaf1nYbqptrjsu?usp=sharing
+   :link: https://colab.research.google.com/drive/1oynsTOvfSveEwih5dNWZUd4lXSd-f9hk#scrollTo=N9QdpBd0X4BM
 
 .. note::
    After preprocessing our data, the next step will be to feed it into our large language model. The concern here is whether our LLM will have a very good understanding of our cleaned data. In this context, we will discuss an important concept known as Tokenization.
@@ -322,126 +322,92 @@ Skip-gram is a slightly different word embedding technique in comparison to CBOW
 
 .. button::
    :text: LAB
-   :link: https://colab.research.google.com/drive/1CyXTqirDsrtinleQc-s6ArX-Dpi0Lo7Q?usp=sharing
+   :link: https://colab.research.google.com/drive/1GXDTqJEN4uVJRulBBas7_rSK9CdUBU_w
 
 3. **Bag of Words (BOW)**
 -----------------------
-Bag-of-words (BOW) is a simple but powerful approach to vectorizing text.As the name may suggest, the bag-of-words technique does not consider the position of a word in a document. Instead, all the words are dropped into a big bag. The idea is to count the number of times each word appears in each document without considering its position or grammatical role.
-Consider the three following sentences from the well-known Surfin’ Bird song, and count the number of times each word appears in each sentence. Let’s first list all the words in the verses:
+Bag of Words (BOW) is a simple but powerful approach to vectorizing text. As the name suggests, the bag-of-words technique does not consider the position of a word in a document. Instead, all the words are dropped into a big bag. The idea is to count the number of times each word appears in each document without considering its position or grammatical role.
 
-.. figure:: ../Images/BOW.png
-    :width: 80%
-    :align: center
-    :alt: BOW on Surfin’ Bird
+   - **Example**: Consider the three following sentences from the well-known Surfin’ Bird song, and count the number of times each word appears in each sentence. Let’s first list all the words in the verses:
 
-Each word is now associated with its own column of numbers, its own vector:
-.. figure:: ../Images/BOW2.png
-    :width: 80%
-    :align: center
-    :alt: Each word has its own vector
+   .. figure:: ../Images/BOW.png
+      :width: 80%
+      :align: center
+      :alt: BOW on Surfin’ Bird
 
-.. note::
-   The matrix calculated on this simple example of three sentences can be generalized to many documents in the corpus. Each document is a row, and each token is a column. Such a matrix is called the document-term matrix. It describes the frequency of terms that occur in a collection of documents and is used as input to a machine learning classifier.
-   Note that the size of the document-term matrix is:number of documents ∗ size of vocabulary
-The vector size of each token equals the number of documents in the corpus. With this BOW approach, a large corpus has long vectors, and a small corpus has short vectors (as in the Surfin’ Bird example above, where each vector only has three numbers).
-.. note::
-   A corpus is a set of texts or documents. A document is any distinct text varying in size, format, or structure and can include sentences, paragraphs, tweets, SMS, comments, reviews, articles, books, etc. 
-   
+   Each word is now associated with its own column of numbers, its own vector:
 
+   .. figure:: ../Images/BOW2.png
+      :width: 80%
+      :align: center
+      :alt: Each word has its own vector
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Tokenization algorithms
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-  1.Byte pair encoding (BPE)
-  
-BPE is a simple form of data compression algorithm in which the most common pair of consecutive bytes of data is replaced with a byte that does not occur in that data.
-Suppose we have data aaabdaaabac which needs to be encoded (compressed). The byte pair aa occurs most often, so we will replace it with Z as Z does not occur in our data.
+   .. note::
+      The matrix calculated on this simple example of three sentences can be generalized to many documents in the corpus. Each document is a row, and each token is a column. Such a matrix is called the document-term matrix. It describes the frequency of terms that occur in a collection of documents and is used as input to a machine learning classifier.
       
-BPE algorithm
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      Note that the size of the document-term matrix is: number of documents * size of vocabulary.
+      
+   The vector size of each token equals the number of documents in the corpus. With this BOW approach, a large corpus has long vectors, and a small corpus has short vectors (as in the Surfin’ Bird example above, where each vector only has three numbers).
 
-1.Initialize Vocabulary: Start with a vocabulary that consists of all the characters or tokens in the dataset.
-
-2.Calculate Frequencies: Calculate the frequency of each character or token pair in the dataset.
-
-3.Merge Most Frequent Pair: Identify the most frequent pair of characters or tokens in the dataset, and merge them into a new token. Update the vocabulary accordingly.
-
-4.Repeat: Repeat steps 2 and 3 for a fixed number of iterations or until a certain condition is met (e.g., reaching a predefined vocabulary size).
-
-5.Encoding: Once the vocabulary is constructed, encode the input text by replacing each token with its corresponding token in the vocabulary.
-
-BPE lab
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. button::
-   :text: BPE LAB
-   :link: https://colab.research.google.com/drive/1pWYPIPiazp8btdIDxOYl_zeRnNa_G3Jv?usp=sharing
-
-
-Sentence Piece Tokenization
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-SentencePiece is an unsupervised text tokenizer(a tokenizer breaks down text into smaller subword units) and detokenizer(a detokenizer reconstructs the original text from a sequence of subword units, ensuring proper formatting and coherence) primarily designed for Neural Network-based text generation tasks. It supports multiple languages with a single model and can tokenize text into subwords, making it versatile for various NLP tasks.
-
-Sentence Piece algorithm
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-1.Training:The algorithm begins by training on a large corpus of text data.During training,it learns a vocabulary of subword units based on the frequency of character sequences in the training data.
-
-2.Tokenization:Once the algorithm is trained , it can tokenize new text inputs.It segments the input text into subword units using the learned vocabulary.
-
-3.Detokenization: SentencePiece merges subword units according to the rules learned during training, effectively reversing the tokenization process from tokens to sentences.
-   
-   .. figure:: ../Images/SentencePiece.png
-    :width: 80%
-    :align: center
-    :alt: SentencePiece Tokenization
-
-Word embedding
-~~~~~~~~~~~~~~~~~~~~~~~
-Word embedding or known as word vector is an approach with which we represent documents and words. It is defined as a numeric vector input that allows words with similar meanings to have the same representation.
-
-Algorithms for word embedding
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-1.Word2Vec
-~~~~~~~~~~~~~~~~~~~~~
-Word2Vec is a neural approach for generating word embeddings.It is a shallow, two-layer neural network trained to reconstruct linguistic contexts of words. It takes a large corpus as input and generates a vector space, usually with several hundred dimensions. Each unique word in the corpus is assigned a vector in this space, positioning words with common contexts close to each other.
-There are two neural embedding methods for Word2Vec :Continuous Bag of Words(CBOW) and Skip-gram
- 
-1.1 Continuous Bag of Words
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-CBOW aims to predict a target word based on its context, which consists of the surrounding words in a given window.
-It a feedforward neural network with a single hidden layer. The input layer represents the context words, and the output layer represents the target word. The hidden layer contains the learned continuous vector representations (word embeddings) of the input words.
-    
-.. figure:: ../Images/cbow.png
-    :width: 80%
-    :align: center
-    :alt: SentencePiece Tokenization
-
-1.2 Skip-gram
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Skip-gram is a slightly different word embedding technique in comparison to CBOW as it does not predict the current word based on the context.This variant takes only one word as an input and then predicts the closely related context words. That is the reason it can efficiently represent rare words.
-
-.. figure:: ../Images/skipgram.png
-    :width: 80%
-    :align: center
-    :alt: SentencePiece Tokenization
+   .. note::
+      A corpus is a set of texts or documents. A document is any distinct text varying in size, format, or structure and can include sentences, paragraphs, tweets, SMS, comments, reviews, articles, books, etc.
 
 .. button::
    :text: LAB
-   :link: https://colab.research.google.com/drive/1CyXTqirDsrtinleQc-s6ArX-Dpi0Lo7Q?usp=sharing
-
-
+   :link: https://colab.research.google.com/drive/1T2wHpvwLmNlF7WMms_wSTArLqhhTbCxK#scrollTo=K4o_HqpCWO0u
    
+4. **GloVe (Global Vectors for Word Representation)**
+-----------------------------------------------------
+
+GloVe is a word embedding technique that combines the advantages of both matrix factorization techniques and local context window methods. It leverages word co-occurrence statistics from a corpus to learn word vectors.
+
+   - **Example**: GloVe creates word vectors based on the frequency of words appearing together in a context window across the entire corpus.
+   
+   - **Advantages**:
+     - Captures both global statistical information and local context.
+     - Efficient and produces meaningful embeddings.
+   
+   - **Limitations**:
+     - Context-independent: Similar to Word2Vec, it doesn't capture different meanings of words in different contexts.
+
+5. **FastText**
+--------------
+
+FastText extends Word2Vec by representing each word as an n-gram of characters, which helps in generating embeddings for words that were not seen during training (out-of-vocabulary words).
+
+   - **Example**: The word "unhappiness" can be represented as character n-grams ["un", "unh", "hap", "happ", "ppiness", "iness"].
+   
+   - **Advantages**:
+     - Handles out-of-vocabulary words better.
+     - Produces more fine-grained embeddings by considering subword information.
+   
+   - **Limitations**:
+     - Increased computational complexity compared to Word2Vec.
+6. **Papers related to Data cleaning**
+----------------------------------------
+1. **Data Cleaning: Overview and Emerging Challenges**
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   - **Title**: "Data Cleaning: Overview and Emerging Challenges"  
+   - **Authors**: Ihab F. Ilyas, Xu Chu  
+   - **Published in**: ACM Journal of Data and Information Quality (JDIQ)  
+   - **Year**: 2019  
+   - **Abstract**: This paper provides a comprehensive overview of data cleaning, discussing its importance, the challenges faced, and emerging trends. It delves into various data cleaning techniques, frameworks, and tools.  
+   - **Link**: `Data Cleaning: Overview and Emerging Challenges <https://dl.acm.org/doi/10.1145/3287310>`_
+
+2. **Data Cleaning: Problems and Current Approaches**
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   - **Title**: "Data Cleaning: Problems and Current Approaches"  
+   - **Authors**: Erhard Rahm, Hong Hai Do  
+   - **Published in**: IEEE Data Engineering Bulletin  
+   - **Year**: 2000  
+   - **Abstract**: This paper reviews the data cleaning process, identifies common problems, and evaluates existing approaches to address these problems. It also discusses the integration of data cleaning tools in data warehousing environments.  
+   - **Link**: `Data Cleaning: Problems and Current Approaches <https://www.researchgate.net/publication/235707951_Data_Cleaning_Problems_and_Current_Approaches>`_
+
+3. **A System for Interactive Data Cleaning and Transformation**
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   - **Title**: "A System for Interactive Data Cleaning and Transformation"  
+   - **Authors**: Tamraparni Dasu, Theodore Johnson, Seung Jin Manku, Divesh Srivastava  
+   - **Published in**: IEEE Data Engineering Bulletin  
+   - **Year**: 2002  
+   - **Abstract**: This paper presents an interactive system designed for data cleaning and transformation. It highlights the importance of user involvement in the data cleaning process and demonstrates the system's capabilities through various case studies.  
+   - **Link**: `A System for Interactive Data Cleaning and Transformation <https://ieeexplore.ieee.org/document/1045105>`_
