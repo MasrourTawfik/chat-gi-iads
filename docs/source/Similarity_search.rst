@@ -122,7 +122,7 @@ Compare the scores from the pretrained and fine-tuned models. Significant improv
 The output is as follows:
 
 
-.. figure:: ../Images/output_sim.png
+.. figure:: ../Images/simi_output.png
    :width: 80%
    :alt: Alternative text for the image
    :align: center
