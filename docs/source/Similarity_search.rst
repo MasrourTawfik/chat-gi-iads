@@ -130,11 +130,11 @@ The output is as follows:
 
 The cosine similarity matrix indicates the following:
 
-+ The pretrained LLM and fine-tuned LLM have a moderate similarity (0.456) with each other.
++ pretrained_output vs. finetuned_output: Cosine similarity is 0.5876, indicating moderate similarity between outputs from the pretrained model and the finetuned model.
 
-+ The pretrained LLM has a low similarity (0.270) with the dataset answer.
++ pretrained_output vs.dataset_output: Cosine similarity is 0.4463, suggesting a lower similarity between outputs from the pretrained model and the dataset answers.
 
-+ The fine-tuned LLM has a very low similarity (0.085) with the dataset answer.
++ finetuned_output vs. dataset_output: Cosine similarity is 0.5455, showing moderate similarity between outputs from the finetuned model and the dataset answers.
 
 These results suggest that the fine-tuned LLM has diverged significantly from both the pretrained LLM and the dataset answer, indicating that the fine-tuning process has not aligned the model closely with the expected dataset answers. Further refinement may be needed to improve alignment.
 
