@@ -1,5 +1,6 @@
-Overview of LLMs
-================
+====================================
+Overview of Large Language Models
+====================================
 
 Large Language Models (LLMs) are advanced artificial intelligence algorithms that use deep learning techniques, particularly transformer-based neural networks, to process and generate natural language. They have played a significant role in bringing generative AI to the forefront of public interest and business applications. LLMs are pre-trained on vast datasets, including text, images, videos, speech, and structured data, enabling them to understand, summarize, and predict new content with high accuracy. The performance of an LLM improves with the number of parameters it uses, which also requires significant computational, data, and engineering resources. The main aim of LLMs is to grasp the complexity of human language, making them invaluable for natural language processing (NLP) and natural language generation (NLG) tasks across various use cases and industries.
 
@@ -22,7 +23,7 @@ Large Language Models (LLMs) are commonly used in:
 
 
 The Predecessors of Large Language Models
-=========================================
+-----------------------------------------
 Large Language Models dominate today's artificial intelligence landscape,but the field of natural language processing (NLP) relied on a variety of techniques and models to understand and generate human language. These early methods laid the groundwork for the sophisticated LLMs we see today.
 
 
@@ -138,7 +139,7 @@ Scientific paper about CNN :<https://arxiv.org/abs/1511.08458>
 
 
 The Emergence of Large Language Models
-=======================================
+-----------------------------------------
 
 Rise of Transformer-Based Models
 --------------------------------

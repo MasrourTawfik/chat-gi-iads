@@ -12,7 +12,6 @@ Welcome to CHAT GI-IADS's documentation!
    Overview-of-Large-Language-Models
    Understanding-the-Architecture-of-Transformers
    Applications-of-LLMs
-   Synthetic_Data_Generation_for_Industrial_Applications
    Data-Preprocessing-for-LLMs
    The_computational_requirements_for_Training_LLMs
    Evaluation-metrics
