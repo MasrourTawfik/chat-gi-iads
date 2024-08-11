@@ -10,7 +10,6 @@ Welcome to CHAT GI-IADS's documentation!
 
    Introduction
    Overview-of-Large-Language-Models
-   History-of-Large-Language-Models
    Understanding-the-Architecture-of-Transformers
    Applications-of-LLMs
    Synthetic_Data_Generation_for_Industrial_Applications
