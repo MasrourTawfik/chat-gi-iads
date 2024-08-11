@@ -14,14 +14,13 @@ Welcome to CHAT GI-IADS's documentation!
    Applications-of-LLMs
    Data-Preprocessing-for-LLMs
    The_computational_requirements_for_Training_LLMs
+   intro-finetuning
    Evaluation-metrics
    Similarity_search
-   intro-finetuning
    prompt-engineering
    rag
    langchain
-   peft
-   rlhfs
+   rlhf
    Study_case_Mistral_Yassine
    
    
