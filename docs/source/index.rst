@@ -16,13 +16,12 @@ Welcome to CHAT GI-IADS's documentation!
    The_computational_requirements_for_Training_LLMs
    intro-finetuning
    Evaluation-metrics
-   Similarity_search
    prompt-engineering
    rag
    langchain
    rlhf
    Study_case_Mistral_Yassine
-   
+   CHAT_GI_IADS_PoC
    
 
    
